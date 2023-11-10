@@ -1,4 +1,4 @@
-# KS0555 Mini Tank Robot V3 Arduino Tutorial
+# Getting started with Mini Tank Robot V3 
 
 ![](media/0eed85e053eec9481023a1aaa999190e.png)
 
