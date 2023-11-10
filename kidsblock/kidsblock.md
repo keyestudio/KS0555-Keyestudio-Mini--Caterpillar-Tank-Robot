@@ -228,7 +228,7 @@ We can power it with a USB cable, the external DC power jack
 |         Clock Speed         |                          16 MHz                          |
 |         LED_BUILTIN         |                           D13                            |
 
-##  Tank Robot
+  **Tank Robot**
 
 Open KidsBlock, click![](media/bfbf7c471ede03845519b11961a13837.png)，select“**TankRobot**”and click“**Connect**”. Then the“**Beetlebot**”is connected. Click“**Go to Editor**”to return the editor.
 

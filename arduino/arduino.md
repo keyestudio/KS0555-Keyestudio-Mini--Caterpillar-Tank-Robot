@@ -169,7 +169,7 @@ In this section, we will start from a single sensor to complex experiments to in
 
 Note: (G), marked on each sensor and module, is the negative pole and connected to“G”, ”-”or “GND”on the sensor shield or control board ; (V) is the positive pole and linked with V , VCC, + or 5V on the sensor shield or control board.
 
-### 1 Project 1: LED Blinks
+###  Project 1: LED Blinks
 
 #### (1) Description：
 
@@ -292,7 +292,7 @@ void loop() //Infinite loop
 
 The test result shows that the LED flashes faster. Therefore, we can draw a conclusion that pins and time delaying affect flash frequency.
 
-### 2 Project 2: Adjust LED Brightness
+###  Project 2: Adjust LED Brightness
 
 #### (1) Description：
 
@@ -468,7 +468,7 @@ Upload the code to development board, LED flashes more slowly.
 
 
 
-### 3 Project 3: Photoresistor
+###  Project 3: Photoresistor
 
 <img src="media/36e7e08764ed3c61a1c22f86be8c23d9.jpeg" alt="unnamed (1)" style="zoom:50%;" />
 
@@ -604,7 +604,7 @@ void loop() {
 
 Upload code to the development board, then cove the photoresistor and observe the LED’s brightness.
 
-### 4 Project 4: Line Tracking Sensor
+###  Project 4: Line Tracking Sensor
 
 #### (1) Description：
 
@@ -772,7 +772,7 @@ void loop (){
 
 
 
-### 5 Project 5: Flame Sensor
+###  Project 5: Flame Sensor
 
 ![](media/7cf8c051f489b06119c262cd059c23c5.jpeg)
 
@@ -910,7 +910,7 @@ void loop() {
 
 
 
-### 6 Project 6: Fan
+###  Project 6: Fan
 
 #### (1) Description：
 
@@ -1032,7 +1032,7 @@ void loop() {
 
 
 
-### 7 Project 7: Servo Control
+###  Project 7: Servo Control
 
 #### (1) Description
 
@@ -1189,7 +1189,7 @@ The following are some common statements of the servo function:
 
 Note: The above written format is“servo variable name, specific statement（）”, for instance: myservo.attach(10)
 
-### 8 Project 8: Ultrasonic Sensor
+###  Project 8: Ultrasonic Sensor
 
 #### (1) **Description：**
 
@@ -1391,7 +1391,7 @@ void loop() {
 
 Upload test code to development board and block ultrasonic sensor by hand, then check if LED is on
 
-### 9 Project 9: IR Reception
+###  Project 9: IR Reception
 
 #### (1)Description：
 
@@ -1543,7 +1543,7 @@ void loop() {
 
 Upload code to development board, press“OK”key on remote control to make LED on and off.
 
-### 10 Project 10: Bluetooth Remote Control
+###  Project 10: Bluetooth Remote Control
 
 #### **(1)Description:**
 
@@ -1757,7 +1757,7 @@ You need to remove the BT module if you finish projects.
 
 ![](media/b45c3c46391467218fe07003dbb2f3e3.png)
 
-### 11 Project 11: Motor Driving and Speed Control
+###  Project 11: Motor Driving and Speed Control
 
 #### **(1)Description:**
 
@@ -1977,7 +1977,7 @@ Upload the code, the speed of the motor is slower.
 
 Low current will cause the motor to rotate slowly.
 
-### 12 Project 12: 8*16 Facial Expression LED Dot Matrix
+###  Project 12: 8*16 Facial Expression LED Dot Matrix
 
 #### **(1)Description:**
 
@@ -2313,7 +2313,7 @@ After uploading test code, the facial expression board shows these patterns orde
 
 ![](media/dce75583e8bf4bc4377364bf8ed3aa99.png)
 
-### 3.13 Project 13: Light Following Tank
+###  Project 13: Light Following Tank
 
 ![01](media/53db841d3b6bd9c5f2bc2c994f77fd1f.jpeg)
 
@@ -2437,7 +2437,7 @@ void Car_Stop()
 
 After uploading the test code successfully, connecting according to the wiring diagram, dialing the DIP switch to the right end and powering it on, the smart car follows the light to move.
 
-### 14 Project 14: Ultrasonic Following Tank
+###  Project 14: Ultrasonic Following Tank
 
 ![04](media/81e2d770186056b457b4d4da95543e79.jpeg)
 
@@ -2580,7 +2580,7 @@ float checkdistance() {
 
 Upload the test code successfully, wire up, dial the DIP switch to the right end, power up and set the servo to 9°，the smart car follows the obstacle to move.
 
-### 15 Project 15: Ultrasonic Obstacle Avoidance Tank
+###  Project 15: Ultrasonic Obstacle Avoidance Tank
 
 ![KS0555-10](media/2063ea3b3c0c5f0404b5508f35c39bd3.jpeg)
 
@@ -2750,7 +2750,7 @@ float checkdistance() {
 
 After upload the test code successfully, wire up, turn the DIP switch to the ON end, and power up, the smart car moves forward and automatically avoids obstacles.
 
-### 16 Project 16: Move-in-Confined-Space Tank
+###  Project 16: Move-in-Confined-Space Tank
 
 ![KS0555-08](media/69f9b1425cdb483b4702b3c4456146df.jpeg)
 
@@ -2870,7 +2870,7 @@ void Car_Stop()
 
 After uploading the test code successfully and powering it up, the smart car moves in a confined space, the circle drawn in black line.
 
-### 17 Project 17: Line-tracking Tank
+###  Project 17: Line-tracking Tank
 
 ![KS0555-07](media/7b241c2004afb2d4d264fbcc98e1c56a.jpeg)
 
@@ -3009,7 +3009,7 @@ void Car_Stop()
 
 After uploading the test code successfully and powering it up, the smart car moves along the black line.
 
-### 18 Project 18: Fire Extinguishing Tank
+###  Project 18: Fire Extinguishing Tank
 
 ![10](media/694677ab33053846ec588667dc40ecfa.jpeg)
 
@@ -3178,7 +3178,7 @@ void Car_Stop()
 
 After uploading the test code successfully and powering it up, the smart car puts out the fire when it detects flame and continues moving along the black line.
 
-### 19 Project 19: IR Remote Control Tank
+###  Project 19: IR Remote Control Tank
 
 ![KS0555-13](media/f161115878e9ae0c0f24dfd8b978773c.jpeg)
 
@@ -3405,7 +3405,7 @@ Upload the code and power up. The 8X16 LED panel will show corresponding pattern
 
 
 
-### 20 Project 20: Bluetooth Control Tank
+###  Project 20: Bluetooth Control Tank
 
 ![KS0555-11](media/4655aeffe0d2081fa2b9fd254113c392.jpeg)
 
@@ -3668,7 +3668,7 @@ After uploading the test code successfully, dialing the DIP switch to the right 
 
 
 
-### 21 Project 21: BT Speed Control Robot
+###  Project 21: BT Speed Control Robot
 
 ![KS0555-14](media/b9c902b937801f829b9ce2fd254b1849.jpeg)
 
@@ -3872,7 +3872,7 @@ After uploading the test code successfully, dialing the DIP switch to the right 
 
 (You can refer to function table in project 20 )
 
-### 22 Project 22: Multifunctional Tank
+###  Project 22: Multifunctional Tank
 
 ![KS0555-12](media/13656cfee75dc5acbeba18a90a084e15.jpeg)
 

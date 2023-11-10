@@ -1,4 +1,4 @@
-# Getting started with Mini Tank Robot V3 
+# Getting started with Tank Robot  
 
 ![](media/0eed85e053eec9481023a1aaa999190e.png)
 
