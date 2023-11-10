@@ -1,4 +1,4 @@
-## 1. Assemble
+# Assemble
 
  **Caution**: Set the initial angle of the servo Peel thin films off boards before installing this robot 
 

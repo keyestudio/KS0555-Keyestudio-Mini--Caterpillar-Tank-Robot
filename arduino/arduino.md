@@ -1,4 +1,4 @@
-# KS0555 Mini Tank Robot V3 Arduino Tutorial
+# Arduino Tutorial
 
 ##  Install Arduino IDE and Driver
 

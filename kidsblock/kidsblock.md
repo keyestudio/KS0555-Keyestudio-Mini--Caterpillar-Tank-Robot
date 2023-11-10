@@ -1,4 +1,4 @@
-# **KS0555 Mini Tank Robot V3 kidsblock tutorial**
+# **kidsblock tutorial**
 
 ##  Software installation
 
