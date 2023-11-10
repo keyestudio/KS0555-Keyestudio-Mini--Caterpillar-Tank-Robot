@@ -2,7 +2,7 @@
 
 ![](media/0eed85e053eec9481023a1aaa999190e.png)
 
-## 1.Introduction
+## Introduction
 
 This STEM educational V3.0 tank robot is newly upgraded, adding an line-tracking and a fire- extinguishing function. It vigorously enhances the relationship between kids and parents, and sparks children’s imagination through programming and coding.
 
@@ -14,7 +14,7 @@ The two tutorials for C language and Arduino are also suitable for the enthusias
 
 It is really the best choice for you.
 
-## 2.Features：
+## Features：
 
 1. Multiple functions：Confinement, line tracking, fire extinguishing, light following, IR and BT remote control, speed control and so on.
 
@@ -28,7 +28,7 @@ It is really the best choice for you.
 
 6. Basic programming：C language code of Arduino IDE.
 
-## 3.Parameters：
+## Parameters：
 
 - Working voltage: 5v
 
@@ -52,7 +52,7 @@ It is really the best choice for you.
 
 
 
-## 4.Kit List
+## Kit List
 
 |      |                                                              |                                                              |      |
 | ---- | :----------------------------------------------------------: | :----------------------------------------------------------: | ---- |

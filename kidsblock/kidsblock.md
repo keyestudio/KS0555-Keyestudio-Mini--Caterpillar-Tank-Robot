@@ -13,11 +13,6 @@ The Kidsblock, based on the Scratch graphical programming software, integrates m
 **[MACOS system](https://www.kidsblock.cn/Down/KidsBlock-MACOS.dmg)**
 
 
-**Install Development Board Driver**
-
-**[How to install development board driver](https://kidsblocksite.readthedocs.io/en/latest/driver/)**
-
-
 **How to use KidsBlock**
 
 We demonstrate how to use KidsBlock on Windows system
@@ -149,7 +144,7 @@ Then the passive buzzer is deleted.
 
 ![](media/f49edaef849c6e3e7eaaa1d588119ef4.jpeg)
 
-#### How to open SB3 type files：
+**How to open SB3 type files**
 
 1.Double-click SB3 type files to open them.
 
@@ -163,40 +158,8 @@ Then the passive buzzer is deleted.
 
 ![](media/74045de1da7b58a8d0e35fe0e140fa9d.png)
 
-##  Keyestudio V4.0 Development Board
 
-You need to know that keyestudio V4.0 development board is the core of this smart car.
-
-![](media/41b05c58f1521cbbeaae2af30a2276c2.png)
-
-Keyestudio V4.0 development board is based on ATmega328P MCU, and with a CP2102 Chip as a UART-to-USB converter.
-
-![](media/308315eef3c603cdf0e8babfc4d9c297.jpeg)
-
-It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16 MHz quartz crystal, a USB connection, a power jack, 2 ICSP headers and a reset button.
-
-![](media/9652daf1229f38442c4c31934022be39.png)
-
-We can power it with a USB cable, the external DC power jack 
-
-(DC 7-12V) or female headers Vin/ GND(DC 7-12V)
-
-|      Micro controller       |                      ATmega328P-PU                       |
-| :-------------------------: | :------------------------------------------------------: |
-|      Operating Voltage      |                            5V                            |
-| Input Voltage (recommended) |                         DC7-12V                          |
-|      Digital I/O Pins       |       14 (D0-D13)  (of which 6 provide PWM output)       |
-|    PWM Digital I/O Pins     |               6 (D3, D5, D6, D9, D10, D11)               |
-|      Analog Input Pins      |                        6 (A0-A5)                         |
-|   DC Current per I/O Pin    |                          20 mA                           |
-|   DC Current for 3.3V Pin   |                          50 mA                           |
-|        Flash Memory         | 32 KB (ATmega328P-PU) of which 0.5 KB used by bootloader |
-|            SRAM             |                   2 KB (ATmega328P-PU)                   |
-|           EEPROM            |                   1 KB (ATmega328P-PU)                   |
-|         Clock Speed         |                          16 MHz                          |
-|         LED_BUILTIN         |                           D13                            |
-
-  **Tank Robot**
+  **Choose Tank Robot device**
 
 Open KidsBlock, click![](media/bfbf7c471ede03845519b11961a13837.png)，select“**TankRobot**”and click“**Connect**”. Then the“**Beetlebot**”is connected. Click“**Go to Editor**”to return the editor.
 
