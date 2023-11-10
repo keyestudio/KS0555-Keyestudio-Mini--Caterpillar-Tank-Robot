@@ -1,238 +1,8 @@
 # KS0555 Mini Tank Robot V3 Arduino Tutorial
 
-## 1. Installation
+##  Install Arduino IDE and Driver
 
- **Caution**: Set the initial angle of the servo Peel thin films off boards before installing this robot 
-
-![](media/4ea30cc75eb77e63441dccef9f0ca3cb.png)
-
-### Installation
-
-![img](media/wps115.jpg)
-
-![img](media/wps116.jpg)
-
-![image-20230525092859344](media/image-20230525092859344.png)
-
-![image-20230525092919242](media/image-20230525092919242.png)
-
-![image-20230525092925326](media/image-20230525092925326.png)
-
-![image-20230525092930362](media/image-20230525092930362.png)
-
-### Step2
-
-Required Parts
-
-![ ](media/6dfc645075993b1a10e45e888b7fc670.png)
-
-![ ](media/e5322cac246d5324e721489fc805d71f.png)
-
-![ ](media/bddc904d904489540d4bb2a2fa29d236.png)
-
-### Step 3
-Required Parts
-
-![ ](media/1cfa4e5862c2e69e4891b2f7f345938b.png)
-
-![ ](media/66a58753fc1fa0a64d9c5dec681cb97c.png)
-
-![ ](media/9a0eb86718e6dd64699af4dab44d5682.png)
-
-### Step 4
-Required Parts
-
-![ ](media/8b60ab25e9f6fba784716a315001db91.png)
-
-![ ](media/a73038cc068a0e0d5495115212fffa66.png)
-
-![ ](media/115177d49c40c68d979fc21653d70834.png)
-
-### Step 5
-Required Parts
-
-![ ](media/7d5047e2ff8803cee7125196533fc4a6.png)
-
-![ ](media/9479cecb0f142fa3b0e496fae2bfc683.png)
-
-![ ](media/5b8572e5104d7e72195e76feb929aba6.png)
-
-### Step 6
-Required Parts
-
-![ 7.png 7](media/76e5f6b6248c29a8ac0fba75eb2e706a.png)
-
-Note the direction of jumper caps
-
-![ 7_1.png 7_1](media/e39a2efd338f70fd1869264fe291450b.png)
-
-![ 7_2.png 7_2](media/4ae6b2601c721b1ebbd039c5567ef78b.png)
-
-### Step 7
-Required Parts
-
-![\\ 9.jpg 9](media/6a0447be5d1c8c410c35d7be569d8770.jpeg)
-
-![ 9_1](media/08c05216fcf38671b207b1769bf4923f.jpeg)
-
-![ 9_2](media/a285db6d2b9ad77594d3e9a05fbc3c3e.jpeg)
-
-### Step 8
-Required Parts
-
-![ 8](media/d3d3d166e9678d298c33b3176de07d6a.jpeg)
-
-![ 8_1](media/286547498c44567def602fe7fcdff8bc.jpeg)
-
-![ 8_2](media/1b572444d27283340f630226bfdef9db.jpeg)
-
-### Step 9
-（Need to adjust the angle of the servo）
-Required Parts
-
-![ 8_3](media/0f4b98efe20dee69b96eeade2599c839.jpeg)
-
-Set the angle of the servo to 90°
-Refer to the lesson 7 to set the servo. If you don’t know how to use it, learn the lesson 7 first.
-
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
-
-Keep the ultrasonic sensor parallel to the board
-
-![ 8_4.png 8_4](media/24d9629c520bda267abd2bb3274f8234.png)
-
-![ 8_5.png 8_5](media/c408c7aa269fee1e0988ad69e4d99215.png)
-
-### Step 9
-Required Parts
-
-![ 12.png 12](media/b8fd0392e5ddb44a066fc64df1ed64e3.png)
-
-![ 12_1.png 12_1](media/ed84f27b216cc41f8d5365c01b0eac99.png)
-
-![ 12_2.png 12_2](media/c5d8fcefa0d47aa0baf1233920694a11.png)
-
-### Step 10
-Required Parts
-
-![ 12_3.png 12_3](media/871cc650bbf0fa90bd66c94fbb7c7e14.png)
-
-![ 12_4.png 12_4](media/2b4e9fc8e12cc62291bcea7703dbcbc2.png)
-
-![ 12_5.png 12_5](media/11bba4f642c4e0d7356a646ac3c17fc0.png)
-
-Wire up
-For 8\*16LED panel, Make wires connect to A4 and A5
-
-![ ](media/f3262a7f63769b2a69665dbf99476394.jpeg)
-
-![ ](media/6a61630c713284ffcd12a046224793df.png)
-
-![ ](media/image-20230907160223855.png)
-
-Connect the motor A to B port and make the motor B to A port
-
-![ ](media/5c5ca1f43b3fe0758ed9c2b95700ab22.png)
-
-![ ](media/47dabc315fe9e19c5d3d5f42b7e36959.png)
-
-Line Tracking Sensor(see the picture)
-
-![ ](media/01d98654282c339efe6a422f96380989.jpeg)
-
-![ ](media/07144428.jpg)
-
-![ ](media/6d44df09cf294c175fe45a067da373ec.jpeg)
-
-![ ](media/7b20e184afc842346615a8ca91167a57.png)
-
-![ ](media/8abdfcbc1328f818978bce68b47ee83c.png)
-
-Wire up the photoresistor
-
-![ ](media/e0d6dbb2e9a054991bbd53284790d2dd.png)
-
-![ ](media/3c4715f8bd327477824d5f9ac872503d.png)
-
-| Left | Keyestudio 8833 Board |      | Right | Keyestudio 8833  Board |
-| :--: | :-------------------: | ---- | :---: | :--------------------: |
-|  G   |           G           |      |   G   |           G            |
-|  V   |           V           |      |   V   |           V            |
-|  S   |          A1           |      |   S   |           A2           |
-
-Wire up ultrasonic sensors
-
-![ ](media/ea9bdc12ab2c158fbf9205e5125cbafa.png)
-
-| Ultrasonic Sensor | Keyestudio 8833 Board |
-| :---------------: | :-------------------: |
-|        Vcc        |           V           |
-|       Trig        |          D12          |
-|       Echo        |          D13          |
-|        Gnd        |           G           |
-
-Wire up the servo(D10)
-
-![ ](media/a435408b48071d6f1977c19d105e3836.png)
-
-| Servo  | Keyestudio 8833 Board |
-| :----: | :-------------------: |
-| Brown  |           G           |
-|  Red   |         V(5V)         |
-| Orange |          D10          |
-
- Extinguishing Robot
-
-Remove the ultrasonic sensor and two photoresistors
-
-![ 12_6.png 12_6](media/d575fad4068d67daffaf3958996a185b.png)
-
-![ 13.png 13](media/3a350ba2fda9f37c8f0870f16c981f7b.png)
-
-Put on a fan module and two flame sensors
-
-![ 2.png 2](media/f1a3dbebcb34d4a390e4b2412d34e03e.png)
-
-You can make the fan module install further if the fan module and flame sensors interfere
-
-![ ](media/8ec448f8b626fd9f8f0a6941b927c0af.png)
-
-Wire up
-
-Wire up the fan module and two flame sensors
-
-![ ](media/e224ea3ffed9b63eda92e9fbd2fc0ed2.png)
-
-![ ](media/5aaf61e5d36e7bc01753e544bebeca46.png)
-
-| Left | Keyestudio 8833 Board |      | Right | Keyestudio 8833 Board |
-| :--: | :-------------------: | ---- | :---: | :-------------------: |
-|  G   |           G           |      |   G   |           G           |
-|  V   |           V           |      |   V   |           V           |
-|  A   |          A1           |      |   A   |          A2           |
-
-![ ](media/c646fb9322c3f4315b246a36ee1df17c.png)
-
-| DC130 Motor | Keyestudio 8833 Board |
-| :---------: | :-------------------: |
-|      G      |           G           |
-|      V      |           V           |
-|     IN+     |          D12          |
-|     IN-     |          D13          |
-
-------
-
-
-
-###  We adopt a model 18650 lithium battery with a pointed positive pole, whose power and capacity are not required.
-
-------
-
-
-
-## 2. Install Arduino IDE and Driver
-
-### **2.1 Installing Arduino IDE**
+### ** Installing Arduino IDE**
 
 When you get control board, you need to download Arduino IDE and driver firstly.
 
@@ -252,7 +22,7 @@ There are two versions of IDE for WINDOWS system. You can choose between the ins
 
 Click JUST DOWNLOAD.
 
-### **2.2 Keyestudio V4.0 Development Board**
+### ** Keyestudio V4.0 Development Board**
 
 You need to know that keyestudio V4.0 development board is the core of this smart car.
 
@@ -285,7 +55,7 @@ We can power it with a USB cable, the external DC power jack
 |         Clock Speed         |                          16 MHz                          |
 |         LED_BUILTIN         |                           D13                            |
 
-### **2.3 Installing the Driver of the V4.0 Board**
+### ** Installing the Driver of the V4.0 Board**
 
 Let’s install the driver of keyestudio V4.0 board. The USB-TTL chip on V4.0 board adopts CP2102 serial chip. The driver program of this chip is included in Arduino 1.8 version and above (<https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers>), which is convenient. Plugging on USB port of board, the computer can recognize the hardware and automatically install the driver of CP2102. 
 
@@ -313,7 +83,7 @@ When opening the device manager, we will find the yellow exclamation mark disapp
 
 ![123](media/9b8ddc1c8af12e5f363817d49cea8571.png)
 
-### **2.4 Arduino IDE Setting**
+### ** Arduino IDE Setting**
 
 Click![](media/675ae7298ce0973df720b2fbbb514caa.png)icon，and open Arduino IDE.
 
@@ -343,7 +113,7 @@ E- Used to save the sketch.
 
 F- Used to send the serial data received from board to the serial monitor.
 
-### **2.5 Start First Program**
+### ** Start First Program**
 
 Open the file to select **Example**, and click **BASIC**\>**BLINK**, as shown below:
 
@@ -363,7 +133,7 @@ Click![](media/9c9158a5d49baa740ea2f0048f655017.png)to upload the program
 
 After the program is uploaded successfully, the onboard LED blinks. Congratulation, you finish the first program.
 
-### **2.6 How to Add a Library?**
+### ** How to Add a Library?**
 
 #### **(1) What are Libraries ?**
 
@@ -393,13 +163,13 @@ Copy them into libraries of Arduino
 
 ![](media/ef128138a3b57f2927bf35784021c13a.png)
 
-## 3.Projects
+## Projects
 
 In this section, we will start from a single sensor to complex experiments to introduce you how the tank robot works
 
 Note: (G), marked on each sensor and module, is the negative pole and connected to“G”, ”-”or “GND”on the sensor shield or control board ; (V) is the positive pole and linked with V , VCC, + or 5V on the sensor shield or control board.
 
-### 3.1 Project 1: LED Blinks
+### 1 Project 1: LED Blinks
 
 #### (1) Description：
 
@@ -522,7 +292,7 @@ void loop() //Infinite loop
 
 The test result shows that the LED flashes faster. Therefore, we can draw a conclusion that pins and time delaying affect flash frequency.
 
-### 3.2 Project 2: Adjust LED Brightness
+### 2 Project 2: Adjust LED Brightness
 
 #### (1) Description：
 
@@ -698,7 +468,7 @@ Upload the code to development board, LED flashes more slowly.
 
 
 
-### 3.3 Project 3: Photoresistor
+### 3 Project 3: Photoresistor
 
 <img src="media/36e7e08764ed3c61a1c22f86be8c23d9.jpeg" alt="unnamed (1)" style="zoom:50%;" />
 
@@ -834,7 +604,7 @@ void loop() {
 
 Upload code to the development board, then cove the photoresistor and observe the LED’s brightness.
 
-### 3.4 Project 4: Line Tracking Sensor
+### 4 Project 4: Line Tracking Sensor
 
 #### (1) Description：
 
@@ -1002,7 +772,7 @@ void loop (){
 
 
 
-### 3.5 Project 5: Flame Sensor
+### 5 Project 5: Flame Sensor
 
 ![](media/7cf8c051f489b06119c262cd059c23c5.jpeg)
 
@@ -1140,7 +910,7 @@ void loop() {
 
 
 
-### 3.6 Project 6: Fan
+### 6 Project 6: Fan
 
 #### (1) Description：
 
@@ -1262,7 +1032,7 @@ void loop() {
 
 
 
-### 3.7 Project 7: Servo Control
+### 7 Project 7: Servo Control
 
 #### (1) Description
 
@@ -1419,7 +1189,7 @@ The following are some common statements of the servo function:
 
 Note: The above written format is“servo variable name, specific statement（）”, for instance: myservo.attach(10)
 
-### 3.8 Project 8: Ultrasonic Sensor
+### 8 Project 8: Ultrasonic Sensor
 
 #### (1) **Description：**
 
@@ -1621,7 +1391,7 @@ void loop() {
 
 Upload test code to development board and block ultrasonic sensor by hand, then check if LED is on
 
-### 3.9 Project 9: IR Reception
+### 9 Project 9: IR Reception
 
 #### (1)Description：
 
@@ -1773,7 +1543,7 @@ void loop() {
 
 Upload code to development board, press“OK”key on remote control to make LED on and off.
 
-### 3.10 Project 10: Bluetooth Remote Control
+### 10 Project 10: Bluetooth Remote Control
 
 #### **(1)Description:**
 
@@ -1987,7 +1757,7 @@ You need to remove the BT module if you finish projects.
 
 ![](media/b45c3c46391467218fe07003dbb2f3e3.png)
 
-### 3.11 Project 11: Motor Driving and Speed Control
+### 11 Project 11: Motor Driving and Speed Control
 
 #### **(1)Description:**
 
@@ -2207,7 +1977,7 @@ Upload the code, the speed of the motor is slower.
 
 Low current will cause the motor to rotate slowly.
 
-### 3.12 Project 12: 8*16 Facial Expression LED Dot Matrix
+### 12 Project 12: 8*16 Facial Expression LED Dot Matrix
 
 #### **(1)Description:**
 
@@ -2667,7 +2437,7 @@ void Car_Stop()
 
 After uploading the test code successfully, connecting according to the wiring diagram, dialing the DIP switch to the right end and powering it on, the smart car follows the light to move.
 
-### 3.14 Project 14: Ultrasonic Following Tank
+### 14 Project 14: Ultrasonic Following Tank
 
 ![04](media/81e2d770186056b457b4d4da95543e79.jpeg)
 
@@ -2810,7 +2580,7 @@ float checkdistance() {
 
 Upload the test code successfully, wire up, dial the DIP switch to the right end, power up and set the servo to 9°，the smart car follows the obstacle to move.
 
-### 3.15 Project 15: Ultrasonic Obstacle Avoidance Tank
+### 15 Project 15: Ultrasonic Obstacle Avoidance Tank
 
 ![KS0555-10](media/2063ea3b3c0c5f0404b5508f35c39bd3.jpeg)
 
@@ -2980,7 +2750,7 @@ float checkdistance() {
 
 After upload the test code successfully, wire up, turn the DIP switch to the ON end, and power up, the smart car moves forward and automatically avoids obstacles.
 
-### 3.16 Project 16: Move-in-Confined-Space Tank
+### 16 Project 16: Move-in-Confined-Space Tank
 
 ![KS0555-08](media/69f9b1425cdb483b4702b3c4456146df.jpeg)
 
@@ -3100,7 +2870,7 @@ void Car_Stop()
 
 After uploading the test code successfully and powering it up, the smart car moves in a confined space, the circle drawn in black line.
 
-### 3.17 Project 17: Line-tracking Tank
+### 17 Project 17: Line-tracking Tank
 
 ![KS0555-07](media/7b241c2004afb2d4d264fbcc98e1c56a.jpeg)
 
@@ -3239,7 +3009,7 @@ void Car_Stop()
 
 After uploading the test code successfully and powering it up, the smart car moves along the black line.
 
-### 3.18 Project 18: Fire Extinguishing Tank
+### 18 Project 18: Fire Extinguishing Tank
 
 ![10](media/694677ab33053846ec588667dc40ecfa.jpeg)
 
@@ -3408,7 +3178,7 @@ void Car_Stop()
 
 After uploading the test code successfully and powering it up, the smart car puts out the fire when it detects flame and continues moving along the black line.
 
-### 3.19 Project 19: IR Remote Control Tank
+### 19 Project 19: IR Remote Control Tank
 
 ![KS0555-13](media/f161115878e9ae0c0f24dfd8b978773c.jpeg)
 
@@ -3635,7 +3405,7 @@ Upload the code and power up. The 8X16 LED panel will show corresponding pattern
 
 
 
-### 3.20 Project 20: Bluetooth Control Tank
+### 20 Project 20: Bluetooth Control Tank
 
 ![KS0555-11](media/4655aeffe0d2081fa2b9fd254113c392.jpeg)
 
@@ -3898,7 +3668,7 @@ After uploading the test code successfully, dialing the DIP switch to the right 
 
 
 
-### 3.21 Project 21: BT Speed Control Robot
+### 21 Project 21: BT Speed Control Robot
 
 ![KS0555-14](media/b9c902b937801f829b9ce2fd254b1849.jpeg)
 
@@ -4102,7 +3872,7 @@ After uploading the test code successfully, dialing the DIP switch to the right 
 
 (You can refer to function table in project 20 )
 
-### 3.22 Project 22: Multifunctional Tank
+### 22 Project 22: Multifunctional Tank
 
 ![KS0555-12](media/13656cfee75dc5acbeba18a90a084e15.jpeg)
 
@@ -4726,8 +4496,4 @@ Some modules work through an IO port. If you need to use the fan module and the 
 
 
 
-## 4. Resource:
 
-Download libraries, app and other documents in the link:
-
-<https://fs.keyestudio.com/KS0555>

@@ -1,226 +1,8 @@
 # **KS0555 Mini Tank Robot V3 kidsblock tutorial**
 
-## 1. Installatio
+##  Software installation
 
-Set the initial angle of the servo Peel thin films off boards before installing this robot
-
-![](media/4ea30cc75eb77e63441dccef9f0ca3cb.png)
-
-### Installation
-
-![img](media/wps115.jpg)
-
-![img](media/wps116.jpg)
-
-![image-20230525092859344](media/image-20230525092859344.png)
-
-![image-20230525092919242](media/image-20230525092919242.png)
-
-![image-20230525092925326](media/image-20230525092925326.png)
-
-![image-20230525092930362](media/image-20230525092930362.png)
-
-### Step 1
-Required Parts
-
-![](media/7fe6481c6e0f41a4c124a63c50713a5a.png)
-
-![image-20230525093038607](media/image-20230525093038607.png)
-
-![](media/6a6dc100d41a0d1dd9ae5e1bc18ea44a.jpeg)
-
-Step 2
-Required Parts
-
-![](media/6dfc645075993b1a10e45e888b7fc670.png)
-
-![image-20230525093339985](media/image-20230525093339985.png)
-
-![](media/bddc904d904489540d4bb2a2fa29d236.png)
-Step 3
-Required Parts
-
-
-
-![](media/1cfa4e5862c2e69e4891b2f7f345938b.png)
-
-![image-20230525093417802](media/image-20230525093417802.png)
-
-![](media/9a0eb86718e6dd64699af4dab44d5682.png)
-Step 4
-Required Parts
-
-
-
-![](media/8b60ab25e9f6fba784716a315001db91.png)
-
-![image-20230525093455532](media/image-20230525093455532.png)
-
-![](media/115177d49c40c68d979fc21653d70834.png)
-Step 5
-Required Parts
-
-![](media/7d5047e2ff8803cee7125196533fc4a6.png)
-
-![image-20230525093525411](media/image-20230525093525411.png)
-
-![](media/5b8572e5104d7e72195e76feb929aba6.png)
-Step 6
-Required Parts
-
-![](media/76e5f6b6248c29a8ac0fba75eb2e706a.png)
-Note the direction of jumper caps
-
-![](media/e39a2efd338f70fd1869264fe291450b.png)
-
-![](media/4ae6b2601c721b1ebbd039c5567ef78b.png)
-Step 7
-Required Parts
-
-![](media/6a0447be5d1c8c410c35d7be569d8770.jpeg)
-
-![image-20230525093640344](media/image-20230525093640344.png)
-
-![](media/a285db6d2b9ad77594d3e9a05fbc3c3e.jpeg)
-Step 8
-Required Parts
-
-![](media/d3d3d166e9678d298c33b3176de07d6a.jpeg)
-
-![image-20230525093718783](media/image-20230525093718783.png)
-
-![](media/1b572444d27283340f630226bfdef9db.jpeg)
-Step 9 (Need to adjust the angle of the servo)
-Required Parts
-
-![](media/0f4b98efe20dee69b96eeade2599c839.jpeg)
-Set servo to 90°
-Use the following Scratch-KidsBlock code to adjust the initial angle of the servo
-
-![image-20230525100712165](media/image-20230525100712165.png)
-
-Open the code of the servo and upload it to the main board
-
-![](media/c41a343cbd22ff1247f30de6b012c294.png)
-
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
-
-Keep the ultrasonic sensor parallel to the board
-
-![image-20230525094023808](media/image-20230525094023808.png)
-
-
-
-![](media/c408c7aa269fee1e0988ad69e4d99215.png)
-Step 10
-Required Parts
-
-![](media/b8fd0392e5ddb44a066fc64df1ed64e3.png)
-
-![image-20230525094111237](media/image-20230525094111237.png)
-
-![](media/c5d8fcefa0d47aa0baf1233920694a11.png)
-
-Step 11
-Required Parts
-
-![](media/871cc650bbf0fa90bd66c94fbb7c7e14.png)
-
-![image-20230525094143701](media/image-20230525094143701.png)
-
-![](media/11bba4f642c4e0d7356a646ac3c17fc0.png)
-
-
-
-### Wire up
-
-LED Panel
-For 8*16 LED panel, make wires connect to A4 and A5
-
-![image-20230525094401166](media/image-20230525094401166.png)
-
-![image-20230525094250031](media/image-20230525094250031.png)
-
-![image-20230525094257629](media/image-20230525094257629.png)
-
-Motor
-Connect the motor A to B port and make the motor B to A port
-
-![image-20230525094550868](media/image-20230525094550868.png)
-
-![](media/47dabc315fe9e19c5d3d5f42b7e36959.png)
-
-Line Tracking Sensor
-
-![](media/01d98654282c339efe6a422f96380989.jpeg)
-
-![ ](media/07144428.jpg)
-
-![](media/5c9acf3b6ef913bb7ca5934a0cf87b11.jpeg)
-
-![](media/6d44df09cf294c175fe45a067da373ec.jpeg)
-
-![](media/7b20e184afc842346615a8ca91167a57.png)
-
-![](media/8abdfcbc1328f818978bce68b47ee83c.png)
-
-Photoresistor
-
-![image-20230525094937300](media/image-20230525094937300.png)
-
-![](media/e0d6dbb2e9a054991bbd53284790d2dd.png)
-
-![](media/3c4715f8bd327477824d5f9ac872503d.png)
-
-Ultrasonic sensors
-
-![image-20230525095742031](media/image-20230525095742031.png)
-
-![](media/8b78f9d9586c605b913ad40267a30f43.png)
-
-Servo (D10)
-
-![image-20230525095853512](media/image-20230525095853512.png)
-
-![](media/4b26fceb4e64f8f49ac9c0ce8ff3f5bc.png)
-
-
-### Extinguishing Robot
-
-Installation
-Remove the ultrasonic sensor and two photoresistors
-![](media/d575fad4068d67daffaf3958996a185b.png)
-![](media/3a350ba2fda9f37c8f0870f16c981f7b.png)
-Put on a fan module and two flame sensors
-![](media/f1a3dbebcb34d4a390e4b2412d34e03e.png)
-You can make the fan module install further if the fan module and flame sensors interfere.
-![](media/8ec448f8b626fd9f8f0a6941b927c0af.png)
-Wire up
-two flame sensors
-
-![image-20230525100257074](media/image-20230525100257074.png)
-
-![](media/5aaf61e5d36e7bc01753e544bebeca46.png)
-
-fan module
-
-![image-20230525100347307](media/image-20230525100347307.png)
-
-![](media/c646fb9322c3f4315b246a36ee1df17c.png)
-
-------
-
-
-
-### We adopt a model 18650 lithium battery with a pointed positive pole, whose power and capacity are not required.
-
-------
-
-
-
-## 2. Software installation
-
-### 2.1Software Downlaod
+### Software Downlaod
 
 Windows:
 
@@ -230,7 +12,7 @@ MacOS:
 
 <http://www.kidsbits.net/Down/KidsBlock%20Desktop%201.1.3.dmg>
 
-### 2.2 KidsBlock Software [Windows]
+### KidsBlock Software [Windows]
 
 Note: we take the Windows system as an example. As for MacOS system, just follow this instruction.
 
@@ -254,7 +36,7 @@ Note: we take the Windows system as an example. As for MacOS system, just follow
 
 ![](media/494babd2708cc77d9dd9de96c5a68bf8.png)
 
-### 2.3 KidsBlock Software [MacOS]
+### KidsBlock Software [MacOS]
 
 Download kidsblock，as shown below;
 
@@ -268,7 +50,7 @@ After the installation is finished, you will view KidsBlock icon.
 
 ![{87729519-705C-0ADF-A10B-20B40221C0DE}](media/87729519705c0adfa10b20b40221c0de.jpeg)
 
-### 2.4 How to use KidsBlock
+### How to use KidsBlock
 
 We demonstrate how to use KidsBlock on Windows system
 
@@ -383,9 +165,9 @@ Click ![](media/9964e0b31fc9846a7f64c57f51e47152.png) to enter the page of exten
 For example, if click the“passive buzzer”,“Not loaded”will change into“Loaded”. Then the passive buzzer is added
 
 
-![\~FC9B7Y1B9IY@\~J%XE7{0NX](media/f49edaef849c6e3e7eaaa1d588119ef4.jpeg)
+![](media/f49edaef849c6e3e7eaaa1d588119ef4.jpeg)
 
-![IMG_256](media/4f752d3174615462d3ef30ebb5e3a0c1.jpeg)
+![](media/4f752d3174615462d3ef30ebb5e3a0c1.jpeg)
 
 Click ![](media/29916972665d35bfb34914b6144e28aa.png) to return the code editor. Then you can view the passive buzzer in the blocks area.
 
@@ -395,9 +177,9 @@ If you want to delete the passive buzzer, click ![](media/9964e0b31fc9846a7f64c5
 
 Then the passive buzzer is deleted.
 
-![IMG_256](media/4f752d3174615462d3ef30ebb5e3a0c1.jpeg)
+![](media/4f752d3174615462d3ef30ebb5e3a0c1.jpeg)
 
-![\~FC9B7Y1B9IY@\~J%XE7{0NX](media/f49edaef849c6e3e7eaaa1d588119ef4.jpeg)
+![](media/f49edaef849c6e3e7eaaa1d588119ef4.jpeg)
 
 #### How to open SB3 type files：
 
@@ -413,7 +195,7 @@ Then the passive buzzer is deleted.
 
 ![](media/74045de1da7b58a8d0e35fe0e140fa9d.png)
 
-## 3. Keyestudio V4.0 Development Board
+##  Keyestudio V4.0 Development Board
 
 You need to know that keyestudio V4.0 development board is the core of this smart car.
 
@@ -446,7 +228,7 @@ We can power it with a USB cable, the external DC power jack
 |         Clock Speed         |                          16 MHz                          |
 |         LED_BUILTIN         |                           D13                            |
 
-## 4. Tank Robot
+##  Tank Robot
 
 Open KidsBlock, click![](media/bfbf7c471ede03845519b11961a13837.png)，select“**TankRobot**”and click“**Connect**”. Then the“**Beetlebot**”is connected. Click“**Go to Editor**”to return the editor.
 
@@ -482,9 +264,9 @@ Click![](media/db0135c23e5313dac75a33d7d2faa529.png), then click “**Connect**�
 
 ![](media/4755983974f7a80d4cd680498cc34cf3.jpeg)
 
-## 5. Projects
+##  Projects
 
-### 5.1 Project 1: LED Blinks
+### Project 1: LED Blinks
 
 #### (1) Description：
 
@@ -570,7 +352,7 @@ You can also drag blocks to edit your code, as shown below
 
 The test result shows that the LED flashes faster. Therefore, we can draw a conclusion that pins and time delaying affect flash frequency.
 
-### **5.2 Project 2: Adjust LED Brightness**
+### Project 2: Adjust LED Brightness
 
 #### (1) Description：
 
@@ -664,7 +446,7 @@ You can also drag blocks to edit your code, as shown below
 
 Upload the code, observe the LED
 
-### 5.3 Project 3: Photoresistor
+### Project 3: Photoresistor
 
 ![](media/36e7e08764ed3c61a1c22f86be8c23d9.jpeg)
 
@@ -765,7 +547,7 @@ You can also drag blocks to edit your code, as shown below
 
 Upload the code to the development board, we press the photoresistor to see if the brightness of the LED light has changed.
 
-### **5.4 Project 4: Line Tracking Sensor**
+### Project 4: Line Tracking Sensor
 
 #### (1) Description：
 
@@ -870,7 +652,7 @@ You can also drag blocks to edit your code, as shown below
 
 ![](media/75539d50d896b73fd652bdac8451dd98.png)
 
-### **5.5 Project 5: Flame Sensor**
+### Project 5: Flame Sensor
 
 ![](media/7cf8c051f489b06119c262cd059c23c5.jpeg)
 
@@ -978,7 +760,7 @@ You can drag blocs to edit your code, as shown below
 
 ![](media/9d2f5915e4a6991ed4549b39ec853fa5.png)
 
-### **5.6 Project 6: Fan**
+### Project 6: Fan
 
 #### (1) Description：
 
@@ -1071,7 +853,7 @@ You can drag blocs to edit your code, as shown below
 
 ![](media/74ddb07daf4063f0640c31f4243a0864.png)
 
-### **5.7 Project 7: Servo Control**
+### Project 7: Servo Control
 
 #### Description
 
@@ -1150,7 +932,7 @@ You can also drag blocks to edit your code, as shown below
 
 Upload code, plug in power and servo moves in the range of 0° and 180°.
 
-### 5.8 Project 8: Ultrasonic Sensor
+### Project 8: Ultrasonic Sensor
 
 #### **Description：**
 
@@ -1286,7 +1068,7 @@ You can also drag blocks to edit your code, as shown below
 
 Upload test code to development board and move your hand and close to the ultrasonic sensor, then check if the LED is on.
 
-### **5.9 Project 9: IR Reception**
+### Project 9: IR Reception
 
 #### Description：
 
@@ -1396,7 +1178,7 @@ You can also drag blocks to edit your code, as shown below
 
 Upload code to development board, press the“OK”key on remote control to make LED on and off.
 
-### **5.10 Project 10: Bluetooth Remote Control**
+### Project 10: Bluetooth Remote Control
 
 #### **(1)Description:**
 
@@ -1631,7 +1413,7 @@ You can also drag blocks to edit your code, as shown below
 
 Click ![](media/d5e59839bafc63f8b35c78c60573d1fc.png) to control the LED. After you finish the BT project, remove it.
 
-### **5.11 Project 11: Motor Driving and Speed Control**
+### Project 11: Motor Driving and Speed Control
 
 #### **(1)Description:**
 
@@ -1723,7 +1505,7 @@ You can also drag blocks to edit your code, as shown below
 
 After wiring according to the diagram, uploading the test code and powering it up, the smart car moves forward for 2s, goes back for 2s, turns left for 2s, turns right for 2s and stops for 2s
 
-### **5.12 Project 12: 8\*16 Facial Expression LED Dot Matrix**
+### Project 12: 8*16 Facial Expression LED Dot Matrix
 
 #### **(1)Description:**
 
@@ -1897,7 +1679,7 @@ Upload the code to the development board, the 8\*16 board will show following pa
 
 ![](media/dce75583e8bf4bc4377364bf8ed3aa99.png)
 
-### **5.13 Project 13: Light-following Tank**
+### Project 13: Light-following Tank
 
 ![](media/2fc21b8591a08d3bfddb0b164028d941.jpeg)
 
@@ -1963,7 +1745,7 @@ Do not connect the Bluetooth module before uploading the code, because the uploa
 
 After uploading the test code successfully, wire up, turn DIP switch to the ON end and power on, the smart car follows the light to move.
 
-### **5.14 Project 14: Ultrasonic Sound-following Tank**
+### Project 14: Ultrasonic Sound-following Tank
 
 ![](media/58dc3b30dfb95bc170f8df6d7dab3ebe.jpeg)
 
@@ -2025,7 +1807,7 @@ You can also drag blocks to edit your code, as shown below
 
 Upload the code, power up and turn the DIP switch to ON. The servo will rotate 90°, the 8X16 LED panel will show ![](media/fdd4ae50b3372cc9c4ef27f6bddda387.png) and the car follows the obstacle to move.
 
-### **5.15 Project 15: Ultrasonic Obstacle Avoidance Tank**
+### Project 15: Ultrasonic Obstacle Avoidance Tank
 
 #### (1) Description
 
@@ -2104,7 +1886,7 @@ You can also drag blocks to edit your code, as shown below
 
 After upload the test code successfully, wire up, turn the DIP switch to the ON end, and power up, the smart car moves forward and automatically avoids obstacles.5
 
-### **5.16 Project 16: Move-in-Confined-Space Tank**
+### Project 16: Move-in-Confined-Space Tank
 
 ![](media/69f9b1425cdb483b4702b3c4456146df.jpeg)
 
@@ -2167,7 +1949,7 @@ You can also drag blocks to edit your code, as shown below
 
 After upload the test code successfully and power up, the smart car moves in a circle drawn in black line.
 
-### **5.17 Project 17:Line-tracking Tank**
+### Project 17:Line-tracking Tank
 
 ![](media/7b241c2004afb2d4d264fbcc98e1c56a.jpeg)
 
@@ -2234,7 +2016,7 @@ You can also drag blocks to edit your code, as shown below
 
 After upload the test code successfully and power on, the smart car moves along the black line.
 
-### **5.18 Project 18: Fire Extinguishing Tank**
+### Project 18: Fire Extinguishing Tank
 
 ![](media/2de5f1d832d40c0fc94274f1d87443c6.jpeg)
 
@@ -2301,7 +2083,7 @@ You can also drag blocks to edit your code, as shown below
 
 After upload the test code successfully, power up and turn the DIP switch to ON end. The smart car will put out the fire when it detects flame.
 
-### **5.19 Project 19: IR Remote Control Tank**
+### Project 19: IR Remote Control Tank
 
 ![](media/6a46a78510c6a65d04b2e061688ff241.jpeg)
 
@@ -2377,7 +2159,7 @@ You can edit blocks to build up your code
 
 After upload the test code successfully and power up, the smart car can be controlled to move by IR remote control and the 8\*16 shows the corresponding patterns of its movements.
 
-### 5.20 Project 20: Bluetooth Control Tank
+### Project 20: Bluetooth Control Tank
 
 ![](media/352d5ec83c4246b980da10b5f99711c5.jpeg)
 
@@ -2445,7 +2227,7 @@ Upload the code, wire up, turn the DIP switch to ON end and power on. Connect yo
 
 You can control the car to go forward and back, turn left and right and stop through corresponding keys on the app. Also, you can control it via remote control and Gravity sensing mode and 8X16 LED panel shows different patterns
 
-### **5.21 Project 21: Multifunctional Tank**
+### Project 21: Multifunctional Tank
 
 ![](media/9f03ddcc09ca24f0521e68a45991a38b.jpeg)
 
@@ -2513,8 +2295,4 @@ The following products are also popular around the world.
 
 
 
-## 6. Resources
 
-Download libraries, app and other documents in the link:
-
-<https://fs.keyestudio.com/KS0555>

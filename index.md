@@ -103,8 +103,8 @@ It is really the best choice for you.
 
 
 
-## 5.Tutorial
+## Download Resource:
 
-[Arduino Tutorial](./KS0555-Arduino-Tutorials/arduino.md)
+Download libraries, app and other documents in the link:
 
-[Scratch Tutorial](./KS0555-Scratch-Tutorials/scratch.md)
+<https://fs.keyestudio.com/KS0555>
