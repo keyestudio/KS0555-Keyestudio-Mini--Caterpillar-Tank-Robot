@@ -1,68 +1,36 @@
 # **Kidsblock Tutorial**
 
-##  Software installation
+##  Getting started with kidsblock
 
-### Software Downlaod
+**Instruction**
 
-Windows:
+The Kidsblock, based on the Scratch graphical programming software, integrates multiple mainstream mainboards, sensors as well as modules. It can be programmed by dragging graphical blocks and using the C/C++ programming language, making programming easy and interesting for children to learn.
 
-<http://www.kidsbits.net/Down/KidsBlock%20Desktop%201.1.3%20Setup.exe>
+**Download and install KidsBlock software**
 
-MacOS: 
+**[Windows system](https://www.kidsblock.cn/Down/KidsBlock.exe)**
 
-<http://www.kidsbits.net/Down/KidsBlock%20Desktop%201.1.3.dmg>
+**[MACOS system](https://www.kidsblock.cn/Down/KidsBlock-MACOS.dmg)**
 
-### KidsBlock Software [Windows]
 
-Note: we take the Windows system as an example. As for MacOS system, just follow this instruction.
+**Install Development Board Driver**
 
-1\. Double click“KidsBlock 1.0.0 Setup.exe”![](media/e955a4e4be134725d4baae093b94306b.png).
+**[How to install development board driver](https://kidsblocksite.readthedocs.io/en/latest/driver/)**
 
-2\. Select“**Anyone who uses this computer(all users)**”, then click“**Next**”.
 
-![](media/23cdd561cd1c36ef202e345d4aac0a20.png)
-
-3\. Click“**Browse...**”and choose the Disk where the software will be placed (here, we choose C Drive). Then click“**Install**”.
-
-![](media/135f443484ab0c5393c5246ac067d307.png)
-
-![](media/a431487852db1e4dc44648af42c8fa00.png)
-
-1.  After a few seconds, the installation is complete. Click "Finish" to open the installed Kidsblock software.
-
-![](media/dcd9105caaf9c24fb41d9a7069abee91.png)
-
-1.  If the computer security alert window appears, click on“**Allow access**”.This is the main page of the Kidsblock software.
-
-![](media/494babd2708cc77d9dd9de96c5a68bf8.png)
-
-### KidsBlock Software [MacOS]
-
-Download kidsblock，as shown below;
-
-![{178F0B5F-C894-CC1F-D786-E1186E37F402}](media/178f0b5fc894cc1fd786e1186e37f402.jpeg)
-
-Double-click KidsBlock icon，then drag ![](media/deb978eaa3dcdaba89ec851b40da041d.png) to the **Applications folder.**
-
-![{09922734-A19C-E043-A2F7-35FB0157FF0C}](media/f63bcac690f9076ceaafb8cf4261fd9b.jpeg)
-
-After the installation is finished, you will view KidsBlock icon.
-
-![{87729519-705C-0ADF-A10B-20B40221C0DE}](media/87729519705c0adfa10b20b40221c0de.jpeg)
-
-### How to use KidsBlock
+**How to use KidsBlock**
 
 We demonstrate how to use KidsBlock on Windows system
 
-#### Interface
+Interface
 
 ![](media/1d07c862c2e059febe07f1522290513d.png)
 
-#### Click![](media/3dd044ace633a5f7218b0d19a55ff9cf.png)to switch to different language
+ Click![](media/3dd044ace633a5f7218b0d19a55ff9cf.png)to switch to different language
 
 ![ ](media/a26ac98fda5eb460bae6370e017e1869.png)
 
-#### Click![](media/ceea175e15c8425a1a70baaaf56d40b3.png)to select“**Install driver**”.Note: if the driver should be installed, as shown below;
+Click![](media/ceea175e15c8425a1a70baaaf56d40b3.png)to select“**Install driver**”.Note: if the driver should be installed, as shown below;
 
 ![](media/bef7e6706a96aa449213e76f661a8530.png)
 
