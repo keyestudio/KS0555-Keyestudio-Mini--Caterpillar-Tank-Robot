@@ -4,10 +4,10 @@
    :caption: KS0555 Mini Tank Robot V3 tutorial
 
 
-   index
-   assemble
+   index.md
+   assemble.md
    arduino/arduino.md
-   kidsblock/Kidsblock.md
+   kidsblock/kidsblock.md
 
 
 
