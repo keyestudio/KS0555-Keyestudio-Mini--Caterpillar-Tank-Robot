@@ -2,7 +2,7 @@
 
 ##  Install Arduino IDE and Driver
 
-### ** Installing Arduino IDE**
+**Installing Arduino IDE**
 
 When you get control board, you need to download Arduino IDE and driver firstly.
 
@@ -22,7 +22,7 @@ There are two versions of IDE for WINDOWS system. You can choose between the ins
 
 Click JUST DOWNLOAD.
 
-### ** Keyestudio V4.0 Development Board**
+**Keyestudio V4.0 Development Board**
 
 You need to know that keyestudio V4.0 development board is the core of this smart car.
 
@@ -55,7 +55,7 @@ We can power it with a USB cable, the external DC power jack
 |         Clock Speed         |                          16 MHz                          |
 |         LED_BUILTIN         |                           D13                            |
 
-### ** Installing the Driver of the V4.0 Board**
+**Installing the Driver of the V4.0 Board**
 
 Let’s install the driver of keyestudio V4.0 board. The USB-TTL chip on V4.0 board adopts CP2102 serial chip. The driver program of this chip is included in Arduino 1.8 version and above (<https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers>), which is convenient. Plugging on USB port of board, the computer can recognize the hardware and automatically install the driver of CP2102. 
 
@@ -83,7 +83,7 @@ When opening the device manager, we will find the yellow exclamation mark disapp
 
 ![123](media/9b8ddc1c8af12e5f363817d49cea8571.png)
 
-### ** Arduino IDE Setting**
+**Arduino IDE Setting**
 
 Click![](media/675ae7298ce0973df720b2fbbb514caa.png)icon，and open Arduino IDE.
 
@@ -113,9 +113,9 @@ E- Used to save the sketch.
 
 F- Used to send the serial data received from board to the serial monitor.
 
-### ** Start First Program**
+**Start First Program**
 
-Open the file to select **Example**, and click **BASIC**\>**BLINK**, as shown below:
+Open the file to select **Example**, and click **BASIC**>**BLINK**, as shown below:
 
 ![](media/ec55de813fc80e5508dc2eab34f223c8.png)
 
@@ -133,9 +133,9 @@ Click![](media/9c9158a5d49baa740ea2f0048f655017.png)to upload the program
 
 After the program is uploaded successfully, the onboard LED blinks. Congratulation, you finish the first program.
 
-### ** How to Add a Library?**
+## ** How to Add a Library?**
 
-#### **(1) What are Libraries ?**
+**(1) What are Libraries ?**
 
 [Libraries](https://www.arduino.cc/en/Reference/Libraries) are a collection of code that make it easy for you to connect a sensor,display, module, etc.
 
@@ -143,7 +143,7 @@ For example, the built-in LiquidCrystal library helps talk to LCD displays. Ther
 
 The built-in libraries and some of these additional libraries are listed in the reference.
 
-#### **(2) How to Install a Library ?**
+**(2) How to Install a Library ?**
 
 Here we will introduce the most simple way to add libraries .
 
@@ -203,7 +203,7 @@ LED display color: yellow
 
 The Keyestudio 8833 motor driver expansion board is compatible with the Arduino UNO development board. Just stack it onto the development board when using it.
 
-![驱动板说明图英文](media/d8696e83ade31f2b7c56cc5911eacbd7.GIF)
+![](media/d8696e83ade31f2b7c56cc5911eacbd7.GIF)
 
 #### (5) Connection Diagram：
 
@@ -417,7 +417,7 @@ PWM is a technology to obtain analog quantity through digital method. Digital co
 
 Through the following five square waves, let’s acknowledge more about PWM.
 
-![C:\\Users\\zuokejian\\AppData\\Local\\Temp\\ksohtml13604\\wps19.png](media/553f3d1b6ca04e1aa0479841dd075fa2.png)
+![](media/553f3d1b6ca04e1aa0479841dd075fa2.png)
 
 In the above figure, the green line represents a period, and value of analogWrite() corresponds to a percentage which is called Duty Cycle as well. 
 
@@ -608,7 +608,7 @@ Upload code to the development board, then cove the photoresistor and observe th
 
 #### (1) Description：
 
-![寻迹](media/d37c24e508361ab86b019135ab6950a9.png)
+![](media/d37c24e508361ab86b019135ab6950a9.png)
 
 The tracking sensor is actually an infrared sensor. The component used here is the TCRT5000 infrared tube. 
 
@@ -645,7 +645,7 @@ Note: the line tracking sensor is installed under the bottom of the robot.
 
 #### (4)Connection Diagram：
 
-![Untitled Sketch 4](media/6426516400b21d7fbe1d9a1a58a1808b.png)
+![](media/6426516400b21d7fbe1d9a1a58a1808b.png)
 
 #### (5) Test Code:
 
