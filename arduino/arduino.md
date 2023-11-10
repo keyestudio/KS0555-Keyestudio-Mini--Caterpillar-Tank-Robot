@@ -133,7 +133,7 @@ Click![](media/9c9158a5d49baa740ea2f0048f655017.png)to upload the program
 
 After the program is uploaded successfully, the onboard LED blinks. Congratulation, you finish the first program.
 
-## ** How to Add a Library?**
+##  How to Add a Library?
 
 **(1) What are Libraries ?**
 

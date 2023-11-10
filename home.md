@@ -14,7 +14,7 @@ The two tutorials for C language and Arduino are also suitable for the enthusias
 
 It is really the best choice for you.
 
-## Features：
+## Features
 
 1. Multiple functions：Confinement, line tracking, fire extinguishing, light following, IR and BT remote control, speed control and so on.
 
@@ -28,7 +28,7 @@ It is really the best choice for you.
 
 6. Basic programming：C language code of Arduino IDE.
 
-## Parameters：
+## Parameters
 
 - Working voltage: 5v
 
@@ -103,7 +103,7 @@ It is really the best choice for you.
 
 
 
-## Download Resource:
+## Download Resource
 
 Download libraries, app and other documents in the link:
 
