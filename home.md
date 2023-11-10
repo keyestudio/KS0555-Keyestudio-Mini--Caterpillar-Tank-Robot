@@ -1,4 +1,4 @@
-# Getting started with Tank Robot  
+# Getting Started With Tank Robot  
 
 ![](media/0eed85e053eec9481023a1aaa999190e.png)
 
@@ -16,17 +16,17 @@ It is really the best choice for you.
 
 ## 2.Features：
 
-1\.Multiple functions：Confinement, line tracking, fire extinguishing, light following, IR and BT remote control, speed control and so on.
+1. Multiple functions：Confinement, line tracking, fire extinguishing, light following, IR and BT remote control, speed control and so on.
 
-2\. Easy to build: assemble the robot with some parts.
+2. Easy to build: assemble the robot with some parts.
 
-3\. High tenacity: Aluminum alloy brackets, metal motors, high quality wheels
+3. High tenacity: Aluminum alloy brackets, metal motors, high quality wheels
 
-4\. High extension: connect many sensors and modules through motor driver shield and LEGO parts
+4. High extension: connect many sensors and modules through motor driver shield and LEGO parts
 
-5\. Multiple controls: IR remote control, App control(iOS and Android system)
+5. Multiple controls: IR remote control, App control(iOS and Android system)
 
-6\. Basic programming：C language code of Arduino IDE.
+6. Basic programming：C language code of Arduino IDE.
 
 ## 3.Parameters：
 

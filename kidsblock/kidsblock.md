@@ -1,4 +1,4 @@
-# **kidsblock tutorial**
+# **Kidsblock Tutorial**
 
 ##  Software installation
 
