@@ -1,10 +1,12 @@
 
 .. toctree::
    :maxdepth: 3
-   :caption: KS0555 Mini Tank Robot V3 Arduino tutorial
+   :caption: KS0555 Mini Tank Robot V3 tutorial
 
 
-   KS0555-arduino.md
+   index.md
+   arduino/arduino.md
+   kidsblock/Kidsblock.md
 
 
 
