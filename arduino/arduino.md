@@ -1,26 +1,6 @@
 # Arduino Tutorial
 
-##  Install Arduino IDE and Driver
-
-**Installing Arduino IDE**
-
-When you get control board, you need to download Arduino IDE and driver firstly.
-
-You could download Arduino IDE from the official website:
-
-<https://www.arduino.cc/>, click the **SOFTWARE** on the browse bar, click“DOWNLOADS” to enter download page, as shown below:
-
-![](media/4636aac9aca9b3aa9d86580caac51b81.png)
-
-There are various versions of IDE for Arduino. Just download a version compatible with your system. Here we will show you how to download and install the windows version of Arduino IDE.
-
-![](media/3d3e36e47f8c7009155f0e8cc256ead1.png)
-
-There are two versions of IDE for WINDOWS system. You can choose between the installer (.exe) and the Zip file. For installer, it can be directly downloaded, without the need of installing it manually. However, for Zip package, you will need to install the driver manually.
-
-![](media/745910f7138b08d5cbcb557f194b0679.png)
-
-Click JUST DOWNLOAD.
+## Get started with Arduino 
 
 **Keyestudio V4.0 Development Board**
 
@@ -55,113 +35,14 @@ We can power it with a USB cable, the external DC power jack
 |         Clock Speed         |                          16 MHz                          |
 |         LED_BUILTIN         |                           D13                            |
 
-**Installing the Driver of the V4.0 Board**
 
-Let’s install the driver of keyestudio V4.0 board. The USB-TTL chip on V4.0 board adopts CP2102 serial chip. The driver program of this chip is included in Arduino 1.8 version and above (<https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers>), which is convenient. Plugging on USB port of board, the computer can recognize the hardware and automatically install the driver of CP2102. 
+**Install Arduino IDE and Driver**
 
-If you install unsuccessfully, or intend to install manually, please open the device manager of computer. Right click Computer----- Properties----- Device Manager
+![](media/ide.png)
 
-![](media/5d3921d98a5be791b0b5166164b389e7.png)
+**Click the link to start learning how to download software, install drivers, upload code, and install library files.**
 
-The yellow exclamation mark on the page implies an unsuccessful installation and you should double click the hardware and update the driver.
-
-![](media/0946d3e3d322e66303a5e3fec0bb53c0.png)
-
-Click“OK”to enter the following page. Click“browse my computer for updated driver software”
-
-![](media/abff63e491413339a985a0a03df21106.png)
-
-Click “Browse”, then search the driver of CP2102 and click“Next”,
-
-There is a DRIVERS folder in Arduino software installed package, open driver folder and check the driver of CP210X series chips.
-
-![1(1)](media/fa8c36f42e47f323ba013dea2ccb46db.png)
-
-When opening the device manager, we will find the yellow exclamation mark disappear. The driver of CP2102 is installed successfully.
-
-![](media/1e888fdeb85783a123b6948dffa44a97.png)
-
-![123](media/9b8ddc1c8af12e5f363817d49cea8571.png)
-
-**Arduino IDE Setting**
-
-Click![](media/675ae7298ce0973df720b2fbbb514caa.png)icon，and open Arduino IDE.
-
-![](media/9539afc53856fb021e9a1ebfd046e25a.png)
-
-When downloading the sketch to the board, you must select the correct name of Arduino board that matches the board connected to your computer. As shown below;
-
-![](media/52a4a83ea3c5cc893fe54bec8d71c7d9.png)
-
-Then select the correct COM port (you can see the corresponding COM port after the driver is successfully installed)
-
-![123](media/9b8ddc1c8af12e5f363817d49cea8571.png)
-
-![](media/cf6578993800712a41898f4fc7527ae3.png)
-
-![](media/54135d610cd0f7470cef7f89ca04df45.png)
-
-A- Used to verify whether there is any compiling mistakes or not.
-
-B- Used to upload the sketch to your Arduino board.
-
-C- Used to create shortcut window of a new sketch.
-
-D- Used to directly open an example sketch.
-
-E- Used to save the sketch.
-
-F- Used to send the serial data received from board to the serial monitor.
-
-**Start First Program**
-
-Open the file to select **Example**, and click **BASIC**>**BLINK**, as shown below:
-
-![](media/ec55de813fc80e5508dc2eab34f223c8.png)
-
-![](media/b105203a78f032101841be899ca23ba4.png)
-
-Set the correct **COM port,** and the corresponding board and COM port are shown on the lower right of IDE.
-
-![](media/013c667ac68859ed97a1f451ee05380b.png)
-
-![](media/fa97797b2bbcca9d4a91117398bd77d0.png)
-
-Click![](media/9c9158a5d49baa740ea2f0048f655017.png)to upload the program
-
-![](media/d15a8d62cf9777001924a2ff8113d13a.png)
-
-After the program is uploaded successfully, the onboard LED blinks. Congratulation, you finish the first program.
-
-##  How to Add a Library?
-
-**(1) What are Libraries ?**
-
-[Libraries](https://www.arduino.cc/en/Reference/Libraries) are a collection of code that make it easy for you to connect a sensor,display, module, etc.
-
-For example, the built-in LiquidCrystal library helps talk to LCD displays. There are hundreds of additional libraries available on the Internet for download.
-
-The built-in libraries and some of these additional libraries are listed in the reference.
-
-**(2) How to Install a Library ?**
-
-Here we will introduce the most simple way to add libraries .
-
-**Step 1：**After downloading well the Arduino IDE, you can right-click the icon of Arduino IDE.
-
-Find the option "Open file location"
-
-![IMG_256](media/f1d5fd3883e0997ca46dcf8513733c46.png)
-
-**Step 2:** Click Open file location \>libraries
-
-![](media/d65edbf3dd79595c741e7e7049334e90.png)
-
-**Step 3：**Next, find out the“libraries”folder of tank robot(seen in the link: <https://fs.keyestudio.com/KS0555>
-
-Copy them into libraries of Arduino
-
-![](media/ef128138a3b57f2927bf35784021c13a.png)
+**[https://getting-started-with-arduino.readthedocs.io](https://getting-started-with-arduino.readthedocs.io/en/latest/Arduino%20IDE%20Tutorial.html)**
 
 ## Projects
 
@@ -470,7 +351,7 @@ Upload the code to development board, LED flashes more slowly.
 
 ###  Project 3: Photoresistor
 
-<img src="media/36e7e08764ed3c61a1c22f86be8c23d9.jpeg" alt="unnamed (1)" style="zoom:50%;" />
+![](media/36e7e08764ed3c61a1c22f86be8c23d9.jpeg)
 
 #### (1) Description：
 
@@ -637,7 +518,7 @@ Special note: before testing,rotate the potentiometer on the sensor to adjust th
 
 | V4.0 development board \*1                       | 8833 Motor Driver Expansion Board\*1                | Yellow LED Module\*1                             | 3P-3P XH2.54 to 2.54 Dupont Wire（Yellow-Red-Black)\*1       |
 | ------------------------------------------------ | --------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------ |
-| ![](media/8ecfc7e4f74bd2001452e33f74eace2e.png)  | ![2(1)](media/a68b920cd30c3b17941fa8b28b643c8f.png) | ![2](media/0b130b1b8eb4e626a9cad08906af2ef5.png) | <img src="media/6a1c8e7c27ca08c62ac0c30a0dbd4578.png" alt="9" style="zoom: 33%;" /> |
+| ![](media/8ecfc7e4f74bd2001452e33f74eace2e.png)  | ![2(1)](media/a68b920cd30c3b17941fa8b28b643c8f.png) | ![2](media/0b130b1b8eb4e626a9cad08906af2ef5.png) | ![](media/6a1c8e7c27ca08c62ac0c30a0dbd4578.png) |
 | Tank Robot Chassis \*1                           | 5P JST-PH2.0MM Dupont Wire\*1                       | USB Cable\*1                                     |                                                              |
 | ![7](media/686670898705c411f9affbd3e2e78c61.png) | ![](media/5a9915f1c774e8bd1d0c54031207d62a.png)     | ![](media/4f8d5af6dee9016b45d975adb2391d37.png)  |                                                              |
 
@@ -809,7 +690,7 @@ In the process of use, pay attention to keep the flame sensor in certain distanc
 
 | V4.0 development board \*1                       | 8833 Motor Driver Expansion Board\*1                  | Yellow LED Module\*1                             | 3P-3P XH2.54 to 2.54 Dupont Wire（Yellow-Red-Black)\*1       |
 | ------------------------------------------------ | ----------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------ |
-| ![](media/8ecfc7e4f74bd2001452e33f74eace2e.png)  | ![2(1)](media/a68b920cd30c3b17941fa8b28b643c8f.png)   | ![2](media/0b130b1b8eb4e626a9cad08906af2ef5.png) | <img src="media/6a1c8e7c27ca08c62ac0c30a0dbd4578.png" alt="9" style="zoom:33%;" /> |
+| ![](media/8ecfc7e4f74bd2001452e33f74eace2e.png)  | ![2(1)](media/a68b920cd30c3b17941fa8b28b643c8f.png)   | ![2](media/0b130b1b8eb4e626a9cad08906af2ef5.png) | ![](media/6a1c8e7c27ca08c62ac0c30a0dbd4578.png) |
 | Flame Sensor\*1                                  | 4P-3P XH2.54 to PH2.0  Dupont Wire（Yellow-Red-Black) | USB Cable\*1                                     |                                                              |
 | ![1](media/ecf808f114234039582880ab4682c4e6.png) | ![11](media/7856a38f34cdeb19966cd0fb99b55f85.png)     | ![](media/4f8d5af6dee9016b45d975adb2391d37.png)  |                                                              |
 
@@ -1050,7 +931,7 @@ In general, servo has three lines in brown, red and orange. The brown wire is gr
 
 The angle of the servo:
 
-<img src="media/ddc74f62dc936c925d28d70a1a9c2214.png" style="zoom:45%;" />
+![](media/ddc74f62dc936c925d28d70a1a9c2214.png)
 
 #### (2) Parameters
 
