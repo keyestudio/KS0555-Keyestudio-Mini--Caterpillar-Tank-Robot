@@ -2,7 +2,14 @@
 
 ![](media/0eed85e053eec9481023a1aaa999190e.png)
 
-## Introduction
+
+## 1. Download Resource
+
+Download libraries, app and other documents in the link:
+
+[https://fs.keyestudio.com/KS0555](https://fs.keyestudio.com/KS0555)
+
+## 2. Introduction
 
 This STEM educational V3.0 tank robot is newly upgraded, adding an line-tracking and a fire- extinguishing function. It vigorously enhances the relationship between kids and parents, and sparks children’s imagination through programming and coding.
 
@@ -14,7 +21,7 @@ The two tutorials for C language and Arduino are also suitable for the enthusias
 
 It is really the best choice for you.
 
-## Features
+## 3. Features
 
 1. Multiple functions：Confinement, line tracking, fire extinguishing, light following, IR and BT remote control, speed control and so on.
 
@@ -28,7 +35,7 @@ It is really the best choice for you.
 
 6. Basic programming：C language code of Arduino IDE.
 
-## Parameters
+## 4. Parameters
 
 - Working voltage: 5v
 
@@ -52,7 +59,7 @@ It is really the best choice for you.
 
 
 
-## Kit List
+## 5. Kit List
 
 |      |                                                              |                                                              |      |
 | ---- | :----------------------------------------------------------: | :----------------------------------------------------------: | ---- |
@@ -101,10 +108,10 @@ It is really the best choice for you.
 | 43   |       ![](media/2e07431f04b6c1e9543918f86ee695a4.png)        |                       Blue Jumper Cap                        | 4    |
 | 44   |       ![](media/a0aca71a25a9c5152b99c0911e6f5221.png)        |                        Red Jumper Cap                        | 4    |
 
+## 6. Tutorial
 
+* [arduino](arduino/arduino.md)
 
-## Download Resource
+* [kidsblock](kidsblock/kidsblock.md)
 
-Download libraries, app and other documents in the link:
-
-<https://fs.keyestudio.com/KS0555>
+* [libraries_and_codes](libraries_and_codes.zip)

@@ -1,8 +1,8 @@
 # Arduino Tutorial
 
-## Get started with Arduino 
+## 1. Get started with Arduino 
 
-**Keyestudio V4.0 Development Board**
+### **1. Keyestudio V4.0 Development Board**
 
 You need to know that keyestudio V4.0 development board is the core of this smart car.
 
@@ -36,23 +36,241 @@ We can power it with a USB cable, the external DC power jack
 |         LED_BUILTIN         |                           D13                            |
 
 
-**Install Arduino IDE and Driver**
+### **2. Install Arduino IDE and Driver**
 
 ![](media/ide.png)
 
-**Click the link to start learning how to download software, install drivers, upload code, and install library files.**
+<span style="color: rgb(255, 76, 65);">**Click the link to start learning how to download software, install drivers, upload code, and install library files.**</span>
 
 **[https://getting-started-with-arduino.readthedocs.io](https://getting-started-with-arduino.readthedocs.io/en/latest/Arduino%20IDE%20Tutorial.html)**
 
-## Projects
+## 2. Assemble Ultrasonic Tank Robot
+
+<span style="color: rgb(255, 76, 65);">**Caution**</span>: Set the initial angle of the servo Peel thin films off boards before installing this robot 
+
+![](./media/4ea30cc75eb77e63441dccef9f0ca3cb.png)
+
+ **Step1**
+
+![img](./media/wps115.jpg)
+
+![img](./media/wps116.jpg)
+
+![image-20230525092859344](./media/image-20230525092859344.png)
+
+ **Step2**
+
+![image-20230525092919242](./media/image-20230525092919242.png)
+
+![image-20230525092925326](./media/image-20230525092925326.png)
+
+![image-20230525092930362](./media/image-20230525092930362.png)
+
+ **Step3**
+
+![ ](./media/6dfc645075993b1a10e45e888b7fc670.png)
+
+![ ](./media/e5322cac246d5324e721489fc805d71f.png)
+
+![ ](./media/bddc904d904489540d4bb2a2fa29d236.png)
+
+ **Step 4**
+
+![ ](./media/1cfa4e5862c2e69e4891b2f7f345938b.png)
+
+![ ](./media/66a58753fc1fa0a64d9c5dec681cb97c.png)
+
+![ ](./media/9a0eb86718e6dd64699af4dab44d5682.png)
+
+ **Step 5**
+
+![ ](./media/8b60ab25e9f6fba784716a315001db91.png)
+
+![ ](./media/a73038cc068a0e0d5495115212fffa66.png)
+
+![ ](./media/115177d49c40c68d979fc21653d70834.png)
+
+ **Step 6**
+
+![ ](./media/7d5047e2ff8803cee7125196533fc4a6.png)
+
+![ ](./media/9479cecb0f142fa3b0e496fae2bfc683.png)
+
+![ ](./media/5b8572e5104d7e72195e76feb929aba6.png)
+
+ **Step 7**
+
+![ 7.png 7](./media/76e5f6b6248c29a8ac0fba75eb2e706a.png)
+
+<span style="color: rgb(255, 76, 65);">Note the direction of jumper caps</span>
+
+![ 7_1.png 7_1](./media/e39a2efd338f70fd1869264fe291450b.png)
+
+![ 7_2.png 7_2](./media/4ae6b2601c721b1ebbd039c5567ef78b.png)
+
+ **Step 8**
+
+![\\ 9.jpg 9](./media/6a0447be5d1c8c410c35d7be569d8770.jpeg)
+
+![ 9_1](./media/08c05216fcf38671b207b1769bf4923f.jpeg)
+
+![ 9_2](./media/a285db6d2b9ad77594d3e9a05fbc3c3e.jpeg)
+
+ **Step 9**
+
+![ 8](./media/d3d3d166e9678d298c33b3176de07d6a.jpeg)
+
+![ 8_1](./media/286547498c44567def602fe7fcdff8bc.jpeg)
+
+![ 8_2](./media/1b572444d27283340f630226bfdef9db.jpeg)
+
+ **Step 10**
+
+（Need to adjust the angle of the servo）
+
+![ 8_3](./media/0f4b98efe20dee69b96eeade2599c839.jpeg)
+
+![Untitled Sketch 7](media/5120d0b422a1d0b1f1ba075aa5911c25.png)
+
+**Set the angle of the servo to 90°**。
+
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+
+Add the servo library first, then copy the code below into the Arduino IDE and upload it to the motherboard, or just open the code provided by us and upload it to the motherboard.
+
+```C
+/*
+  Keyestudio Mini Tank Robot V3 (Popular Edition)
+  lesson 0
+  set servo
+  http://www.keyestudio.com
+*/
+#include <Servo.h>
+
+Servo myservo;  // create servo object to control a servo
+// twelve servo objects can be created on most boards
+
+int pos = 0;    // variable to store the servo position
+
+void setup() {
+  myservo.attach(10);  // attaches the servo on pin 10 to the servo object
+  myservo.write(0);
+  delay(500);
+  myservo.write(90);
+  delay(500);
+  myservo.write(180);
+  delay(500);
+  myservo.write(90);
+  delay(500);
+}
+
+void loop() {
+
+}
+
+```
+
+Keep the ultrasonic sensor parallel to the board
+
+![ 8_4.png 8_4](./media/24d9629c520bda267abd2bb3274f8234.png)
+
+![ 8_5.png 8_5](./media/c408c7aa269fee1e0988ad69e4d99215.png)
+
+ **Step 11**
+
+![ 12.png 12](./media/b8fd0392e5ddb44a066fc64df1ed64e3.png)
+
+![ 12_1.png 12_1](./media/ed84f27b216cc41f8d5365c01b0eac99.png)
+
+![ 12_2.png 12_2](./media/c5d8fcefa0d47aa0baf1233920694a11.png)
+
+ **Step 12**
+
+![ 12_3.png 12_3](./media/871cc650bbf0fa90bd66c94fbb7c7e14.png)
+
+![ 12_4.png 12_4](./media/2b4e9fc8e12cc62291bcea7703dbcbc2.png)
+
+![ 12_5.png 12_5](./media/11bba4f642c4e0d7356a646ac3c17fc0.png)
+
+**Wire up**
+
+For 8\*16LED panel, Make wires connect to A4 and A5
+
+![ ](./media/f3262a7f63769b2a69665dbf99476394.jpeg)
+
+![ ](./media/6a61630c713284ffcd12a046224793df.png)
+
+![ ](./media/image-20230907160223855.png)
+
+Connect the motor A to B port and make the motor B to A port.
+
+![ ](./media/5c5ca1f43b3fe0758ed9c2b95700ab22.png)
+
+![ ](./media/47dabc315fe9e19c5d3d5f42b7e36959.png)
+
+Connect the power wire
+
+![ ](./media/01d98654282c339efe6a422f96380989.jpeg)
+
+![ ](./media/07144428.jpg)
+
+Line Tracking Sensor(see the picture)
+
+![ ](./media/6d44df09cf294c175fe45a067da373ec.jpeg)
+
+![ ](./media/7b20e184afc842346615a8ca91167a57.png)
+
+![ ](./media/8abdfcbc1328f818978bce68b47ee83c.png)
+
+Wire up the photoresistors
+
+![ ](./media/e0d6dbb2e9a054991bbd53284790d2dd.png)
+
+![ ](./media/3c4715f8bd327477824d5f9ac872503d.png)
+
+| Left | Keyestudio 8833 Board |      | Right | Keyestudio 8833  Board |
+| :--: | :-------------------: | ---- | :---: | :--------------------: |
+|  G   |           G           |      |   G   |           G            |
+|  V   |           V           |      |   V   |           V            |
+|  S   |          A1           |      |   S   |           A2           |
+
+Wire up ultrasonic sensor
+
+![ ](./media/ea9bdc12ab2c158fbf9205e5125cbafa.png)
+
+| Ultrasonic Sensor | Keyestudio 8833 Board |
+| :---------------: | :-------------------: |
+|        Vcc        |           V           |
+|       Trig        |          D12          |
+|       Echo        |          D13          |
+|        Gnd        |           G           |
+
+Wire up the servo(D10)
+
+![ ](./media/a435408b48071d6f1977c19d105e3836.png)
+
+| Servo  | Keyestudio 8833 Board |
+| :----: | :-------------------: |
+| Brown  |           G           |
+|  Red   |         V(5V)         |
+| Orange |          D10          |
+
+------
+
+<span style="color: rgb(255, 76, 65);">**We adopt a model 18650 lithium battery with a pointed positive pole, whose power and capacity are not required.**</span>
+
+------
+
+
+## 3. Projects 1
 
 In this section, we will start from a single sensor to complex experiments to introduce you how the tank robot works
 
-Note: (G), marked on each sensor and module, is the negative pole and connected to“G”, ”-”or “GND”on the sensor shield or control board ; (V) is the positive pole and linked with V , VCC, + or 5V on the sensor shield or control board.
+<span style="color: rgb(255, 76, 65);">Note:</span> (G), marked on each sensor and module, is the negative pole and connected to“G”, ”-”or “GND”on the sensor shield or control board ; (V) is the positive pole and linked with V , VCC, + or 5V on the sensor shield or control board.
 
 ###  Project 1: LED Blinks
 
-#### (1) Description：
+#### **(1)Description:**
 
 ![IMG_256](media/64b0b431d58473408ac46b39d2dc2ad0.jpeg)
 
@@ -60,7 +278,7 @@ Note: (G), marked on each sensor and module, is the negative pole and connected 
 
 For starters and enthusiasts, LED Blink is a fundamental program. LED, the abbreviation of light emitting diodes, consists of Ga, As, P, N chemical compounds and so on. The LED can flash in diverse colors by altering the delay time in the test code. When in control, power on GND and VCC, the LED will be on if S end is in high level; nevertheless, it will go off.
 
-#### (2）Parameters：
+#### **(2)Parameters:**
 
 Control interface: digital port
 
@@ -72,7 +290,7 @@ Pin spacing: 2.54mm
 
 LED display color: yellow
 
-#### (3) Components Required
+#### **(3)Components Required:**
 
 | Keyestudio V4.0 development board \*1              | Keyestudio 8833 Motor  Driver Expansion Board\*1    | Yellow LED Module\*1                             |
 | -------------------------------------------------- | --------------------------------------------------- | ------------------------------------------------ |
@@ -80,25 +298,25 @@ LED display color: yellow
 | 3P-3P XH2.54 to 2.54 Dupont Wire（Yellow-Red-Black) | USB Cable\*1                                        |                                                  |
 | ![9](media/6a1c8e7c27ca08c62ac0c30a0dbd4578.png)   | ![](media/4f8d5af6dee9016b45d975adb2391d37.png)     |                                                  |
 
-#### (4) Motor driver expansion board
+#### **(4)Motor driver expansion board:**
 
 The Keyestudio 8833 motor driver expansion board is compatible with the Arduino UNO development board. Just stack it onto the development board when using it.
 
 ![](media/d8696e83ade31f2b7c56cc5911eacbd7.GIF)
 
-#### (5) Connection Diagram：
+#### **(5)Connection Diagram:**
 
 ![Untitled Sketch 1-2](media/8ad54723c1d6149952c730217a1861cd.png)
 
 ![](media/d68e6475a7c9ed55bb057b75d1b11689.png)
 
-LED is connected to D9 port, and remember to install jumper caps onto the shield
+<span style="color: rgb(255, 76, 65);">NOTE:</span> LED is connected to D9 port, and remember to install jumper caps onto the shield
 
-#### (6) Test Code:
+#### **(6)Test Code:**
 
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+(<span style="color: rgb(255, 76, 65);">Note: </span>Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
-```c++
+```C
 /*
 
 Keyestudio Mini Tank Robot V3 (Popular Edition)
@@ -126,23 +344,23 @@ void loop() //infinite loop
 }
 ```
 
-#### (7) Test Results：
+#### **(7)Test Results:**
 
 Upload the program, LED blinks at the interval of 1s.
 
-#### (8) Code Explanation
+#### **(8)Code Explanation:**
 
 **pinMode(LED，OUTPUT) -** This function can denote that the pin is INPUT or OUTPUT
 
 **digitalWrite(LED，HIGH) -** When pin is OUTPUT, we can set it to HIGH(output 5V) or LOW(output 0V)
 
-#### (9) Extension Practice:
+#### **(9)Extension Practice:**
 
 We have succeeded in blinking LED. Next, let’s observe what will happen to the LED if we modify pins and delay time.
 
 (Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
-```c++
+```C
 /*
 
 Keyestudio Mini Tank Robot V3 (Popular Edition)
@@ -175,7 +393,7 @@ The test result shows that the LED flashes faster. Therefore, we can draw a conc
 
 ###  Project 2: Adjust LED Brightness
 
-#### (1) Description：
+#### **(1)Description:**
 
 In previous lesson, we control LED on and off and make it blink.
 
@@ -191,7 +409,7 @@ For Arduino digital port voltage outputs, there are only LOW and HIGH levels, wh
 
 This process can be likened to showing a movie. The movie we watch are not completely continuous. Actually, it generates 25 pictures per second, which cannot be told by human eyes. Therefore, we mistake it as a continuous process. PWM works in the same way. To output different voltages, we need to control the ratio of 0 and 1. The more‘0’or‘1’ output per unit time, the more accurate the control.
 
-#### (2) Parameters：
+#### **(2)Parameters:**
 
 ![2](media/0ea85307e1317c25f2a8d92f25319aa8.png)
 
@@ -203,7 +421,7 @@ Pin spacing: 2.54mm
 
 LED display color: yellow
 
-#### (3) Components Required
+#### **(3)Components Required:**
 
 | keyestudio V4.0 development board \*1                        | Keyestudio 8833 Motor Driver Expansion Board\*1     | Yellow LED Module\*1                             |
 | ------------------------------------------------------------ | --------------------------------------------------- | ------------------------------------------------ |
@@ -211,17 +429,17 @@ LED display color: yellow
 | 3P-3P XH2.54 to 2.54 Dupont Wire<br />（Yellow-Red-Black)\*1 | USB Cable\*1                                        |                                                  |
 | ![9](media/6a1c8e7c27ca08c62ac0c30a0dbd4578.png)             | ![](media/4f8d5af6dee9016b45d975adb2391d37.png)     |                                                  |
 
-#### (4) Connection Diagram：
+#### **(4)Connection Diagram:**
 
 PWM pins of Arduino are connected to 3，5，6，9，10 and 11. Keep the pin 9 unchanged
 
 ![Untitled Sketch 1-2](media/8ad54723c1d6149952c730217a1861cd.png)
 
-#### (5) Test Code:
+#### **(5)Test Code:**
 
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
-```c++
+```C
 /*
 
 Keyestudio Mini Tank Robot V3 (Popular Edition)
@@ -252,11 +470,11 @@ void loop () {
 }
 ```
 
-#### (6) Test Results：
+#### **(6)Test Results:**
 
 Upload test code successfully, LED gradually changes from bright to dark, like human’s breath, rather than turning on and off immediately.
 
-#### (7) Code Explanation:
+#### **(7)Code Explanation:**
 
 To repeat some certain statements, we could use FOR statement. FOR statement format is shown below:
 
@@ -308,13 +526,13 @@ PWM mostly is used for adjusting the LED’s brightness or the rotation speed of
 
 It plays a vital role in controlling smart robot cars. I believe that you cannot wait to learn next project.
 
-#### (8) Extension Practice：
+#### **(8)Extension Practice:**
 
 Let’s modify the value of delay and remain the pin unchanged, then observe how LED changes.
 
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
-```c++
+```C
 /*
 
 Keyestudio Mini Tank Robot V3 (Popular Edition)
@@ -353,7 +571,7 @@ Upload the code to development board, LED flashes more slowly.
 
 ![](media/36e7e08764ed3c61a1c22f86be8c23d9.jpeg)
 
-#### (1) Description：
+#### **(1)Description:**
 
 The photosensitive resistor is a special resistor made of a semiconductor material such as a sulfide or selenium, and a moisture-proof resin is also coated with a photoconductive effect. The photosensitive resistance is most sensitive to the ambient light, different illumination strength, and the resistance of the photosensitive resistance is different. We use the photosensitive resistance to design the photosensitive resistor module. 
 
@@ -365,7 +583,7 @@ In this way, we can read the corresponding analog value using the photosensitive
 
 ![](media/0d9daba6454ef099fe1ceb0e6cb56ec4.png)
 
-#### (2) Parameters：
+#### **(2)Parameters:**
 
 Photosensitive resistance resistance value: 5K Ou-0.5m
 
@@ -375,7 +593,7 @@ Working voltage: 3.3V-5V
 
 Pin spacing: 2.54mm
 
-#### (3) Components Needed:
+#### **(3)Components Needed:**
 
 | keyestudio V4.0 development board \*1            | Keyestudio 8833 Motor Driver Expansion Board\*1        | Yellow LED Module\*1                             | 3P-3P XH2.54 to 2.54 Dupont Wire（Yellow-Red-Black)\*1 |
 | ------------------------------------------------ | ------------------------------------------------------ | ------------------------------------------------ | ----------------------------------------------------- |
@@ -383,7 +601,7 @@ Pin spacing: 2.54mm
 | Photoresistor \*1                                | 3P-3P XH2.54 to PH2.0 Dupont Wire（Yellow-Red-Black)\*1 | USB Cable\*1                                     |                                                       |
 | ![4](media/9b0193c19a5a7392052adffdfc4e10c2.png) | ![10-1](media/95c5336284bd206f65c7cba677901999.png)    | ![](media/4f8d5af6dee9016b45d975adb2391d37.png)  |                                                       |
 
-#### (4) Connection Diagram
+#### **(4)Connection Diagram:**
 
 ![Untitled Sketch 3.1](media/484852a36f52bdbe44bec1b9a8941e44.png)
 
@@ -391,11 +609,11 @@ This photoresistor is connected to A1 and A2
 
 Let’s read its analog value first.
 
-#### (5) Test Code:
+#### **(5)Test Code:**
 
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
-```c++
+```C
 /*
 
 Keyestudio Mini Tank Robot V3 (Popular Edition)
@@ -423,13 +641,13 @@ void loop() {
 }
 ```
 
-#### (6) Test Results：
+#### **(6)Test Results:**
 
 ![](media/54b92578e3210999e23f5fb8138f0fa0.png)
 
 When covering it, the value gets smaller; if not, the value gets larger
 
-#### (7) Code Explanation:
+#### **(7)Code Explanation:**
 
 **analogRead(sensorPin)**: read the analog value of photoresistors
 
@@ -437,7 +655,7 @@ When covering it, the value gets smaller; if not, the value gets larger
 
 **Serial.println**: serial prints
 
-#### (8) Extension Practice:
+#### **(8)Extension Practice:**
 
 We know the value of the photoresistor. How about controlling the LED’s brightness by it?
 
@@ -445,7 +663,7 @@ We know the value of the photoresistor. How about controlling the LED’s bright
 
 The LED’s brightness is controlled by PWM. Therefore, we connect the LED to PMW pin(pin 9) of the shield.
 
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
 ```c
 /*
@@ -487,7 +705,7 @@ Upload code to the development board, then cove the photoresistor and observe th
 
 ###  Project 4: Line Tracking Sensor
 
-#### (1) Description：
+#### **(1)Description:**
 
 ![](media/d37c24e508361ab86b019135ab6950a9.png)
 
@@ -501,7 +719,7 @@ Keyestudio 3-channel line tracking module has integrated 3 sets of TCRT5000 infr
 
 By rotating the adjustable potentiometer on the sensor, it can adjust the detection sensitivity of the sensor.
 
-#### (2) Parameters：
+#### **(2)Parameters:**
 
 - Operating Voltage: 3.3-5V (DC)
 
@@ -514,7 +732,7 @@ By rotating the adjustable potentiometer on the sensor, it can adjust the detect
 
 Special note: before testing,rotate the potentiometer on the sensor to adjust the detection sensitivity. When adjust the LED at the threshold between ON and OFF, the sensitivity is the best.
 
-#### (3) Components Required
+#### **(3)Components Required:**
 
 | V4.0 development board \*1                       | 8833 Motor Driver Expansion Board\*1                | Yellow LED Module\*1                             | 3P-3P XH2.54 to 2.54 Dupont Wire（Yellow-Red-Black)\*1       |
 | ------------------------------------------------ | --------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------ |
@@ -522,17 +740,17 @@ Special note: before testing,rotate the potentiometer on the sensor to adjust th
 | Tank Robot Chassis \*1                           | 5P JST-PH2.0MM Dupont Wire\*1                       | USB Cable\*1                                     |                                                              |
 | ![7](media/686670898705c411f9affbd3e2e78c61.png) | ![](media/5a9915f1c774e8bd1d0c54031207d62a.png)     | ![](media/4f8d5af6dee9016b45d975adb2391d37.png)  |                                                              |
 
-Note: the line tracking sensor is installed under the bottom of the robot.
+<span style="color: rgb(255, 76, 65);">Note:</span> the line tracking sensor is installed under the bottom of the robot.
 
-#### (4)Connection Diagram：
+#### **(4)Connection Diagram:**
 
 ![](media/6426516400b21d7fbe1d9a1a58a1808b.png)
 
-#### (5) Test Code:
+#### **(5)Test Code:**
 
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
-```c++
+```C
 /*
 
 Keyestudio Mini Tank Robot V3 (Popular Edition)
@@ -577,21 +795,21 @@ void loop (){
 
 
 
-#### (6) Test Results：
+#### **(6)Test Results:**
 
 Upload the code on development board, open serial monitor to check line tracking sensors. And the displayed value is 1(high level) when no signals are received. The value shifts into 0 when the sensor is covered with paper.
 
 ![](media/b9319753c148f66aabc9bf648ed93da1.png)
-
-#### (7) Code Explanation:
+**
+#### (7)Code Explanation:**
 
 **Serial.begin(9600)**- Initialize serial port, set baud rate to 9600
 
 **pinMode-** Define the pin as input or output mode
 
-**digitalRead-**Read the state of pin, which are generally HIGH and LOW level
+**digitalRead-** Read the state of pin, which are generally HIGH and LOW level
 
-#### (8) Extension Practice：
+#### **(8)Extension Practice:**
 
 After knowing its working principle, you can connect an LED to D9. so as to control LED by line tracking sensor.
 
@@ -599,10 +817,9 @@ After knowing its working principle, you can connect an LED to D9. so as to cont
 
 **Test Code**
 
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
-```c++
-/*
+```C
 
 Keyestudio Mini Tank Robot V3 (Popular Edition)
 
@@ -651,271 +868,9 @@ void loop (){
 }
 ```
 
+###  Project 5: Servo Control
 
-
-###  Project 5: Flame Sensor
-
-![](media/7cf8c051f489b06119c262cd059c23c5.jpeg)
-
-#### (1) Description：
-
-The flame sensor uses IR receiving tube to detect flames, converts the brightness of the flame into signals with high and low levels, input them into the central processor. The corresponding program processing. In both flames close to and without flames, the voltage value of the analog port is varied. 
-
-If there is no flame, the analog port is about 0.3V; when there is a flame, the analog port is 1.0V. The closer the flame is , the more the voltage value is. It can be used to detect the fire source or make a smart robot.
-
-Note the probe of flame sensors only bears the temperature between -25 ℃and ～85℃
-
-In the process of use, pay attention to keep the flame sensor in certain distance to avoid getting damaged.
-
-#### (2) Parameters：
-
-![](media/e2c77a94067ccd3e634fb3674c02b80f.png)
-
-- Working voltage: 3.3V-5V (DC)
-
-- Current: 100mA
-
-- Maximum power: 0.5W
-
-- Work temperature: -10 ° C to +50 degrees Celsius
-
-- Sensor size: 31.6mmx23.7mm
-
-- Interface: 4pin turn 3PIN interface
-
-- Output signal: analog signals A0, A1
-
-
-#### (3) Components Needed:
-
-| V4.0 development board \*1                       | 8833 Motor Driver Expansion Board\*1                  | Yellow LED Module\*1                             | 3P-3P XH2.54 to 2.54 Dupont Wire（Yellow-Red-Black)\*1       |
-| ------------------------------------------------ | ----------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------ |
-| ![](media/8ecfc7e4f74bd2001452e33f74eace2e.png)  | ![2(1)](media/a68b920cd30c3b17941fa8b28b643c8f.png)   | ![2](media/0b130b1b8eb4e626a9cad08906af2ef5.png) | ![](media/6a1c8e7c27ca08c62ac0c30a0dbd4578.png) |
-| Flame Sensor\*1                                  | 4P-3P XH2.54 to PH2.0  Dupont Wire（Yellow-Red-Black) | USB Cable\*1                                     |                                                              |
-| ![1](media/ecf808f114234039582880ab4682c4e6.png) | ![11](media/7856a38f34cdeb19966cd0fb99b55f85.png)     | ![](media/4f8d5af6dee9016b45d975adb2391d37.png)  |                                                              |
-
-#### (4) Connection Diagram：
-
-![Untitled Sketch 5.1](media/10f5f2256c61c54bf7f9a7a0c52375f9.png)
-
-Flame sensors are connected to A1 and A2. When we remove ultrasonic sensors and photoresistors, then add flame sensors and fan modules.
-
-The fire extinguishing robot is created.
-
-#### (5) Test Code:
-
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
-
-```c++
-/*
-
-Keyestudio Mini Tank Robot V3 (Popular Edition)
-
-lesson 5.1
-
-flame sensor
-
-http://www.keyestudio.com
-
-*/
-
-int flame = A1; //Define the flame pin as analog pin A1
-int val = 0; //Define digital variables
-
-void setup() {
-	pinMode(flame, INPUT); //Define the buzzer as an input source
-    Serial.begin(9600); //Set the baud rate to 9600
-}
-
-void loop() {
-	val = analogRead(flame); //Read the analog value of the flame sensor
-	Serial.println(val);//Output analog value and print it
-	delay(100); //Delay in 100ms
-}
-```
-
-#### (6）Test Result：
-
-Wire up components, burn the code, open the serial monitor and set the baud rate to 9600.
-
-You can view the simulation value of flame sensor.
-
-The closer the flame, the smaller the simulation value.
-
-Adjust the potentiometer on the module to maintain D1 at the critical point. When the sensor does not detect flame, the D1 will be off, but if the sensor detects flame, the D1 will be on.
-
-![](media/05db06b3e205dfca63c2ba3aa7ff528e.png)
-
-#### (7) Extension Practice:
-
-Next, connect an LED to pin 9 and we can control it by a flame sensor, as shown below;
-
-![Untitled Sketch 5.2](media/814c315d3bb44278b476a754d3681227.png)
-
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
-
-```c++
-/*
-
-Keyestudio Mini Tank Robot V3 (Popular Edition)
-
-lesson 5.2
-
-flame sensor
-
-http://www.keyestudio.com
-
-*/
-
-int flame = A1; //Define the flame pin as analog pin A1
-int LED = 9; //Define the LED as digital port 9
-int val = 0; //Define digital variables
-
-void setup() {
-    pinMode(flame, INPUT); //Define the buzzer as an input source
-    pinMode(LED, OUTPUT); //Set LED to output mode
-    Serial.begin(9600); //Set the baud rate to 9600
-}
-
-void loop() {
-    val = analogRead(flame); //Read the analog value of the flame sensor
-    Serial.println(val);//Output analog value and print it
-    if (val < 300) { //When analog value is less than 300, LED is on
-    	digitalWrite(LED, HIGH); //LED is on
-    } else {
-    	digitalWrite(LED, LOW); //LED is off
-    }
-    delay(50); //Delay in 50ms
-}
-```
-
-
-
-###  Project 6: Fan
-
-#### (1) Description：
-
-![](media/4afc1c9720d36beba8adfac0ee22ff10.png)
-
-This fan module uses a HR1124S motor-controlling chip, a single-channel H-bridge driver chip containing a low-conductivity resistance PMOS and NMOS power tubes. The low-conducting resistance can ease the power consumption, contributing to the safe work of the chip for longer time. 
-
-In addition, its low standby current and low static working current makes itself apply to toys. We can control the rotation direction and speed of the fan by outputting IN + and IN- signals and PWM signals.
-
-#### (2) Specification
-
-Working voltage: 5V
-
-Current: 200MA
-
-Maximum power: 2W
-
-Operating temperature: -10 degrees Celsius to +50 degrees Celsius
-
-Size: 47.6MM \*23.8MM
-
-#### (3) Components Required
-
-| keyestudio V4.0 development board \*1            | Keyestudio 8833 Motor Driver Expansion Board\*1     | 130 Motor \*1                                    | 4P XH2.54 to PH2.0 Dupont Wire（Green-Blue-Red-Black) \*1 |
-| ------------------------------------------------ | --------------------------------------------------- | ------------------------------------------------ | -------------------------------------------------------- |
-| ![](media/8ecfc7e4f74bd2001452e33f74eace2e.png)  | ![2(1)](media/a68b920cd30c3b17941fa8b28b643c8f.png) | ![5](media/abaa4c82e054462f00d4cff084cc4d62.png) | ![8](media/615e41a58cbc46bb72609ddb4f9076ea.png)         |
-| Flame Sensor\*1                                  | 4P-3P XH2.54 to PH2.0 Dupont Wire（Yellow-Red-Black) | USB Cable\*1                                     | Tank Robot Chassis                                       |
-| ![1](media/ecf808f114234039582880ab4682c4e6.png) | ![11](media/7856a38f34cdeb19966cd0fb99b55f85.png)   | ![](media/4f8d5af6dee9016b45d975adb2391d37.png)  | ![7](media/686670898705c411f9affbd3e2e78c61.png)         |
-
-The fan module needs driving by large current; therefore, we install a battery holder.
-
-#### (4) Connection Diagram
-
-![Untitled Sketch 6.1](media/2bd9aa5cc21e274458328958561f1915.png)
-
-The pin GND, VCC, IN+ and IN- of the fan module are connected to pin G, V, 12
-and 13 of the shield.
-
-#### (5) Test Code:
-
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
-
-```c++
-/*
-Keyestudio Mini Tank Robot V3 (Popular Edition)
-lesson 6.1
-130 motor
-http://www.keyestudio.com
-*/
-
-int INA = 12;
-int INB = 13;
-
-void setup() {
-    pinMode(INA, OUTPUT);//Set digital port INA as output
-    pinMode(INB, OUTPUT);//Set digital port INA as output
-}
-
-void loop() {
-    //Set the fan to rotate anticlockwise for 3s
-    digitalWrite(INA, LOW);
-    digitalWrite(INB, HIGH);
-    delay(3000);
-    //Set the fan to stop for 1s
-    digitalWrite(INA, LOW);
-    digitalWrite(INB, LOW);
-    delay(1000);
-    //Set the fan to rotate clockwise for 3s
-    digitalWrite(INA, HIGH);
-    digitalWrite(INB, LOW);
-    delay(3000);
-}
-```
-
-#### (7) Test Results：
-
-Upload code, wire up components and plug in power. The small fan will turn anticlockwise for 3000ms, stop for 1000ms, and clockwise for 300ms.
-
-#### (8) Extension Practice:
-
-We have understood the working principle of the flame sensor. Next, hook up a flame sensor in the circuit , as shown below. Then control the fan to blew out fire with the flame sensor.
-
-![Untitled Sketch 6.2](media/67463007499fe6b3f077b4bfbdce6cad.png)
-
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
-
-```c++
-/*
-Keyestudio Mini Tank Robot V3 (Popular Edition)
-lesson 6.2
-130 motor
-http://www.keyestudio.com
-*/
-
-int INA = 12;
-int INB = 13;
-int flame = A1; //Define the flame pin as analog pin A1
-int val = 0; //Define digital variables
-
-void setup() {
-    pinMode(INA, OUTPUT);//Set digital port INA as output
-    pinMode(INB, OUTPUT);//Set digital port INA as output
-    pinMode(flame, INPUT); //Define the buzzer as an input source
-}
-
-void loop() {
-    val = analogRead(flame); //Read the analog value of the flame sensor
-    if (val <= 700) { //When analog value≤700, LED is on
-        //Turn on the fan when flame is detected
-        digitalWrite(INA, LOW);
-        digitalWrite(INB, HIGH);
-    } else {
-        //Otherwise it stops operating
-        digitalWrite(INA, LOW);
-        digitalWrite(INB, LOW);
-    }
-}
-```
-
-
-
-###  Project 7: Servo Control
-
-#### (1) Description
+#### **(1)Description:**
 
 Servo motor is a position control rotary actuator. It mainly consists of a housing, a circuit board, a core-less motor, a gear and a position sensor. Its working principle is that the servo receives the signal sent by MCU or receiver and produces a reference signal with a period of 20ms and width of 1.5ms, then compares the acquired DC bias voltage to the voltage of the potentiometer and obtain the voltage difference output.
 
@@ -933,7 +888,7 @@ The angle of the servo:
 
 ![](media/ddc74f62dc936c925d28d70a1a9c2214.png)
 
-#### (2) Parameters
+#### **(2)Parameters:**
 
 - Working voltage: DC 4.8V \~ 6V
 
@@ -952,7 +907,7 @@ The angle of the servo:
 - Standby current: 3 ± 1mA (DC 4.8V) 4 ± 1mA (DC 6V)
 
 
-#### (3) Components Required
+#### **(3)Components Required:**
 
 | V4.0 development board \*1                       | 8833 Motor Driver Expansion Board\*1                | 9G Servo                                        |
 | ------------------------------------------------ | --------------------------------------------------- | ----------------------------------------------- |
@@ -960,20 +915,20 @@ The angle of the servo:
 | Tank Robot Chassis \*1                           | USB Cable\*1                                        |                                                 |
 | ![7](media/686670898705c411f9affbd3e2e78c61.png) | ![](media/4f8d5af6dee9016b45d975adb2391d37.png)     |                                                 |
 
-#### (4)Connection Diagram：
+#### **(4)Connection Diagram:**
 
 ![Untitled Sketch 7](media/5120d0b422a1d0b1f1ba075aa5911c25.png)
 
-Note: The brown, red and orange wire of the servo are respectively attached to Gnd(G), 5v(V) and 10 of the shield. Remember to connect an external power because of the high current of the servo. If not, the development board will be burnt out.
+<span style="color: rgb(255, 76, 65);">Note:</span> The brown, red and orange wire of the servo are respectively attached to Gnd(G), 5v(V) and 10 of the shield. Remember to connect an external power because of the high current of the servo. If not, the development board will be burnt out.
 
-#### (5) Test Code 1：
+#### **(5)Test Code 1:**
 
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
-```c++
+```C
 /*
 Keyestudio Mini Tank Robot V3 (Popular Edition)
-lesson 7.1
+lesson 5.1
 Servo
 http://www.keyestudio.com
 */
@@ -1011,18 +966,18 @@ void procedure(int myangle) {
 
 Upload code, we will see the servo move from 0° to 180°. In the further chapters, we will introduce how to drive a servo. Additionally, we can control a servo with a servo library of Arduino.
 
-Note: This servo library file uses timer 1, and the PWM output of IO ports 9 and 10 also uses timer 1, so we cannot use this servo library when using the PWM output of D9 and D10 later.
+<span style="color: rgb(255, 76, 65);">Note:</span> This servo library file uses timer 1, and the PWM output of IO ports 9 and 10 also uses timer 1, so we cannot use this servo library when using the PWM output of D9 and D10 later.
 
-You can refer to the use of the servo library: <https://www.arduino.cc/en/Reference/Servo>.
+You can refer to the use of the servo library: [https://www.arduino.cc/en/Reference/Servo](https://www.arduino.cc/en/Reference/Servo).
 
-#### (6) Test Code2:
+#### **(6)Test Code2:**
 
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+(<span style="color: rgb(255, 76, 65);">Note: </span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
-```c++
+```C
 /*
 Keyestudio Mini Tank Robot V3 (Popular Edition)
-lesson 7.2
+lesson 5.2
 Servo
 <http://www.keyestudio.com>
 */
@@ -1050,11 +1005,11 @@ void loop() {
 }
 ```
 
-#### (7) Test Results：
+#### **(7)Test Results:**
 
 Upload code, plug in power and servo moves in the range of 0° and 180°.
 
-#### (8) Code Explanation
+#### **(8)Code Explanation:**
 
 Arduino comes with **\#include \<Servo.h\>** (servo function and statement）
 
@@ -1070,9 +1025,9 @@ The following are some common statements of the servo function:
 
 Note: The above written format is“servo variable name, specific statement（）”, for instance: myservo.attach(10)
 
-###  Project 8: Ultrasonic Sensor
+###  Project 6: Ultrasonic Sensor
 
-#### (1) **Description：**
+#### **(1) Description:**
 
 ![15160984609_f127220a5d_o](media/0180b169a1c3b228394b43df704fac32.png)
 
@@ -1082,7 +1037,7 @@ The HC-SR04 or the ultrasonic sensor is being used in a wide range of electronic
 
 ![2](media/0ea85307e1317c25f2a8d92f25319aa8.png)
 
-#### (2）Parameters：
+#### **(2）Parameters:**
 
 - Power Supply :+5V DC
 
@@ -1101,7 +1056,7 @@ The HC-SR04 or the ultrasonic sensor is being used in a wide range of electronic
 - Trigger Input Pulse width: 10uS
 
 
-#### (3) Components Required
+#### **(3)Components Required:**
 
 | keyestudio V4.0 development board \*1           | Keyestudio 8833 Motor Driver Expansion Board\*1     | Yellow LED Module\*1                             | 3P-3P XH2.54 to 2.54 Dupont Wire（Yellow-Red-Black)\*1 |
 | ----------------------------------------------- | --------------------------------------------------- | ------------------------------------------------ | ----------------------------------------------------- |
@@ -1109,7 +1064,7 @@ The HC-SR04 or the ultrasonic sensor is being used in a wide range of electronic
 | HC-SR04 Ultrasonic Sensor\*1                    | 4P M-F PH2.0mm to 2.54 Dupont Wire                  | USB Cable\*1                                     | Tank Robot Chassis \*1                                |
 | ![](media/b0906d68835b2659491e53a85567569b.png) | ![](media/9065eb862cc4bcbde2f324702ec8a954.png)     | ![](media/4f8d5af6dee9016b45d975adb2391d37.png)  | ![7](media/686670898705c411f9affbd3e2e78c61.png)      |
 
-#### **(4) The principle of ultrasonic sensor**
+#### **(4) The principle of ultrasonic sensor:**
 
 As the above picture shown, it is like two eyes. One is transmitting end, the other is receiving end.
 
@@ -1131,25 +1086,25 @@ Circuit diagram of ultrasonic sensor:
 
 ![图片1hi;.hkl;hlhjl](media/a25028af84d6c7c94382c2a907101241.jpeg)
 
-#### (5)**Connection Diagram：**
+#### **(5)Connection Diagram:**
 
 ![IMG_256](media/b573604e96ca595da17452d9b126f2ba.png)
 
-#### (6)**Connection Diagram：**
+#### **(6)Connection Diagram:**
 
 ![Untitled Sketch 8.1](media/d8fad040d3ab5abe247d6a8d1e08a13d.png)
 
-Note: The pin VCC, Trig, Echo and Gnd of the ultrasonic sensor are respectively
+<span style="color: rgb(255, 76, 65);">Note:</span> The pin VCC, Trig, Echo and Gnd of the ultrasonic sensor are respectively
 connected to 5v(V), 12(S), 13(S) and Gnd(G) of the shield
 
-#### (7)Test Code:
+#### **(7)Test Code:**
 
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
-```c++
+```C
 /*
 Keyestudio Mini Tank Robot V3 (Popular Edition)
-lesson 8.1
+lesson 6.1
 Ultrasonic sensor
 http://www.keyestudio.com
 */
@@ -1189,13 +1144,13 @@ void loop() {
 }
 ```
 
-#### (8)Test Results：
+#### **(8)Test Results:**
 
 Upload test code on the development board, open serial monitor and set baud rate to 9600. The detected distance will be displayed, and the unit is cm and inch. Hinder the ultrasonic sensor by hand, the displayed distance value gets smaller.
 
 ![](media/2ff018e5d9d631a32fce99eb9b4778be.png)
 
-#### (9)Code Explanation
+#### **(9)Code Explanation:**
 
 **int trigPin = 12;**  this pin is defined to transmit ultrasonic waves, generally output.
 
@@ -1213,18 +1168,18 @@ Or in inches: 13503.9in/s = 0.0135in/uS = 1/74in/uS
 
 We need to divide the traveltime by 2 because we have to take into account that the wave was sent, hit the object, and then returned back to the sensor.
 
-#### (10) Extension Practice:
+#### **(10)Extension Practice:**
 
 We have just measured the distance displayed by the ultrasonic. How about controlling the LED with the measured distance? Let's try it and connect an LED light module to the D9 pin.
 
 ![Untitled Sketch 8.2](media/291ac1db0f38418772d11bb1786b7314.png)
 
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
-```c++
+```C
 /*
 Keyestudio Mini Tank Robot V3 (Popular Edition)
-lesson 8.2
+lesson 6.2
 Ultrasonic LED
 http://www.keyestudio.com
 */
@@ -1272,9 +1227,9 @@ void loop() {
 
 Upload test code to development board and block ultrasonic sensor by hand, then check if LED is on
 
-###  Project 9: IR Reception
+###  Project 7: IR Reception
 
-#### (1)Description：
+#### **(1)Description:**
 
 ![](media/8969111328604c5358f7c915ac94e474.png)
 
@@ -1292,7 +1247,7 @@ Infrared receiver we use is an infrared receiver module. Mainly composed of an i
 
 Additionally, it is suitable for infrared remote control and infrared data transmission. The infrared receiving module made by the receiver has only three pins, signal line, VCC and GND. It is very convenient to communicate with Arduino and other microcontrollers.
 
-#### (2)Parameters:
+#### **(2)Parameters:**
 
 Operating Voltage: 3.3-5V（DC）
 
@@ -1306,7 +1261,7 @@ Frequency: 38khz
 
 Receiving Distance: 10m
 
-#### (3) Components Needed:
+#### **(3)Components Needed:**
 
 | keyestudio V4.0 development board \*1           | Keyestudio 8833 Motor Driver Expansion Board\*1     | Kidsbits Yellow LED Module\*1                         | 3P-3P XH2.54 to 2.54 Dupont Wire（Yellow-Red-Black)\*1 |
 | ----------------------------------------------- | --------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- |
@@ -1314,18 +1269,18 @@ Receiving Distance: 10m
 | USB Cable\*1                                    | Tank Robot Chassis                                  | Keyestudio JMFP-4 17-Key Remote Control\*1            |                                                       |
 | ![](media/4f8d5af6dee9016b45d975adb2391d37.png) | ![7](media/686670898705c411f9affbd3e2e78c61.png)    | **![11](media/582c493060f3ed80fcc6cc531f548e61.png)** |                                                       |
 
-#### (4) Test Code:
+#### **(4)Test Code:**
 
 You need to import the IR library first.
 
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
-```c++
+```C
 /*
 
 Keyestudio Mini Tank Robot V3 (Popular Edition)
 
-lesson 9.1
+lesson 7.1
 
 IRremote
 
@@ -1354,7 +1309,7 @@ void loop() {
 }
 ```
 
-#### (5)Test Results：
+#### **(5)Test Results:**
 
 Upload test code, open serial monitor and set baud rate to 9600, point remote control to IR receiver. Then the corresponding value will be shown. If holding down keys for a while, the error codes will appear.
 
@@ -1366,13 +1321,13 @@ Below we have listed out each button value of keyestudio remote control. So you 
 
 The IR receiver is connected to D3, so we don’t need to wire up
 
-#### (6)Code Explanation:
+#### **(6)Code Explanation:**
 
 **irrecv.enableIRIn():** after enabling IR decoding, the IR signals will be received, then function“decode()”will check continuously if decode successfully.
 
 **irrecv.decode(&results):** after decoding successfully, this function will come back to “true”, and keep result in “results”. After decoding a IR signals, run the resume()function and receive the next signal.
 
-#### (7)Extension Practice:
+#### **(7)Extension Practice:**
 
 We decoded the key value of IR remote control. How about controlling LED by the measured value? We could design an experiment.
 
@@ -1380,12 +1335,12 @@ Attach an LED to D9, then press the keys of remote control to make LED light on 
 
 ![Untitled Sketch 9.2](media/e05da7ef9e7b6f63f414f2ca7e3f4ee3.png)
 
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
-```c++
+```C
 /*
 Keyestudio Mini Tank Robot V3 (Popular Edition)
-lesson 9.2
+lesson 7.2
 IRremote
 http://www.keyestudio.com
 */
@@ -1424,221 +1379,8 @@ void loop() {
 
 Upload code to development board, press“OK”key on remote control to make LED on and off.
 
-###  Project 10: Bluetooth Remote Control
 
-#### **(1)Description:**
-
-In the last several decades, Bluetooth has become the most popular wireless communication module for it is easy to use and has found wide applications in most devices powered by batteries.
-
-In order to adjust with the time and reality and need the needs of customers, Bluetooth has been upgraded several times. In recent years, it embraces lots of transformations in terms of data transfer rate, power consumption of wearable devices and IoT devices, and security systems and others. Here, we plan to learn about DX-BT24 with Arduino board.
-
-#### **(2) Parameter**
-
-- Bluetooth Protocol: Bluetooth Specification V5.1 BLE
-
-- Serial port sending and receiving without byte limit
-
-- Communication distance: 40m (open environment)
-
-- Operating frequency: 2.4GHz ISM band
-
-- Modulation method: GFSK (Gaussian Frequency Shift Keying)
-
-- Security Features: Authentication and Encryption
-
-- Support Services: Central and Peripheral UUIDs FFE0, FFE1, FFE2
-
-- Power consumption: automatic sleep mode, standby current 400uA\~800uA, 8.5mA during transmission.
-  
-- Power supply: 5V
-
-- Operating temperature: –10 to +65 degrees Celsius
-
-#### (3) Application
-
-| V4.0 development board \*1                           | 8833 Motor Driver Expansion Board\*1                |                   Yellow LED Module\*1                    |
-| ---------------------------------------------------- | --------------------------------------------------- | :-------------------------------------------------------: |
-| ![](media/8ecfc7e4f74bd2001452e33f74eace2e.png)      | ![2(1)](media/a68b920cd30c3b17941fa8b28b643c8f.png) |     ![2](media/0b130b1b8eb4e626a9cad08906af2ef5.png)      |
-| DX-BT24 V5.1 BLE BT Module\*1                        | USB Cable\*1                                        | 3P-3P XH2.54 to 2.54 Dupont Wire<br />（Yellow-Red-Black) |
-| ![蓝牙](media/85543fff75f9ea24d8bd5768cca35802.jpeg) | ![](media/4f8d5af6dee9016b45d975adb2391d37.png)     |     ![9](media/6a1c8e7c27ca08c62ac0c30a0dbd4578.png)      |
-
-#### (4)Connection Diagram：
-
-1.STATE is the status test pin connected to the internal light-emitting diode and usually remains unconnected.
-
-2.RXD is the serial port interface for receiving terminal.
-
-3.TXD is the serial port interface for sending terminal.
-
-4.GND is for ground.
-
-5.VCC is the positive pole.
-
-6.EN/BRK: the disconnection of it represents the disconnection of the Bluetooth and it usually remains unconnected.
-
-(Note: here the Bluetooth is directly linked with the V2 shield and please pay attention to the direction)
-
-![Untitled Sketch 10.1](media/63b96e5b26ee18337fb6e0dced5bbbe3.png)
-
-（5）Test Code:
-
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
-
-```c++
-/*
-Keyestudio Mini Tank Robot V3 (Popular Edition)
-lesson 10.1
-Bluetooth
-http://www.keyestudio.com
-*/
-
-char ble_val; //Character variable(used to store the value received by Bluetooth)
-
-void setup() {
-	Serial.begin(9600);
-}
-
-void loop() {
-    if (Serial.available() > 0) //Determine whether there is data in the serial port buffer
-    {
-        ble_val = Serial.read(); //Read the data in the serial port buffer
-        Serial.println(ble_val); //Print out
-    }
-}
-```
-
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
-
-Upload the code to the development board, then plug in the Bluetooth module, and then wait for the instructions from the mobile phone.
-
-#### (5)Download APP：
-
-##### IOS system
-
-1\. Open App Store
-
-2\. Search KeyesRobot and download
-
-![](media/704427efe863436824e03446079b7674.png)
-
-3\. Open Motorhome then select Tank Robot
-
-![](media/31879907eebdbcf596766e1f87506189.png)
-
-4\. Enable the BT of your cellphone and click **Bluetooth** in the upper right corner You need to open the location access.
-
-![](media/a368e3381590429b53bc7a17fbff6464.png)
-
-5\. Select TANK ROBOT
-
-![](media/896a4da0d14bd23b1cb02fd6350bc8e7.png)
-
-##### **Android System**
-
-1\. Go to Google Play to search KeyesRobot, or open the following link：
-
-<https://play.google.com/store/apps/details?id=com.keyestudio.motorhome>
-
-<https://play.google.com/store/apps/details?id=com.keyestudio.keyestudio>
-
-![](media/15ef9eede8a626ee2e2f1ea775f53977.png)
-
-2\. Download it
-
-![](media/2ecba5bc20bf85129a394d2b9b99321a.png)
-
-![](media/1e01c31ab01988cbcd9bd52554d8bc3b.png)
-
-3\. Click the above icon to select TANK ROBOT and enable“location and Bluetooth”to pair the Bluetooth.
-
-Scan Bluetooth device. The Bluetooth name of BLE 5.1 is BT24.
-
-The BLE 5.1 Bluetooth has no pairing password
-
-![](media/31879907eebdbcf596766e1f87506189.png)
-
-![](media/d36819ba5dd018e18bff03e24cd168ba.png)
-
-4\. Upload the code, connect the BT and power up. The LED on the BT module will flash.
-
-Enable the BT of your cellphone and click **Bluetooth** in the upper right corner
-
-Select BT24 and click Connect. You need to wait for 3-5s after connection.
-
-![](media/3a37719f547e8c314e6a6cdb80e9cd1b.png)
-
-5\. Then LED of the BT module will be solid on
-
-![](media/2e77319861651b00780cb3ac6c653593.png)
-
-6\. Connect the BT module and open serial monitor and set baud rate to 9600.
-
-Point at the BT module and press keys on the app, then we can see the corresponding characters of the App.
-
-![](media/6886bcc40850b08182b6970bdafd1ed0.png)
-
-7\. Remove the BT module before uploading the code, otherwise the code may not be burned. And we need to enable GPS when connecting the T module.
-
-#### (6)**Code Explanation**
-
-**Serial.available()** represents the number of characters currently remaining in the serial port buffer. 
-
-This function is generally used to determine whether there is data in this area. When Serial.available()\>0, it means that the serial port has received data and can be read.
-
-**Serial.read()** refers to taking out and reading a Byte of data from the serial port buffer. For example, if a device sends data to the Arduino through the serial port, we can use Serial.read() to read the sent data.
-
-#### **(7)Expansion Project**
-
-Here we use the command sent by the mobile phone to turn on or off an LED light. Looking at the wiring diagram, an LED is connected to the D9 pin,
-
-![Untitled Sketch 10.2](media/549c10efcf47f29f8f6355d8cd0497cc.png)
-
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
-
-```c++
-/*
-Keyestudio Mini Tank Robot V3 (Popular Edition)
-lesson 10.2
-Bluetooth
-http://www.keyestudio.com
-*/
-
-int LED = 9;
-char ble_val; //Integer variable used to store the value received by Bluetooth
-
-void setup() {
-    Serial.begin(9600);
-    pinMode(LED, OUTPUT);
-}
-
-void loop() {
-
-    if (Serial.available() > 0) //Determine whether there is data in the serial port buffer
-    {
-        ble_val = Serial.read(); //Read data from serial port buffer
-        Serial.print("DATA RECEIVED:");
-        Serial.println(ble_val);
-        if (ble_val == 'a') {
-            digitalWrite(LED, HIGH);
-            Serial..println("led on");
-        }
-        if (ble_val == 'b') {
-            digitalWrite(LED, LOW);
-            Serial.println("led off");
-        }
-    }
-}
-```
-
-![](media/3577f17c526b1dc55d4f587ef95f2d08.png)
-
-Click ![](media/3fd6c998c0f665fb607a5827794b9bfe.png) to control the LED. When clicking it, a character a will be sent, then LED will be on. If this button is pressed again, the LED will be off.
-
-You need to remove the BT module if you finish projects.
-
-![](media/b45c3c46391467218fe07003dbb2f3e3.png)
-
-###  Project 11: Motor Driving and Speed Control
+###  Project 8: Motor Driving and Speed Control
 
 #### **(1)Description:**
 
@@ -1698,28 +1440,28 @@ According to the table below, we can know how to control the movement of the rob
 | Rotate Right | HIGH |  255-200  |   Rotate Left   | LOW  |    200    |  Rotate Right   |
 |     Stop     | LOW  |     0     |      Stop       | LOW  |     0     |      Stop       |
 
-#### (5) Components Required
+#### **(4)Components Required:**
 
 | V4.0 development <br />board \*1                | 8833 Motor Driver <br />Expansion Board\*1          | Tank Robot Chassis                               | USB Cable\*1                                    |
 | ----------------------------------------------- | --------------------------------------------------- | ------------------------------------------------ | ----------------------------------------------- |
 | ![](media/8ecfc7e4f74bd2001452e33f74eace2e.png) | ![2(1)](media/a68b920cd30c3b17941fa8b28b643c8f.png) | ![7](media/686670898705c411f9affbd3e2e78c61.png) | ![](media/4f8d5af6dee9016b45d975adb2391d37.png) |
 
-#### **(6)Connection Diagram:**
+#### **(5)Connection Diagram:**
 
 ![Untitled Sketch 11](media/3e53cf19ea5f85a931b955453b86304b.png)
 
-Note:
+<span style="color: rgb(255, 76, 65);">Note:</span>
 
 The 4-pin connector is marked with A, A1, B1 and B. The right rear motor is connected to B of the 8833 board and left front one is connected to A port.
 
-#### (6)Test Code:
+#### **(6)Test Code:**
 
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
-```c++
+```C
 /*
 Keyestudio Mini Tank Robot V3 (Popular Edition)
-lesson 11.1
+lesson 8.1
 motor driver
 http://www.keyestudio.com
 */
@@ -1776,11 +1518,11 @@ void loop()
 }
 ```
 
-#### (7)**Test Results:**
+#### **(7)Test Results:**
 
 After wiring according to the diagram, uploading the test code and powering it up, the smart car moves forward for 2s, steps back for 2s, turns left for 2s, turns right for 2s and stops for 2s and repeats this sequence.
 
-#### (8)**Code Explanation**
+#### **(8)Code Explanation:**
 
 **digitalWrite(ML_Ctrl,LOW);**
 
@@ -1794,12 +1536,12 @@ The speed adjustment of the motor is realized by PWM, and the pin that controls 
 
 We adjust the speed of motors by controlling PWM and the wiring remains the same.
 
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
-```c++
+```C
 /*
 Keyestudio Mini Tank Robot V3 (Popular Edition)
-lesson 11.2
+lesson 8.2
 motor driver pwm
 http://www.keyestudio.com
 */
@@ -1858,7 +1600,7 @@ Upload the code, the speed of the motor is slower.
 
 Low current will cause the motor to rotate slowly.
 
-###  Project 12: 8*16 Facial Expression LED Dot Matrix
+###  Project 9: 8*16 Facial Expression LED Dot Matrix
 
 #### **(1)Description:**
 
@@ -1866,7 +1608,7 @@ Won’t it be fun if a expression board is added to the robot? And the Keyestudi
 
 The 8*16 LED board comes with 128 LEDs. The data of the microprocessor (Arduino) communicates with the AiP1640 through a two-wire bus interface. Therefore, it can control the on and off of 128 LEDs on the module, so as to make the dot matrix on the module to display the pattern you need. A HX-2.54 4Pin cable is provided for your convenience of wiring.
 
-#### (2) Parameters：
+#### **(2)Parameters:**
 
 - Working voltage: DC 3.3-5V
 - Power loss: 400mW
@@ -1875,7 +1617,7 @@ The 8*16 LED board comes with 128 LEDs. The data of the microprocessor (Arduino)
 - Working temperature: -40\~80℃
 - Communication mode: two-wire bus
 
-#### (3) Components Required
+#### **(3)Components Required:**
 
 | V4.0 development board \*1                      | 8833 Motor Driver Expansion Board\*1                 | 8x16 LED Panel\*1                               |
 | ----------------------------------------------- | ---------------------------------------------------- | ----------------------------------------------- |
@@ -1883,7 +1625,7 @@ The 8*16 LED board comes with 128 LEDs. The data of the microprocessor (Arduino)
 | USB Cable\*1                                    | 4P HX-2.54 Dupont Wire<br /> (Black-Red-White-Brown) |                                                 |
 | ![](media/4f8d5af6dee9016b45d975adb2391d37.png) | ![5](media/6ffb2ea768a8bef08df881f372981936.png)     |                                                 |
 
-#### (4) Knowledge
+#### **(4)Knowledge:**
 
 **Principle of the 8\*16 LED dot matrix**
 
@@ -1914,7 +1656,6 @@ The first 00H is selected in our sample program, and the binary number 1100 0000
 ![image-20230427083716284](media/image-20230427083716284.png)
 
 
-
 ④The requirement for data input is that when SCL is at high level when inputting data, the signal on SDA must remain unchanged. Only when the clock signal on SCL is at low level, can the signal on SDA be changed. The input of data is the low bit first, and the high bit later.
 
 ⑤The condition for the end of data transmission is that when SCL is at low level, SDA at low level and SCL at high level, the level of SDA becomes high.
@@ -1927,7 +1668,7 @@ In the example, the pulse width is 4/16, and the hexadecimal corresponding to 10
 
 4\. Instructions for the use of modulus tool
 
-The dot matrix tool uses the online version, and the link is: <http://dotmatrixtool.com/#>
+The dot matrix tool uses the online version, and the link is: [http://dotmatrixtool.com/#]( http://dotmatrixtool.com/#)
 
 ①Enter the link and the page appears as shown below
 
@@ -1949,20 +1690,19 @@ As shown in the figure below, press the left mouse button to select, right click
 
 The GND, VCC, SDA, and SCL of the 8x16 LED light board are respectively connected to the keyestudio sensor expansion board-(GND), + (VCC), A4, A5 for two-wire serial communication.
 
-(Note: though it is connected with the IIC pin of Arduino, this module is not
-for IIC communication. And the IO port here is to simulate I2C communication and
+(<span style="color: rgb(255, 76, 65);">Note:</span> though it is connected with the IIC pin of Arduino, this module is not for IIC communication. And the IO port here is to simulate I2C communication and
 can be connected with any two pins )
 
-#### (6) Test Code
+#### **(6)Test Code:**
 
 The code to show the smile face
 
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
-```c++
+```C
 /*
   Keyestudio Mini Tank Robot V3 (Popular Edition)
-  lesson 12.1
+  lesson 9.1
   Matrix face
   http://www.keyestudio.com
 */
@@ -2041,7 +1781,7 @@ void IIC_send(unsigned char send_data)
 }
 ```
 
-#### **(7 )Test Results:**
+#### **(7)Test Results:**
 
 After uploading the test code successfully, connecting according to the wiring diagram, dialing the DIP switch to the right end and powering it on, a smile-shaped pattern shows on the dot matrix.
 
@@ -2049,7 +1789,7 @@ After uploading the test code successfully, connecting according to the wiring d
 
 #### **(8)Expansion Project:**
 
-We use the modulus tool we just learned, <http://dotmatrixtool.com/#>, to make the dot matrix display the pattern start , going forward, and stop and then clear the pattern. The time interval is 2000 ms.
+We use the modulus tool we just learned, [http://dotmatrixtool.com/#](http://dotmatrixtool.com/#), to make the dot matrix display the pattern start , going forward, and stop and then clear the pattern. The time interval is 2000 ms.
 
 ![](media/9866c73416df7466b5fe8be3712e6eb3.png)
 
@@ -2088,12 +1828,12 @@ We use the modulus tool we just learned, <http://dotmatrixtool.com/#>, to make t
 
 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00
 
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
-```c++
+```C
 /*
   keyestudio Mini Tank Robot V3 (Popular Edition)
-  lesson 12.2
+  lesson 9.2
   Matrix face
   http://www.keyestudio.com
 */
@@ -2194,11 +1934,11 @@ After uploading test code, the facial expression board shows these patterns orde
 
 ![](media/dce75583e8bf4bc4377364bf8ed3aa99.png)
 
-###  Project 13: Light Following Tank
+###  Project 10: Light Following Tank
 
 ![01](media/53db841d3b6bd9c5f2bc2c994f77fd1f.jpeg)
 
-#### **(1)Description**:
+#### **(1)Description:**
 
 In previous projects, we introduced in detail the use of various sensors, modules, and expansion boards on the smart car. Now let’s move to the projects of the smart car . The light-following smart cars, as the name suggests, is a smart car that can follow the light.
 
@@ -2216,7 +1956,7 @@ The specific logic of the light-following smart car is shown as below.
 | left_light≤650 and right_light＞650  |            Rotate right（set PWM to 200）            |
 |  left_light≤650 and right_light≤650  |                         stop                         |
 
-#### **(2)Flow chart**
+#### **(2)Flow chart:**
 
 ![img](media/wps8.png)
 
@@ -2224,22 +1964,20 @@ The specific logic of the light-following smart car is shown as below.
 
 ![Untitled Sketch 13_bb](media/d8132c5a3f88a1016d27e5fa9e5fda92.png)
 
-Note: The pin "G", "V" and S of the left photoresistor module are connected to G (GND), V (VCC), A1 respectively;
+<span style="color: rgb(255, 76, 65);">Note:</span> The pin "G", "V" and S of the left photoresistor module are connected to G (GND), V (VCC), A1 respectively;
 
 The pin "G", "V" and S of the right photoresistor module are connected to the G (GND), V (VCC), and A2 respectively.
 
-The 4pin cable is marked with A, A1, B1 and B
+The 4pin cable is marked with A, A1, B1 and B. The right rear motor is connected to B port of the 8833 motor driver expansion board and the left front motor is connected to A port of the 8833 motor driver expansion board
 
-The right rear motor is connected to B port of the 8833 motor driver expansion board and the left front motor is connected to A port of the 8833 motor driver expansion board
+#### **(4)Test Code:**
 
-#### **(4)Test Code**
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
-
-```c++
+```C
 /*
   Keyestudio Mini Tank Robot V3 (Popular Edition)
-  lesson 13
+  lesson 10
   light follow tank
   http://www.keyestudio.com
 */
@@ -2314,11 +2052,11 @@ void Car_Stop()
 }
 ```
 
-#### (5)Test Result
+#### **(5)Test Result**
 
 After uploading the test code successfully, connecting according to the wiring diagram, dialing the DIP switch to the right end and powering it on, the smart car follows the light to move.
 
-###  Project 14: Ultrasonic Following Tank
+###  Project 11: Ultrasonic Following Tank
 
 ![04](media/81e2d770186056b457b4d4da95543e79.jpeg)
 
@@ -2338,7 +2076,7 @@ The specific logic of the ultrasonic sound- following smart car is shown in the 
 |            10＜distance＜20<br/>distance＞50            |               Stop                |
 |                       distance≤10                       |              go back              |
 
-#### **(2)Flow chart**
+#### **(2)Flow chart:**
 
 ![img](media/wps9.png)
 
@@ -2346,14 +2084,14 @@ The specific logic of the ultrasonic sound- following smart car is shown in the 
 
 ![Untitled Sketch 14-15_bb](media/72a10097d286bc5f9589df031b60484a.png)
 
-#### **(4)Test Code**
+#### **(4)Test Code:**
 
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
-```c++
+```C
 /*
   Keyestudio Mini Tank Robot V3 (Popular Edition)
-  lesson 14
+  lesson 11
   Ultrasonic follow tank
   http://www.keyestudio.com
 */
@@ -2457,15 +2195,15 @@ float checkdistance() {
 }
 ```
 
-#### **(5 )Test Results:**
+#### **(5)Test Results:**
 
 Upload the test code successfully, wire up, dial the DIP switch to the right end, power up and set the servo to 9°，the smart car follows the obstacle to move.
 
-###  Project 15: Ultrasonic Obstacle Avoidance Tank
+###  Project 12: Ultrasonic Obstacle Avoidance Tank
 
 ![KS0555-10](media/2063ea3b3c0c5f0404b5508f35c39bd3.jpeg)
 
-#### (1)**Description:**
+#### **(1)Description:**
 
 In the previous project, we made an ultrasonic sound-following smart car. In fact, using the same components and the same wiring method, we only need to change the test code to turn it into an ultrasonic obstacle avoidance smart car. This smart car can move with the movement of the human hands. 
 
@@ -2491,7 +2229,7 @@ We use ultrasonic sensors to detect the distance between the smart car and the o
 
 
 
-#### **(2)Flow chart**
+#### **(2)Flow chart:**
 
 ![img](media/wps10.png)
 
@@ -2499,16 +2237,16 @@ We use ultrasonic sensors to detect the distance between the smart car and the o
 
 ![Untitled Sketch 14-15_bb](media/72a10097d286bc5f9589df031b60484a.png)
 
-(Note: the brown, red and orange wires of the servo are respectively connected to G (GND), V（5V）and D10 of the expansion board；and for the ultrasonic sensor, the VCC pin is connected to the 5v (V) ,the Trig pin to digital 12 (S), the Echo pin to digital 13 (S), and the Gnd pin to Gnd (G); the same as last project.）
+(<span style="color: rgb(255, 76, 65);">Note:</span> the brown, red and orange wires of the servo are respectively connected to G (GND), V（5V）and D10 of the expansion board；and for the ultrasonic sensor, the VCC pin is connected to the 5v (V) ,the Trig pin to digital 12 (S), the Echo pin to digital 13 (S), and the Gnd pin to Gnd (G); the same as last project.）
 
-#### **(4) Test Code**
+#### **(4)Test Code:**
 
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
-```c++
+```C
 /*
   Keyestudio Mini Tank Robot V3 (Popular Edition)
-  lesson 15
+  lesson 12
   Ultrasonic avoid tank
   http://www.keyestudio.com
 */
@@ -2627,11 +2365,11 @@ float checkdistance() {
 }
 ```
 
-#### (5) Test Result
+#### **(5)Test Result:**
 
 After upload the test code successfully, wire up, turn the DIP switch to the ON end, and power up, the smart car moves forward and automatically avoids obstacles.
 
-###  Project 16: Move-in-Confined-Space Tank
+###  Project 13: Move-in-Confined-Space Tank
 
 ![KS0555-08](media/69f9b1425cdb483b4702b3c4456146df.jpeg)
 
@@ -2652,7 +2390,7 @@ The specific logic of the line-tracking smart car is shown in the table blow:
 |                                    | All the three line-tracking sensors detect no black lines    |
 |                                    | Any of the three line-tracking sensors detects black lines   |
 
-#### **(2)Flow chart**
+#### **(2)Flow chart:**
 
 ![image-20230427092708208](media/image-20230427092708208.png)
 
@@ -2660,14 +2398,14 @@ The specific logic of the line-tracking smart car is shown in the table blow:
 
 ![Untitled Sketch 16-17_bb](media/e5c3763e764359ec8be92102b6d2a7f9.png)
 
-#### **(4)Test Code**
+#### **(4)Test Code:**
 
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
-```c++
+```C
 /*
   Keyestudio Mini Tank Robot V3 (Popular Edition)
-  lesson 16
+  lesson 13
   draw a circle for tank
   http://www.keyestudio.com
 */
@@ -2747,11 +2485,11 @@ void Car_Stop()
 }
 ```
 
-#### **(5 )Test Results:**
+#### **(5)Test Results:**
 
 After uploading the test code successfully and powering it up, the smart car moves in a confined space, the circle drawn in black line.
 
-###  Project 17: Line-tracking Tank
+###  Project 14: Line-tracking Tank
 
 ![KS0555-07](media/7b241c2004afb2d4d264fbcc98e1c56a.jpeg)
 
@@ -2775,22 +2513,22 @@ The specific logic of the line-tracking smart car is shown in the table blow:
 |                                                              | Line-tracking sensor on the left detects white line<br />and <br />the one on the right detects the black line | Rotate right<br />set PWM to 200 |
 |                                                              | Both the left and right line-tracking sensors detect white line<br />or<br />Both the left and right line-tracking sensors detect the black line |               Stop               |
 
-#### **(2)Flow chart**
+#### **(2)Flow chart:**
 
 ![img](media/wps11.png)
 
-#### (3)Wiring Diagram
+#### **(3)Wiring Diagram:**
 
 ![Untitled Sketch 16-17_bb](media/e5c3763e764359ec8be92102b6d2a7f9.png)
 
-#### **(4) Test Code**
+#### **(4)Test Code:**
 
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
-```c++
+```C
 /*
   Keyestudio Mini Tank Robot V3 (Popular Edition)
-  lesson 17
+  lesson 14
   Line track tank
   http://www.keyestudio.com
 */
@@ -2886,180 +2624,11 @@ void Car_Stop()
 }
 ```
 
-#### (5)Test Result
+#### **(5)Test Result:**
 
 After uploading the test code successfully and powering it up, the smart car moves along the black line.
 
-###  Project 18: Fire Extinguishing Tank
-
-![10](media/694677ab33053846ec588667dc40ecfa.jpeg)
-
-#### **(1)Description:**
-
-The line-tracking function of the smart tank has been explained in the previous project. And in this project we use the flame sensor to make a fire extinguishing robot. 
-
-When the car encounters flames, the motor of the fan will rotate to blow out the fire. Of course, we need to replace the ultrasonic sensor and two photoresistors with a fan module and flame sensors first. 
-
-The specific logic of the line-tracking smart car is shown in the table below:
-
-![image-20230427094001916](media/image-20230427094001916.png)
-
-#### **(2)Flow chart**
-
-![img](media/wps12.png)
-
-#### **(3)Connection Diagram:**
-
-![Untitled Sketch 18_bb](media/c02e461ac7bdbab7fd14a19c453e08e4.png)
-
-#### **(4)Test Code**
-
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
-
-```c++
-/*
-  Keyestudio Mini Tank Robot V3 (Popular Edition)
-  lesson 18
-  Fire extinguishing tank
-  http://www.keyestudio.com
-*/
-
-int flame_L = A1; //Define the flame interface on the left as the analog pin A1
-int flame_R = A2; //Define the flame interface on the right as the analog pin A2
-//The wiring of line tracking sensor
-#define L_pin  11  //left
-#define M_pin  7  //middle
-#define R_pin  8  //right
-//The pin of the servo 130
-int INA = 12;
-int INB = 13;
-#define ML_Ctrl 4  //Define the direction control pin of the left motor
-#define ML_PWM 6   //Define the PWM control pin of the left motor
-#define MR_Ctrl 2  //Define the direction control pin of the right motor
-#define MR_PWM 5   //Define the PWM control pin of the right motor
-int L_val, M_val, R_val, flame_valL, flame_valR;
-
-void setup()
-{
-  Serial.begin(9600);
-  //Set all pins of the line tracking sensor as input mode
-  pinMode(L_pin, INPUT);
-  pinMode(M_pin, INPUT);
-  pinMode(R_pin, INPUT);
-  //Define the flame as INPUT
-  pinMode(flame_L, INPUT);
-  pinMode(flame_R, INPUT);
-  //Define the motor as OUTPUT
-  pinMode(ML_Ctrl, OUTPUT);
-  pinMode(ML_PWM, OUTPUT);
-  pinMode(MR_Ctrl, OUTPUT);
-  pinMode(MR_PWM, OUTPUT);
-  pinMode(INA, OUTPUT);//Set digital port INA as OUTPUT
-  pinMode(INB, OUTPUT);//Set digital port INB as OUTPUT
-}
-
-void loop () {
-  //Read the analog value of the flame sensors
-  flame_valL = analogRead(flame_L);
-  flame_valR = analogRead(flame_R);
-  Serial.print(flame_valL);
-  Serial.print("  ");
-  Serial.print(flame_valR);
-  Serial.println("  ");
-//  delay(500);
-  if (flame_valL <= 700 || flame_valR <= 700) {
-    Car_Stop();
-    fan_begin();
-  } else {
-    fan_stop();
-    L_val = digitalRead(L_pin); //Read the value of the left sensor
-    M_val = digitalRead(M_pin); //Read the value of the middle sensor
-    R_val = digitalRead(R_pin); //Read the value of the right sensor
-    
-    if (M_val == 1) { //the middle one detects black lines
-      if (L_val == 1 && R_val == 0) { //If a black line is detected on the left, but not on the right, turn left
-        Car_left();
-      }
-      else if (L_val == 0 && R_val == 1) { //If a black line is detected on the right, not on the left, turn right
-        Car_right();
-      }
-      else { //otherwise, go front
-        Car_front();
-      }
-    }
-    else { //The middle one doesn't detect black lines
-      if (L_val == 1 && R_val == 0) { //If a black line is detected on the left, but not on the right, turn left
-        Car_left();
-      }
-      else if (L_val == 0 && R_val == 1) { //If a black line is detected on the right, not on the left, turn right
-        Car_right();
-      }
-      else { //otherwise, stop
-        Car_Stop();
-      }
-    }
-  }
-}
-
-void fan_stop() {
-  //stop rotating
-  digitalWrite(INA, LOW);
-  digitalWrite(INB, LOW);
-}
-
-void fan_begin() {
-  //fan rotates
-  digitalWrite(INA, LOW);
-  digitalWrite(INB, HIGH);
-}
-
-void Car_front()
-{
-  digitalWrite(MR_Ctrl, HIGH);
-  analogWrite(MR_PWM, 150);
-  digitalWrite(ML_Ctrl, HIGH);
-  analogWrite(ML_PWM, 150);
-}
-void Car_back()
-{
-  digitalWrite(MR_Ctrl, LOW);
-  analogWrite(MR_PWM, 100);
-  digitalWrite(ML_Ctrl, LOW);
-  analogWrite(ML_PWM, 100);
-}
-void Car_left()
-{
-  digitalWrite(MR_Ctrl, HIGH);
-  analogWrite(MR_PWM, 150);
-  digitalWrite(ML_Ctrl, LOW);
-  analogWrite(ML_PWM, 100);
-}
-void Car_right()
-{
-  digitalWrite(MR_Ctrl, LOW);
-  analogWrite(MR_PWM, 100);
-  digitalWrite(ML_Ctrl, HIGH);
-  analogWrite(ML_PWM, 150);
-}
-void Car_Stop()
-{
-  digitalWrite(MR_Ctrl, LOW);
-  analogWrite(MR_PWM, 100);
-  digitalWrite(ML_Ctrl, LOW);
-  analogWrite(ML_PWM, 100);
-  
-  digitalWrite(MR_Ctrl, LOW);
-  analogWrite(MR_PWM, 0);
-  digitalWrite(ML_Ctrl, LOW);
-  analogWrite(ML_PWM, 0);
-}
-```
-
-#### (5)Test Result
-
-After uploading the test code successfully and powering it up, the smart car puts out the fire when it detects flame and continues moving along the black line.
-
-###  Project 19: IR Remote Control Tank
+###  Project 15: IR Remote Control Tank
 
 ![KS0555-13](media/f161115878e9ae0c0f24dfd8b978773c.jpeg)
 
@@ -3081,7 +2650,7 @@ The specific logic of the line-tracking smart car is shown in the table:
 | ![image-20230427094725151](media/image-20230427094725151.png) |  FFC23D   |     Turn right<br />display the pattern of turning left      |
 | ![image-20230427094729839](media/image-20230427094729839.png) |  FF02FD   |             Stop<br />display the pattern“STOP”              |
 
-#### **(2)Flow chart**
+#### **(2)Flow chart:**
 
 ![img](media/wps21.png)
 
@@ -3089,21 +2658,21 @@ The specific logic of the line-tracking smart car is shown in the table:
 
 ![Untitled Sketch 19_bb](media/54527fe245b218dd22bdff5dafd4805d.png)
 
-Note:
+<span style="color: rgb(255, 76, 65);">Note:</span>
 
 GND, VCC, SDA and SCL of the 8x16 LED panel are connected to G（GND), V（VCC). SDA and SCL of the expansion board.
 
 Since the 8833 board integrates the IR receiver, you don’t need to wire it up. The pins of the IR receiver are G（GND), V（VCC) and D3.
 
-#### (4)**Test Code**
+#### (4)**Test Code:**
 
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
-```c++
+```C
 /*
  Keyestudio Mini Tank Robot V3 (Popular Edition)
- lesson 19
- IRremote
+ lesson 15
+ IRremote Control Tank
  http://www.keyestudio.com
 */
 #include <IRremote.h>
@@ -3280,55 +2849,271 @@ void IIC_send(unsigned char send_data)
 }
 ```
 
-#### (5)Test Result
+#### **(5)Test Result:**
 
 Upload the code and power up. The 8X16 LED panel will show corresponding patterns.
 
+###  Project 16: Bluetooth Remote Control
+
+![Img](./media/img-20240111140012.png)
+
+#### **(1)Description:**
+
+In the last several decades, Bluetooth has become the most popular wireless communication module for it is easy to use and has found wide applications in most devices powered by batteries.
+
+In order to adjust with the time and reality and need the needs of customers, Bluetooth has been upgraded several times. In recent years, it embraces lots of transformations in terms of data transfer rate, power consumption of wearable devices and IoT devices, and security systems and others. Here, we plan to learn about DX-BT24 with Arduino board.
+
+#### **(2)Parameter:**
+
+- Bluetooth Protocol: Bluetooth Specification V5.1 BLE
+
+- Serial port sending and receiving without byte limit
+
+- Communication distance: 40m (open environment)
+
+- Operating frequency: 2.4GHz ISM band
+
+- Modulation method: GFSK (Gaussian Frequency Shift Keying)
+
+- Security Features: Authentication and Encryption
+
+- Support Services: Central and Peripheral UUIDs FFE0, FFE1, FFE2
+
+- Power consumption: automatic sleep mode, standby current 400uA\~800uA, 8.5mA during transmission.
+  
+- Power supply: 5V
+
+- Operating temperature: –10 to +65 degrees Celsius
+
+#### **(3)Application:**
+
+| V4.0 development board \*1                           | 8833 Motor Driver Expansion Board\*1                |                   Yellow LED Module\*1                    |
+| ---------------------------------------------------- | --------------------------------------------------- | :-------------------------------------------------------: |
+| ![](media/8ecfc7e4f74bd2001452e33f74eace2e.png)      | ![2(1)](media/a68b920cd30c3b17941fa8b28b643c8f.png) |     ![2](media/0b130b1b8eb4e626a9cad08906af2ef5.png)      |
+| DX-BT24 V5.1 BLE BT Module\*1                        | USB Cable\*1                                        | 3P-3P XH2.54 to 2.54 Dupont Wire<br />（Yellow-Red-Black) |
+| ![蓝牙](media/85543fff75f9ea24d8bd5768cca35802.jpeg) | ![](media/4f8d5af6dee9016b45d975adb2391d37.png)     |     ![9](media/6a1c8e7c27ca08c62ac0c30a0dbd4578.png)      |
+
+#### **(4)Connection Diagram:**
+
+1.STATE is the status test pin connected to the internal light-emitting diode and usually remains unconnected.
+
+2.RXD is the serial port interface for receiving terminal.
+
+3.TXD is the serial port interface for sending terminal.
+
+4.GND is for ground.
+
+5.VCC is the positive pole.
+
+6.EN/BRK: the disconnection of it represents the disconnection of the Bluetooth and it usually remains unconnected.
+
+(Note: here the Bluetooth is directly linked with the V2 shield and please pay attention to the direction)
+
+![Untitled Sketch 10.1](media/63b96e5b26ee18337fb6e0dced5bbbe3.png)
 
 
-###  Project 20: Bluetooth Control Tank
+#### **(5)Download APP:**
+
+##### **For IOS system**
+
+1\. Open App Store.
+
+2\. Search <span style="color: rgb(61, 167, 66);">KeyesRobot</span> in the Apple Store and click download.
+
+![Img](./media/img-20240111141301.png)
+
+3\. After the app is installed, you will see the following icon on your phone desktop.
+
+![Img](./media/img-20240111141412.png)
+
+**How to connect iOS Phone to Bluetooth module:**
+
+1\. Turn on the Bluetooth and location services on phone through settings.
+
+![Img](./media/img-20240111141943.png)
+
+2\. Allow KeyesRobot APP to access Bluetooth through settings.
+
+![Img](./media/img-20240111142052.png)
+
+3\. Click to open KeyesRobot App.
+
+![Img](./media/img-20240111142140.png)
+
+4\. KeyesRobot App is a universal APP, which is applied to multiple keyestudio robots. If the interface does not display "TANK ROBOT", you can click the left and right buttons to find "TANK ROBOT".
+
+5\. Click the <span style="color: rgb(61, 167, 66);">Bluetooth </span>button ![Img](./media/img-20240111142336.png) in the upper right corner to scan the bluetooth
+
+![Img](./media/img-20240111142415.png)
+
+6\. You will see a Bluetooth named <span style="color: rgb(0, 209, 0);">**BT24**</span>, click the <span style="color: rgb(255, 169, 0);">Connect</span> button.
+
+![Img](./media/img-20240111142536.png)
+
+7\. If the onboard LED on the Bluetooth module stops flashing and stays on, it means your phone is successfully connected to the Bluetooth module.
+
+![Img](./media/img-20240111142702.png)
+
+
+##### **For Android System**
+
+1\. Search <span style="color: rgb(61, 167, 66);">**KeyesRobot**</span> in Google Play, or open the following link to download and install the app. 
+
+[https://play.google.com/store/apps/details?id=com.keyestudio.keyestudio](https://play.google.com/store/apps/details?id=com.keyestudio.keyestudio)
+
+![Img](./media/img-20240111143312.png)
+
+2\. Turn on the Bluetooth and the location services of the mobile phone
+
+![Img](./media/img-20240111143354.png)
+
+3\. Find the KeyesRobot Bluetooth app from settings, click on the permission options of the app, and
+enable Location and nearby device permissions.(<span style="color: rgb(255, 76, 65);">Note:</span> Some mobile phones do not have nearby device permissions function.)
+
+![Img](./media/img-20240111143451.png)
+
+4\. Click to open KeyesRobot App.
+
+![Img](./media/img-20240111143529.png)
+
+5\. KeyesRobot App is a universal APP, which is applied to multiple keyestudio robots. If the interface does not display "TANK ROBOT", you can click the left and right buttons to find "TANK ROBOT".
+
+6\. Click the <span style="color: rgb(61, 167, 66);">Bluetooth </span> button ![Img](./media/img-20240111142336.png) in the upper right corner to scan the bluetooth
+
+![Img](./media/img-20240111142415.png)
+
+7\. You will see a Bluetooth named <span style="color: rgb(0, 209, 0);">**BT24**</span>, click the <span style="color: rgb(255, 169, 0);">Connect</span> button.
+
+![Img](./media/img-20240111143910.png)
+
+8\. When your phone is successfully connected to the Bluetooth module, the onboard LED on the Bluetooth module will stop flashing and stay on.
+
+![Img](./media/img-20240111144004.png)
+
+![Img](./media/img-20240111142702.png)
+
+
+#### **(5)Test the Bluetooth APP:**
+
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+
+```C
+/*
+Keyestudio Mini Tank Robot V3 (Popular Edition)
+lesson 16.1
+Bluetooth
+http://www.keyestudio.com
+*/
+
+char ble_val; //Character variable(used to store the value received by Bluetooth)
+
+void setup() {
+	Serial.begin(9600);
+}
+
+void loop() {
+    if (Serial.available() > 0) //Determine whether there is data in the serial port buffer
+    {
+        ble_val = Serial.read(); //Read the data in the serial port buffer
+        Serial.println(ble_val); //Print out
+    }
+}
+```
+
+Upload the code to the development board, then plug in the Bluetooth module, and then connected the mobile phone to the Bluetooth module.
+
+After the mobile phone is successfully connected to the Bluetooth module, click to open the Bluetooth APP and click the <span style="color: rgb(0, 252, 255);">Select</span> button on the <span style="color: rgb(0, 252, 255);">homepage</span>.
+
+![Img](./media/img-20240111144744.png)
+
+The main interface of the Bluetooth app is shown in the figure below.
+
+![Img](./media/img-20240111144859.png)
+
+After the code above is successfully uploaded, open the serial monitor of the arduino IDE and set the baud rate to 9600. Click the icon on the APP interface and the serial monitor will display command sent by button.
+
+![](media/805f8ee5c8998a5d6cb8bcef9da09186.png)
+
+<br>
+<br>
+<span style="color: rgb(255, 76, 65);">**Note: The APP connection method is the same as below.**</span>
+<br>
+<br>
+
+
+
+#### **(6)Code Explanation:**
+
+**Serial.available()** represents the number of characters currently remaining in the serial port buffer. 
+
+This function is generally used to determine whether there is data in this area. When Serial.available()\>0, it means that the serial port has received data and can be read.
+
+**Serial.read()** refers to taking out and reading a Byte of data from the serial port buffer. For example, if a device sends data to the Arduino through the serial port, we can use Serial.read() to read the sent data.
+
+#### **(7)Expansion Project:**
+
+Here we use the command sent by the mobile phone to turn on or off an LED light. Looking at the wiring diagram, an LED is connected to the D9 pin,
+
+![Untitled Sketch 10.2](media/549c10efcf47f29f8f6355d8cd0497cc.png)
+
+(<span style="color: rgb(255, 76, 65);">Note: </span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+
+```C
+/*
+Keyestudio Mini Tank Robot V3 (Popular Edition)
+lesson 16.2
+Bluetooth
+http://www.keyestudio.com
+*/
+
+int LED = 9;
+char ble_val; //Integer variable used to store the value received by Bluetooth
+
+void setup() {
+    Serial.begin(9600);
+    pinMode(LED, OUTPUT);
+}
+
+void loop() {
+
+    if (Serial.available() > 0) //Determine whether there is data in the serial port buffer
+    {
+        ble_val = Serial.read(); //Read data from serial port buffer
+        Serial.print("DATA RECEIVED:");
+        Serial.println(ble_val);
+        if (ble_val == 'a') {
+            digitalWrite(LED, HIGH);
+            Serial..println("led on");
+        }
+        if (ble_val == 'b') {
+            digitalWrite(LED, LOW);
+            Serial.println("led off");
+        }
+    }
+}
+```
+
+![](media/3577f17c526b1dc55d4f587ef95f2d08.png)
+
+After the code above is successfully uploaded, open the serial monitor of the arduino IDE and set the baud rate to 9600. Click ![](media/3fd6c998c0f665fb607a5827794b9bfe.png) to control the LED. When clicking it, a character a will be sent, then LED will be on. If this button is pressed again, the LED will be off.
+
+You need to remove the BT module if you finish projects.
+
+![](media/b45c3c46391467218fe07003dbb2f3e3.png)
+
+###  Project 17: Bluetooth Control Tank
 
 ![KS0555-11](media/4655aeffe0d2081fa2b9fd254113c392.jpeg)
 
-#### (1)**Description:**
+#### **(1)Description:**
 
 We have learned the basic knowledge of Bluetooth in the previous project . In this lesson, we will use Bluetooth to control the smart car. Since it involves Bluetooth, a sending end and a receiving end are needed. In the project, we use the mobile phone as the sender (master), and the smart car connected with the HM-10 Bluetooth module (slave) as the receiver.
 
 We have learned earlier that sending a bit can control LEDs. And the principle of controlling this robot car is the same.
 
-In order to better control the intelligent tank robot, we specially made an APP. In this lesson, we will read all the key value on this APP through code, and then introduce the exclusive APP of our tank robot.
+We first understand the function of each button on the APP, and then use the button on the APP to control the tank.
 
-#### (2) Test Code 1
-
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
-
-```c
-/*
- Keyestudio Mini Tank Robot V3 (Popular Edition)
- lesson 20.1
- bluetooth test
- http://www.keyestudio.com
-*/
-char ble_val; //Character variable(used to store the value received by Bluetooth)
-void setup() {
-  Serial.begin(9600);
-}
-void loop() {
-  if(Serial.available() > 0)  //Determine whether there is data in the serial port buffer
-  {
-    ble_val = Serial.read();  //Read the data in the serial port buffer
-    Serial.println(ble_val);  //Print out
-  }
-}
-```
-
-First remove the Bluetooth module and upload the test code;
-
-Then reconnect the Bluetooth module and open the serial monitor to set the baud rate to 9600;
-
-Press the button of the Bluetooth APP, and the corresponding characters are displayed in the serial monitor as shown in the picture below:
-
-![](media/805f8ee5c8998a5d6cb8bcef9da09186.png)
+#### **(2)Key Function on the APP**
 
 The following table illustrates the functions of corresponding keys:
 
@@ -3365,11 +3150,11 @@ The following table illustrates the functions of corresponding keys:
 | ![](media/a76df707b84409e57a1167889c3510d9.png) | Click to send“x” <br />Click to show the distance detected by ultrasonic sensor (unit: cm) |
 | ![](media/704e5c6a72d89ee8f78d79ff3cd9537c.png) | Click to send“c” Click again to send“d”<br />Press to turn on the fan and press again to turn off it |
 
-#### (3)Flow Chart
+#### **(3)Flow Chart:**
 
 ![image-20230427101759352](media/image-20230427101759352.png)
 
-#### **(4) Wiring Diagram**
+#### **(4)Wiring Diagram:**
 
 ![Untitled Sketch 20_bb](media/930a8024364e07505e845624a94c27bd.png)
 
@@ -3377,15 +3162,15 @@ The GND, VCC, SDA, and SCL of the 8x16 LED dot matrix are respectively connected
 
 The STATE and BRK pins of the Bluetooth module do not need to be connected.
 
-#### (5)Test Code 2
+#### **(5)Test Code:**
 
-(Note: When uploading the code, the Bluetooth module must be unplugged, and the Bluetooth can be reconnected after the uploading process. Otherwise the code may not be burned.)
+(<span style="color: rgb(255, 76, 65);">Note: </span> When uploading the code, the Bluetooth module must be unplugged, and the Bluetooth can be reconnected after the uploading process. Otherwise the code may not be burned.)
 
-```c++
+```C
 /*
   Keyestudio Mini Tank Robot V3 (Popular Edition)
-  lesson 20.2
-  bluetooth tank
+  lesson 17.
+  bluetooth Control tank
   http://www.keyestudio.com
 */
 
@@ -3543,23 +3328,23 @@ void IIC_send(unsigned char send_data)
 }
 ```
 
-#### (6)Test Result
+#### **(6)Test Result:**
 
 After uploading the test code successfully, dialing the DIP switch to the right end, powering it on, and pairing the APP with Bluetooth, the smart car can be controlled to move by the APP.
 
 
 
-###  Project 21: BT Speed Control Robot
+###  Project 18: BT Speed Control Robot
 
 ![KS0555-14](media/b9c902b937801f829b9ce2fd254b1849.jpeg)
 
-#### (1)**Description**
+#### (1)**Description:**
 
 In the previous project, we learned how to control the smart tank with Bluetooth. The PWM value of the motor we used in front of us is 200 (the speed is 200). 
 
 In this lesson, we will use Bluetooth to adjust the speed of the smart car. It is not limited to Fixed speed of 200. We define two variables to store the speed values of the left and right motors respectively. Through the previous study, we know that the range of this value can only take 0 to 255.
 
-#### **(2)Flow chart**
+#### **(2)Flow chart:**
 
 ![image-20230427102042028](media/image-20230427102042028.png)
 
@@ -3569,14 +3354,14 @@ In this lesson, we will use Bluetooth to adjust the speed of the smart car. It i
 
 The GND, VCC, SDA, and SCL of the 8x16 LED dot matrix are respectively connected to-(GND), + (VCC), SDA, SCL of the expansion board;
 
-#### **(4)Test Code**
+#### **(4)Test Code:**
 
-(Note: When uploading the code, the Bluetooth module must be unplugged, and the Bluetooth can be reconnected after the uploading process. Otherwise the code may not be burned.)
+(<span style="color: rgb(255, 76, 65);">Note:</span> When uploading the code, the Bluetooth module must be unplugged, and the Bluetooth can be reconnected after the uploading process. Otherwise the code may not be burned.)
 
-```c++
+```C
 /*
   Keyestudio Mini Tank Robot V3 (Popular Edition)
-  lesson 21
+  lesson 18
   bluetooth control speed tank
   http://www.keyestudio.com
 */
@@ -3753,7 +3538,7 @@ After uploading the test code successfully, dialing the DIP switch to the right 
 
 (You can refer to function table in project 20 )
 
-###  Project 22: Multifunctional Tank
+###  Project 19: Ultrasonic Tank Robot Multiple Functions
 
 ![KS0555-12](media/13656cfee75dc5acbeba18a90a084e15.jpeg)
 
@@ -3765,11 +3550,11 @@ Can it display multiply functions at a time ? Positive.
 
 In this last big project, we intend to use a complete code to control the smart car to show off all functions mentioned in previous projects. We use the keys on the Bluetooth APP to automatically switch various functions, quite simple and convenient.
 
-#### (2)Flow Diagram
+#### **(2)Flow Diagram:**
 
 ![image-20230427102547633](media/image-20230427102547633.png)
 
-#### **(3) Connection Diagram:**
+#### **(3)Connection Diagram:**
 
 ![Untitled Sketch 21_bb](media/e7ac834ba04aa2e8862995d2d33ce935.png)
 
@@ -3783,17 +3568,17 @@ In this last big project, we intend to use a complete code to control the smart 
 
 5\. The pin "G", "V" and S of the left photoresistor module are connected to G (GND), V (VCC), A1 respectively; The right photoresistor module is connected to the G (GND), V (VCC), and A2 respectively.
 
-6\. The distal port of the line tracking sensor is 11, 7 and 8
+6\. The distal port of the line tracking sensor is 11, 7 and 8.
 
-#### **(4) Test Code**
+#### **(4)Test Code:**
 
-(Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
-```c++
+```C
 /*
   Keyestudio Mini Tank Robot V3 (Popular Edition)
-  lesson 22
-  multiple functions
+  lesson 19
+  Ultrasonic Tank Robot Multiple Functions
   http://www.keyestudio.com
 */
 #include <IRremote.h>
@@ -4362,19 +4147,1116 @@ void Car_Stop() {
 }
 ```
 
-#### (5)Test Result
+#### **(5)Test Result:**
 
 Before uploading the program code, the Bluetooth module needs to be removed, otherwise the code upload will fail.
 
-After uploading the code successfully, open the positioning, and then connect
-the Bluetooth module.
+After uploading the code successfully, open the positioning, and then connect the Bluetooth module.
 
 After uploading the code successfully, plug in the Bluetooth module, after power-on, after the mobile APP is connected to the Bluetooth successfully, we can use the mobile APP to control the tank robot
 
 You can also control the robot with the remote control
 
-Some modules work through an IO port. If you need to use the fan module and the flame sensor, you need to \#define USE_FAN_FUNCTION 0 into \#define USE_FAN_FUNCTION
+Some modules work through an IO port. If you need to use the fan module and the flame sensor, you need to \#define USE_FAN_FUNCTION 0 into \#define USE_FAN_FUNCTION 1 .
 
 
+## 4. Assemble Fire Extinguishing Robot
+
+Remove the ultrasonic sensor and two photoresistors
+
+![ 12_6.png 12_6](./media/d575fad4068d67daffaf3958996a185b.png)
+
+![ 13.png 13](./media/3a350ba2fda9f37c8f0870f16c981f7b.png)
+
+Put on a fan module and two flame sensors
+
+![ 2.png 2](./media/f1a3dbebcb34d4a390e4b2412d34e03e.png)
+
+You can make the fan module install further if the fan module and flame sensors interfere
+
+![ ](./media/8ec448f8b626fd9f8f0a6941b927c0af.png)
+
+**Wire up**
+
+Wire up the two flame sensors
+
+![ ](./media/e224ea3ffed9b63eda92e9fbd2fc0ed2.png)
+
+![ ](./media/5aaf61e5d36e7bc01753e544bebeca46.png)
+
+| Left | Keyestudio 8833 Board |      | Right | Keyestudio 8833 Board |
+| :--: | :-------------------: | ---- | :---: | :-------------------: |
+|  G   |           G           |      |   G   |           G           |
+|  V   |           V           |      |   V   |           V           |
+|  A   |          A1           |      |   A   |          A2           |
+
+Wire up the fan module 
+
+![ ](./media/c646fb9322c3f4315b246a36ee1df17c.png)
+
+| DC130 Motor | Keyestudio 8833 Board |
+| :---------: | :-------------------: |
+|      G      |           G           |
+|      V      |           V           |
+|     IN+     |          D12          |
+|     IN-     |          D13          |
+
+------
+
+
+
+ **We adopt a model 18650 lithium battery with a pointed positive pole, whose power and capacity are not required.**
+
+------
+
+
+## 5. Projects 2
+
+###  Project 20: Flame Sensor
+
+![](media/7cf8c051f489b06119c262cd059c23c5.jpeg)
+
+#### **(1)Description：**
+
+The flame sensor uses IR receiving tube to detect flames, converts the brightness of the flame into signals with high and low levels, input them into the central processor. The corresponding program processing. In both flames close to and without flames, the voltage value of the analog port is varied. 
+
+If there is no flame, the analog port is about 0.3V; when there is a flame, the analog port is 1.0V. The closer the flame is , the more the voltage value is. It can be used to detect the fire source or make a smart robot.
+
+Note the probe of flame sensors only bears the temperature between -25 ℃and ～85℃
+
+In the process of use, pay attention to keep the flame sensor in certain distance to avoid getting damaged.
+
+#### **(2)Parameters：**
+
+![](media/e2c77a94067ccd3e634fb3674c02b80f.png)
+
+- Working voltage: 3.3V-5V (DC)
+
+- Current: 100mA
+
+- Maximum power: 0.5W
+
+- Work temperature: -10 ° C to +50 degrees Celsius
+
+- Sensor size: 31.6mmx23.7mm
+
+- Interface: 4pin turn 3PIN interface
+
+- Output signal: analog signals A0, A1
+
+
+#### **(3)Components Needed:**
+
+| V4.0 development board \*1                       | 8833 Motor Driver Expansion Board\*1                  | Yellow LED Module\*1                             | 3P-3P XH2.54 to 2.54 Dupont Wire（Yellow-Red-Black)\*1       |
+| ------------------------------------------------ | ----------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------ |
+| ![](media/8ecfc7e4f74bd2001452e33f74eace2e.png)  | ![2(1)](media/a68b920cd30c3b17941fa8b28b643c8f.png)   | ![2](media/0b130b1b8eb4e626a9cad08906af2ef5.png) | ![](media/6a1c8e7c27ca08c62ac0c30a0dbd4578.png) |
+| Flame Sensor\*1                                  | 4P-3P XH2.54 to PH2.0  Dupont Wire（Yellow-Red-Black) | USB Cable\*1                                     |                                                              |
+| ![1](media/ecf808f114234039582880ab4682c4e6.png) | ![11](media/7856a38f34cdeb19966cd0fb99b55f85.png)     | ![](media/4f8d5af6dee9016b45d975adb2391d37.png)  |                                                              |
+
+#### **(4)Connection Diagram:**
+
+![Untitled Sketch 5.1](media/10f5f2256c61c54bf7f9a7a0c52375f9.png)
+
+Flame sensors are connected to A1 and A2. When we remove ultrasonic sensors and photoresistors, then add flame sensors and fan modules.
+
+The fire extinguishing robot is created.
+
+#### **(5)Test Code:**
+
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+
+```C
+/*
+
+Keyestudio Mini Tank Robot V3 (Popular Edition)
+
+lesson 20.1
+
+flame sensor
+
+http://www.keyestudio.com
+
+*/
+
+int flame = A1; //Define the flame pin as analog pin A1
+int val = 0; //Define digital variables
+
+void setup() {
+	pinMode(flame, INPUT); //Define the buzzer as an input source
+    Serial.begin(9600); //Set the baud rate to 9600
+}
+
+void loop() {
+	val = analogRead(flame); //Read the analog value of the flame sensor
+	Serial.println(val);//Output analog value and print it
+	delay(100); //Delay in 100ms
+}
+```
+
+#### **(6)Test Result：**
+
+Wire up components, burn the code, open the serial monitor and set the baud rate to 9600.
+
+You can view the simulation value of flame sensor.
+
+The closer the flame, the smaller the simulation value.
+
+Adjust the potentiometer on the module to maintain D1 at the critical point. When the sensor does not detect flame, the D1 will be off, but if the sensor detects flame, the D1 will be on.
+
+![](media/05db06b3e205dfca63c2ba3aa7ff528e.png)
+
+#### **(7)Extension Practice:**
+
+Next, connect an LED to pin 9 and we can control it by a flame sensor, as shown below;
+
+![Untitled Sketch 5.2](media/814c315d3bb44278b476a754d3681227.png)
+
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+
+```C
+/*
+
+Keyestudio Mini Tank Robot V3 (Popular Edition)
+
+lesson 20.2
+
+flame sensor
+
+http://www.keyestudio.com
+
+*/
+
+int flame = A1; //Define the flame pin as analog pin A1
+int LED = 9; //Define the LED as digital port 9
+int val = 0; //Define digital variables
+
+void setup() {
+    pinMode(flame, INPUT); //Define the buzzer as an input source
+    pinMode(LED, OUTPUT); //Set LED to output mode
+    Serial.begin(9600); //Set the baud rate to 9600
+}
+
+void loop() {
+    val = analogRead(flame); //Read the analog value of the flame sensor
+    Serial.println(val);//Output analog value and print it
+    if (val < 300) { //When analog value is less than 300, LED is on
+    	digitalWrite(LED, HIGH); //LED is on
+    } else {
+    	digitalWrite(LED, LOW); //LED is off
+    }
+    delay(50); //Delay in 50ms
+}
+```
+
+
+###  Project 21: Fan
+
+#### **(1) Description：**
+
+![](media/4afc1c9720d36beba8adfac0ee22ff10.png)
+
+This fan module uses a HR1124S motor-controlling chip, a single-channel H-bridge driver chip containing a low-conductivity resistance PMOS and NMOS power tubes. The low-conducting resistance can ease the power consumption, contributing to the safe work of the chip for longer time. 
+
+In addition, its low standby current and low static working current makes itself apply to toys. We can control the rotation direction and speed of the fan by outputting IN + and IN- signals and PWM signals.
+
+#### **(2) Specification:**
+
+Working voltage: 5V
+
+Current: 200MA
+
+Maximum power: 2W
+
+Operating temperature: -10 degrees Celsius to +50 degrees Celsius
+
+Size: 47.6MM \*23.8MM
+
+#### **(3)Components Required:**
+
+| keyestudio V4.0 development board \*1            | Keyestudio 8833 Motor Driver Expansion Board\*1     | 130 Motor \*1                                    | 4P XH2.54 to PH2.0 Dupont Wire（Green-Blue-Red-Black) \*1 |
+| ------------------------------------------------ | --------------------------------------------------- | ------------------------------------------------ | -------------------------------------------------------- |
+| ![](media/8ecfc7e4f74bd2001452e33f74eace2e.png)  | ![2(1)](media/a68b920cd30c3b17941fa8b28b643c8f.png) | ![5](media/abaa4c82e054462f00d4cff084cc4d62.png) | ![8](media/615e41a58cbc46bb72609ddb4f9076ea.png)         |
+| Flame Sensor\*1                                  | 4P-3P XH2.54 to PH2.0 Dupont Wire（Yellow-Red-Black) | USB Cable\*1                                     | Tank Robot Chassis                                       |
+| ![1](media/ecf808f114234039582880ab4682c4e6.png) | ![11](media/7856a38f34cdeb19966cd0fb99b55f85.png)   | ![](media/4f8d5af6dee9016b45d975adb2391d37.png)  | ![7](media/686670898705c411f9affbd3e2e78c61.png)         |
+
+The fan module needs driving by large current; therefore, we install a battery holder.
+
+#### **(4) Connection Diagram:**
+
+![Untitled Sketch 6.1](media/2bd9aa5cc21e274458328958561f1915.png)
+
+The pin GND, VCC, IN+ and IN- of the fan module are connected to pin G, V, D12 and D13 of the shield.
+
+#### **(5) Test Code:**
+
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+
+```C
+/*
+Keyestudio Mini Tank Robot V3 (Popular Edition)
+lesson 21.1
+130 motor
+http://www.keyestudio.com
+*/
+
+int INA = 12;
+int INB = 13;
+
+void setup() {
+    pinMode(INA, OUTPUT);//Set digital port INA as output
+    pinMode(INB, OUTPUT);//Set digital port INA as output
+}
+
+void loop() {
+    //Set the fan to rotate anticlockwise for 3s
+    digitalWrite(INA, LOW);
+    digitalWrite(INB, HIGH);
+    delay(3000);
+    //Set the fan to stop for 1s
+    digitalWrite(INA, LOW);
+    digitalWrite(INB, LOW);
+    delay(1000);
+    //Set the fan to rotate clockwise for 3s
+    digitalWrite(INA, HIGH);
+    digitalWrite(INB, LOW);
+    delay(3000);
+}
+```
+
+#### **(7)Test Results：**
+
+Upload code, wire up components and plug in power. The small fan will turn anticlockwise for 3000ms, stop for 1000ms, and clockwise for 300ms.
+
+#### **(8)Extension Practice:**
+
+We have understood the working principle of the flame sensor. Next, hook up a flame sensor in the circuit , as shown below. Then control the fan to blew out fire with the flame sensor.
+
+![Untitled Sketch 6.2](media/67463007499fe6b3f077b4bfbdce6cad.png)
+
+(<span style="color: rgb(255, 76, 65);">Note: </span>Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+
+```C
+/*
+Keyestudio Mini Tank Robot V3 (Popular Edition)
+lesson 21.2
+130 motor
+http://www.keyestudio.com
+*/
+
+int INA = 12;
+int INB = 13;
+int flame = A1; //Define the flame pin as analog pin A1
+int val = 0; //Define digital variables
+
+void setup() {
+    pinMode(INA, OUTPUT);//Set digital port INA as output
+    pinMode(INB, OUTPUT);//Set digital port INA as output
+    pinMode(flame, INPUT); //Define the buzzer as an input source
+}
+
+void loop() {
+    val = analogRead(flame); //Read the analog value of the flame sensor
+    if (val <= 700) { //When analog value≤700, LED is on
+        //Turn on the fan when flame is detected
+        digitalWrite(INA, LOW);
+        digitalWrite(INB, HIGH);
+    } else {
+        //Otherwise it stops operating
+        digitalWrite(INA, LOW);
+        digitalWrite(INB, LOW);
+    }
+}
+```
+
+###  Project 22: Fire Extinguishing Tank  
+
+![10](media/694677ab33053846ec588667dc40ecfa.jpeg)
+
+#### **(1)Description:**
+
+The line-tracking function of the smart tank has been explained in the previous project. And in this project we use the flame sensor to make a fire extinguishing robot. 
+
+When the car encounters flames, the motor of the fan will rotate to blow out the fire. Of course, we need to replace the ultrasonic sensor and two photoresistors with a fan module and flame sensors first. 
+
+The specific logic of the line-tracking smart car is shown in the table below:
+
+![image-20230427094001916](media/image-20230427094001916.png)
+
+#### **(2)Flow chart:**
+
+![img](media/wps12.png)
+
+#### **(3)Connection Diagram:**
+
+![Untitled Sketch 18_bb](media/c02e461ac7bdbab7fd14a19c453e08e4.png)
+
+#### **(4)Test Code:**
+
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+
+```C
+/*
+  Keyestudio Mini Tank Robot V3 (Popular Edition)
+  lesson 22
+  Fire extinguishing tank
+  http://www.keyestudio.com
+*/
+
+int flame_L = A1; //Define the flame interface on the left as the analog pin A1
+int flame_R = A2; //Define the flame interface on the right as the analog pin A2
+//The wiring of line tracking sensor
+#define L_pin  11  //left
+#define M_pin  7  //middle
+#define R_pin  8  //right
+//The pin of the servo 130
+int INA = 12;
+int INB = 13;
+#define ML_Ctrl 4  //Define the direction control pin of the left motor
+#define ML_PWM 6   //Define the PWM control pin of the left motor
+#define MR_Ctrl 2  //Define the direction control pin of the right motor
+#define MR_PWM 5   //Define the PWM control pin of the right motor
+int L_val, M_val, R_val, flame_valL, flame_valR;
+
+void setup()
+{
+  Serial.begin(9600);
+  //Set all pins of the line tracking sensor as input mode
+  pinMode(L_pin, INPUT);
+  pinMode(M_pin, INPUT);
+  pinMode(R_pin, INPUT);
+  //Define the flame as INPUT
+  pinMode(flame_L, INPUT);
+  pinMode(flame_R, INPUT);
+  //Define the motor as OUTPUT
+  pinMode(ML_Ctrl, OUTPUT);
+  pinMode(ML_PWM, OUTPUT);
+  pinMode(MR_Ctrl, OUTPUT);
+  pinMode(MR_PWM, OUTPUT);
+  pinMode(INA, OUTPUT);//Set digital port INA as OUTPUT
+  pinMode(INB, OUTPUT);//Set digital port INB as OUTPUT
+}
+
+void loop () {
+  //Read the analog value of the flame sensors
+  flame_valL = analogRead(flame_L);
+  flame_valR = analogRead(flame_R);
+  Serial.print(flame_valL);
+  Serial.print("  ");
+  Serial.print(flame_valR);
+  Serial.println("  ");
+//  delay(500);
+  if (flame_valL <= 700 || flame_valR <= 700) {
+    Car_Stop();
+    fan_begin();
+  } else {
+    fan_stop();
+    L_val = digitalRead(L_pin); //Read the value of the left sensor
+    M_val = digitalRead(M_pin); //Read the value of the middle sensor
+    R_val = digitalRead(R_pin); //Read the value of the right sensor
+    
+    if (M_val == 1) { //the middle one detects black lines
+      if (L_val == 1 && R_val == 0) { //If a black line is detected on the left, but not on the right, turn left
+        Car_left();
+      }
+      else if (L_val == 0 && R_val == 1) { //If a black line is detected on the right, not on the left, turn right
+        Car_right();
+      }
+      else { //otherwise, go front
+        Car_front();
+      }
+    }
+    else { //The middle one doesn't detect black lines
+      if (L_val == 1 && R_val == 0) { //If a black line is detected on the left, but not on the right, turn left
+        Car_left();
+      }
+      else if (L_val == 0 && R_val == 1) { //If a black line is detected on the right, not on the left, turn right
+        Car_right();
+      }
+      else { //otherwise, stop
+        Car_Stop();
+      }
+    }
+  }
+}
+
+void fan_stop() {
+  //stop rotating
+  digitalWrite(INA, LOW);
+  digitalWrite(INB, LOW);
+}
+
+void fan_begin() {
+  //fan rotates
+  digitalWrite(INA, LOW);
+  digitalWrite(INB, HIGH);
+}
+
+void Car_front()
+{
+  digitalWrite(MR_Ctrl, HIGH);
+  analogWrite(MR_PWM, 150);
+  digitalWrite(ML_Ctrl, HIGH);
+  analogWrite(ML_PWM, 150);
+}
+void Car_back()
+{
+  digitalWrite(MR_Ctrl, LOW);
+  analogWrite(MR_PWM, 100);
+  digitalWrite(ML_Ctrl, LOW);
+  analogWrite(ML_PWM, 100);
+}
+void Car_left()
+{
+  digitalWrite(MR_Ctrl, HIGH);
+  analogWrite(MR_PWM, 150);
+  digitalWrite(ML_Ctrl, LOW);
+  analogWrite(ML_PWM, 100);
+}
+void Car_right()
+{
+  digitalWrite(MR_Ctrl, LOW);
+  analogWrite(MR_PWM, 100);
+  digitalWrite(ML_Ctrl, HIGH);
+  analogWrite(ML_PWM, 150);
+}
+void Car_Stop()
+{
+  digitalWrite(MR_Ctrl, LOW);
+  analogWrite(MR_PWM, 100);
+  digitalWrite(ML_Ctrl, LOW);
+  analogWrite(ML_PWM, 100);
+  
+  digitalWrite(MR_Ctrl, LOW);
+  analogWrite(MR_PWM, 0);
+  digitalWrite(ML_Ctrl, LOW);
+  analogWrite(ML_PWM, 0);
+}
+```
+
+#### **(5)Test Result:**
+
+After uploading the test code successfully and powering it up, the smart car puts out the fire when it detects flame and continues moving along the black line.
+
+
+###  Project 23: Fire Extinguishing Robot Multiple Functions
+
+![KS0555-12](media/13656cfee75dc5acbeba18a90a084e159.jpg)
+
+#### **(1)Description:**
+
+The smart car has performed a single function in every previous project. 
+
+Can it display multiply functions at a time ? Positive. 
+
+In this last big project, we intend to use a complete code to control the smart car to show off all functions mentioned in previous projects. We use the keys on the Bluetooth APP to automatically switch various functions, quite simple and convenient.
+
+#### **(2)Flow Diagram:**
+
+![image-20230427102547633](media/image-20230427102547633.png)
+
+#### **(3)Connection Diagram:**
+
+![Untitled Sketch 21_bb](media/e7ac834ba04aa2e8862995d2d33ce9356.jpg)
+
+1\. GND, VCC, SDA and SCL of the 8x16 board are connected to G（GND), +（VCC), A4 and A5 of the expansion board.
+
+2\. VCC, IN+, IN- and Gnd of the ultrasonic sensor are connected to 5V(V), 12(S), 13(S) and Gnd(G)
+
+3\. The brown wire, red wire and orange wire of the servo are connected to Gnd(G), 5v(V) and D10.
+
+4\. RXD, TXD, GND and VCC of the BT module are connected to TX, RX, G（GND) and 5V（VCC）. STATE and BRK don’t need to be interfaced.
+
+5\. The pin "G", "V" and S of the left Flame sensors are connected to G (GND), V (VCC), A1 respectively; The right Flame sensors is connected to the G (GND), V (VCC), and A2 respectively.
+
+6\. The distal port of the line tracking sensor is 11, 7 and 8
+
+#### **(4)Test Code:**
+
+(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+
+```C
+/*
+  Keyestudio Mini Tank Robot V3 (Popular Edition)
+  lesson 23
+  Fire Extinguishing Robot Multiple Functions
+  http://www.keyestudio.com
+*/
+#include <IRremote.h>
+IRrecv irrecv(3);  //
+decode_results results;
+long ir_rec;  //used to save the IR value 
+
+/***********/
+#define USE_FAN_FUNCTION   1
+
+//Array, used to save data of images, can be calculated by yourself or gotten from modulus tool
+unsigned char start01[] = {0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80, 0x80, 0x40, 0x20, 0x10, 0x08, 0x04, 0x02, 0x01};
+unsigned char STOP01[] = {0x2E, 0x2A, 0x3A, 0x00, 0x02, 0x3E, 0x02, 0x00, 0x3E, 0x22, 0x3E, 0x00, 0x3E, 0x0A, 0x0E, 0x00};
+unsigned char front[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x24, 0x12, 0x09, 0x12, 0x24, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+unsigned char back[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x24, 0x48, 0x90, 0x48, 0x24, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+unsigned char left[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x44, 0x28, 0x10, 0x44, 0x28, 0x10, 0x44, 0x28, 0x10, 0x00};
+unsigned char right[] = {0x00, 0x10, 0x28, 0x44, 0x10, 0x28, 0x44, 0x10, 0x28, 0x44, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+
+unsigned char Smile[] = {0x00, 0x00, 0x1c, 0x02, 0x02, 0x02, 0x5c, 0x40, 0x40, 0x5c, 0x02, 0x02, 0x02, 0x1c, 0x00, 0x00};
+unsigned char Disgust[] = {0x00, 0x00, 0x02, 0x02, 0x02, 0x12, 0x08, 0x04, 0x08, 0x12, 0x22, 0x02, 0x02, 0x00, 0x00, 0x00};
+unsigned char Happy[] = {0x02, 0x02, 0x02, 0x02, 0x08, 0x18, 0x28, 0x48, 0x28, 0x18, 0x08, 0x02, 0x02, 0x02, 0x02, 0x00};
+unsigned char Squint[] = {0x00, 0x00, 0x00, 0x41, 0x22, 0x14, 0x48, 0x40, 0x40, 0x48, 0x14, 0x22, 0x41, 0x00, 0x00, 0x00};
+unsigned char Despise[] = {0x00, 0x00, 0x06, 0x04, 0x04, 0x04, 0x24, 0x20, 0x20, 0x26, 0x04, 0x04, 0x04, 0x04, 0x00, 0x00};
+unsigned char Heart[] = {0x00, 0x00, 0x0C, 0x1E, 0x3F, 0x7F, 0xFE, 0xFC, 0xFE, 0x7F, 0x3F, 0x1E, 0x0C, 0x00, 0x00, 0x00};
+
+unsigned char clear[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+
+#define SCL_Pin  A5  //set the pin of clock to A5
+#define SDA_Pin  A4  //set the data pin to A4
+
+#define ML_Ctrl 4  //define the direction control pin of the left motor as 4
+#define ML_PWM 6   //define the PWM control pin of the left motor 
+#define MR_Ctrl 2  //define the direction control pin of the right sensor
+#define MR_PWM 5   //define the PWM control pin of the right motor 
+char ble_val;      //used to save the Bluetooth value
+byte speeds_L = 200; //the initial speed of the left motor is 200
+byte speeds_R = 200; //the initial speed of the right motor is 200
+String speeds_l, speeds_r; //receive PWM characters and convert them into PWM value
+
+//wire up the line tracking sensor
+#define L_pin  11  //left
+#define M_pin  7  //middle
+#define R_pin  8  //right
+int L_val, M_val, R_val;
+
+#if USE_FAN_FUNCTION  /****use fan*******/
+int flame_L = A1; //define the analog port of the left flame sensor to A1
+int flame_R = A2; //define the analog port of the right flame sensor to A2
+int flame_valL, flame_valR;
+
+//the pin of 130 motor
+int INA = 12;
+int INB = 13;
+
+#else /****use the ultrasonic sensor*******/
+#define servoPin    10  //servo Pin
+#define light_L_Pin A1   //define the pin of the left photoresistor
+#define light_R_Pin A2   //define the pin of the right photoresistor
+int left_light;
+int right_light;
+
+#define Trig 12
+#define Echo 13
+float distance;//Store the distance values detected by ultrasonic for following
+
+//Store the distance values detected by ultrasonic for obstacle avoidance
+int a;
+int a1;
+int a2;
+
+#endif
+
+bool flag;  //flag invariable, used to enter and exit a mode
+
+void setup() {
+  Serial.begin(9600);
+  irrecv.enableIRIn();  //Initialize the library of the IR remote
+
+  pinMode(SCL_Pin, OUTPUT);
+  pinMode(SDA_Pin, OUTPUT);
+  
+  pinMode(ML_Ctrl, OUTPUT);
+  pinMode(ML_PWM, OUTPUT);
+  pinMode(MR_Ctrl, OUTPUT);
+  pinMode(MR_PWM, OUTPUT);
+
+  pinMode(L_pin, INPUT); //define the pins of sensors to INPUT
+  pinMode(M_pin, INPUT);
+  pinMode(R_pin, INPUT);
+
+  matrix_display(clear);    //clear screen
+  matrix_display(start01);  //show start
+
+#if USE_FAN_FUNCTION/****use the fan*******/
+  pinMode(INA, OUTPUT);//set INA to OUTPUT
+  pinMode(INB, OUTPUT);//set INB to OUTPUT
+
+  //define inputs of the flame sensor
+  pinMode(flame_L, INPUT);
+  pinMode(flame_R, INPUT);
+#else/****use the ultrasonic sensor*******/
+  pinMode(servoPin, OUTPUT);
+  pinMode(light_L_Pin, INPUT);
+  pinMode(light_R_Pin, INPUT);
+
+  pinMode(Trig, OUTPUT);
+  pinMode(Echo, INPUT);
+  procedure(90); //set the angle of the servo to 90°
+#endif
+}
+
+void loop() {
+  if (Serial.available()) //if there is data in the serial buffer
+  {
+    ble_val = Serial.read();
+    Serial.println(ble_val);
+    switch (ble_val) {
+      case 'F': Car_front(); break; //the command to go front
+
+      case 'B': Car_back(); break;  //the command to go back
+
+      case 'L': Car_left(); break;  //the command to turn left
+
+      case 'R': Car_right(); break; //the command to turn right
+
+      case 'S': Car_Stop();  break; //stop
+
+      case 'e': Tracking();  break; //enter the line tracking mode
+
+      case 'f': Confinement(); break;  //enter the confinement mode
+
+#if USE_FAN_FUNCTION/****use fan*******/
+      case 'j': Fire(); break;  //enable extinguishing fire mode
+
+      case 'c': fan_begin(); break;  //enable the fan
+
+      case 'd': fan_stop();  break;  //turn off the fan
+
+#else/****use the ultrasonic sensor*******/
+      case 'g': Avoid(); break;  //enter obstacle avoidance mode
+
+      case 'h': Follow(); break;  //enter light following mode
+
+      case 'i': Light_following();  break;  //enter light following mode
+#endif
+      case 'u': 
+        speeds_l = Serial.readStringUntil('#'); 
+        speeds_L = String(speeds_l).toInt(); 
+        break; //start by receiving u, end by receiving characters # and convert into the integer
+
+      case 'v': 
+        speeds_r = Serial.readStringUntil('#');
+        speeds_R = String(speeds_r).toInt(); 
+        break; //start by receiving u, end by receiving characters # and convert into the integer
+
+      case 'k': matrix_display(Smile);    break;  //show "smile" face
+      case 'l': matrix_display(Disgust);  break;  //show "disgust" face
+      case 'm': matrix_display(Happy);    break;  //show "happy" face
+      case 'n': matrix_display(Squint);   break;  //show "Sad" face
+      case 'o': matrix_display(Despise);  break;  //show "despise" face
+      case 'p': matrix_display(Heart);    break;  //show the hearbeat image
+      case 'z': matrix_display(clear);    break;  //clear images
+
+      default: break;
+    }
+  }
+
+#if (USE_FAN_FUNCTION != 1)/****the function to not use the fan*******/
+  //The following three signals are mainly used for cyclic printing
+  if (ble_val == 'x') {
+    distance = checkdistance(); Serial.println(distance);
+    delay(50);
+  } else if (ble_val == 'w') {
+    left_light = analogRead(light_L_Pin);
+    Serial.println(left_light);
+    delay(50);
+  } else if (ble_val == 'y') {
+    right_light = analogRead(light_R_Pin);
+    Serial.println(right_light);
+    delay(50);
+  }
+#endif
+
+  if (irrecv.decode(&results)) { //Receive infrared remote control value
+    ir_rec = results.value;
+    Serial.println(ir_rec, HEX);
+    switch (ir_rec) {
+      case 0xFF629D: Car_front();   break;   //go front
+      case 0xFFA857: Car_back();    break;   //go back
+      case 0xFF22DD: Car_left();    break;   //rotate to left
+      case 0xFFC23D: Car_right();   break;   //rotate to right
+      case 0xFF02FD: Car_Stop();    break;   //stop
+      default: break;
+    }
+    irrecv.resume();
+  }
+}
+
+#if (USE_FAN_FUNCTION != 1)/****use the ultrasonic sensor*******/
+
+//Control the ultrasonic sensor
+float checkdistance() {
+  float distance;
+  digitalWrite(Trig, LOW);
+  delayMicroseconds(2);
+  digitalWrite(Trig, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(Trig, LOW);
+  distance = pulseIn(Echo, HIGH) / 58.20;  //
+  delay(10);
+  return distance;
+}
+
+
+//the function to control the servo
+void procedure(int myangle) {
+  int pulsewidth;
+  pulsewidth = map(myangle, 0, 180, 500, 2000);  //Calculate the pulse width value, which should be the mapping value from 500 to 2500. Considering the influence of the infrared library, 500~2000 is used here.
+  for (int i = 0; i < 5; i++) {
+    digitalWrite(servoPin, HIGH);
+    delayMicroseconds(pulsewidth);   //The duration of the high level is the pulse width
+    digitalWrite(servoPin, LOW);
+    delay((20 - pulsewidth / 1000));  //The period is 20ms, so the low level lasts the rest of the time
+  }
+}
+
+/*****************obstacle avoidance******************/
+void Avoid()
+{
+  flag = 0;
+  while (flag == 0)
+  {
+    a = checkdistance();  //the front distance is set to a
+    if (a < 20) {//When the distance in front is less than 20cm
+      Car_Stop();  //stop
+      delay(500); //delay in 500ms
+      procedure(180);  //servo turns left
+      delay(500); //delay in 500ms
+      a1 = checkdistance();  //the left distance is set to a1
+      delay(100); //read value
+
+      procedure(0); //servo turns right
+      delay(500); //delay in 500ms
+      a2 = checkdistance(); ///the right distance is set to a2
+      delay(100); //read value
+
+      procedure(90);  //back to 90°
+      delay(500);
+      if (a1 > a2) { //When the distance on the left is greater than the distance on the right
+        Car_left();  //the robot turns left
+        delay(700);  //turn left 700ms
+      } else {
+        Car_right(); //turn right
+        delay(700);
+      }
+    }
+    else { //if the front distance ≥20cm，robot goes front
+      Car_front(); //go front
+    }
+    //receive the Bluetooth value to exit the loop
+    if (Serial.available())
+    {
+      ble_val = Serial.read();
+      if (ble_val == 'S')  //receive S
+      {
+        flag = 1;  //Set flag to 1 to exit the loop
+        Car_Stop();
+      }
+    }
+  }
+}
+
+/*******************following***************/
+void Follow() {
+  flag = 0;
+  while (flag == 0) {
+    distance = checkdistance();  //set the distance value to distance
+    if (distance >= 20 && distance <= 60) //go front
+    {
+      Car_front();
+    }
+    else if (distance > 10 && distance < 20)  // stop
+    {
+      Car_Stop();
+    }
+    else if (distance <= 10)  //go back
+    {
+      Car_back();
+    }
+    else  //stop
+    {
+      Car_Stop();
+    }
+    if (Serial.available())
+    {
+      ble_val = Serial.read();
+      if (ble_val == 'S')
+      {
+        flag = 1;  //exit the loop
+        Car_Stop();
+      }
+    }
+  }
+}
+
+/****************light following******************/
+void Light_following() {
+  flag = 0;
+  while (flag == 0) {
+    left_light = analogRead(light_L_Pin);
+    right_light = analogRead(light_R_Pin);
+    if (left_light > 650 && right_light > 650) //go forward
+    {
+      Car_front();
+    }
+    else if (left_light > 650 && right_light <= 650)  //turn left
+    {
+      Car_left();
+    }
+    else if (left_light <= 650 && right_light > 650) //turn right
+    {
+      Car_right();
+    }
+    else  //or else, stop
+    {
+      Car_Stop();
+    }
+    if (Serial.available())
+    {
+      ble_val = Serial.read();
+      if (ble_val == 'S') {
+        flag = 1;
+        Car_Stop();
+      }
+    }
+  }
+}
+
+#else/****use the fan*******/
+/***************enable the fan*****************/
+void fan_begin() {
+  digitalWrite(INA, LOW);
+  digitalWrite(INB, HIGH);
+}
+
+/***************stop fanning*****************/
+void fan_stop() {
+  digitalWrite(INA, LOW);
+  digitalWrite(INB, LOW);
+}
+
+/***************extinguish fire****************/
+void Fire() {
+  flag = 0;
+  while (flag == 0) {
+    //Read the analog value of the flame sensor
+    flame_valL = analogRead(flame_L);
+    flame_valR = analogRead(flame_R);
+    if (flame_valL <= 700 || flame_valR <= 700) {
+      Car_Stop();
+      fan_begin();
+    } else {
+      fan_stop();
+      L_val = digitalRead(L_pin); //Read the value of the left sensor
+      M_val = digitalRead(M_pin); //Read the value of the left sensor
+      R_val = digitalRead(R_pin); //Read the value of the right sensor
+
+      if (M_val == 1) { //the middle one detects black lines
+        if (L_val == 1 && R_val == 0) { //If a black line is detected on the left, but not on the right, turn left
+          Car_left();
+        }
+        else if (L_val == 0 && R_val == 1) { //If a black line is detected on the right, not on the left, turn right
+          Car_right();
+        }
+        else { //go front
+          Car_front();
+        }
+      }
+      else { //the middle one detects black lines
+        if (L_val == 1 && R_val == 0) { //If a black line is detected on the left, but not on the right, turn left
+          Car_left();
+        }
+        else if (L_val == 0 && R_val == 1) { //If a black line is detected on the right, not on the left, turn right
+          Car_right();
+        }
+        else { //otherwise stop
+          Car_Stop();
+        }
+      }
+    }
+    if (Serial.available())
+    {
+      ble_val = Serial.read();
+      if (ble_val == 'S') {
+        flag = 1;
+        Car_Stop();
+      }
+    }
+  }
+}
+
+#endif
+
+/***************line tracking*****************/
+void Tracking() {
+  flag = 0;
+  while (flag == 0) {
+    L_val = digitalRead(L_pin); //Read the value of the left sensor
+    M_val = digitalRead(M_pin); //Read the value of the intermediate sensor
+    R_val = digitalRead(R_pin); //Read the value of the sensor on the right
+    if (M_val == 1) { //the middle one detects black lines
+      if (L_val == 1 && R_val == 0) { //If a black line is detected on the left, but not on the right, turn left
+        Car_left();
+      }
+      else if (L_val == 0 && R_val == 1) { //If a black line is detected on the right, not on the left, turn right
+        Car_right();
+      }
+      else { //go front
+        Car_front();
+      }
+    }
+    else { //the middle sensor doesn’t detect black lines
+      if (L_val == 1 && R_val == 0) { //If a black line is detected on the left, but not on the right, turn left
+        Car_left();
+      }
+      else if (L_val == 0 && R_val == 1) { //If a black line is detected on the right, not on the left, turn right
+        Car_right();
+      }
+      else { //otherwise stop
+        Car_Stop();
+      }
+    }
+    if (Serial.available())
+    {
+      ble_val = Serial.read();
+      if (ble_val == 'S') {
+        flag = 1;
+        Car_Stop();
+      }
+    }
+  }
+}
+
+/***************Confinement*****************/
+void Confinement() {
+  flag = 0;
+  while (flag == 0) {
+    L_val = digitalRead(L_pin); //Read the value of the left sensor
+    M_val = digitalRead(M_pin); //Read the value of the intermediate sensor
+    R_val = digitalRead(R_pin); //Read the value of the sensor on the right
+    if ( L_val == 0 && M_val == 0 && R_val == 0 ) { //Go front when no black lines are detected      Car_front();
+    }
+    else { //
+      Car_back();
+      delay(700);
+      Car_left();
+      delay(800);
+    }
+    if (Serial.available())
+    {
+      ble_val = Serial.read();
+      if (ble_val == 'S') {
+        flag = 1;
+        Car_Stop();
+      }
+    }
+  }
+}
+
+
+/***************dot matrix******************/
+//this function is used for the display of dot matrix 
+void matrix_display(unsigned char matrix_value[])
+{
+  IIC_start();  //use the function to start transmitting data
+  IIC_send(0xc0);  //select an address
+  for (int i = 0; i < 16; i++) //image data have 16 characters
+  {
+    IIC_send(matrix_value[i]); //data to transmit pictures
+  }
+  IIC_end();   //end the data transmission of pictures
+  IIC_start();
+  IIC_send(0x8A);  //show control and select pulse width 4/16
+  IIC_end();
+}
+
+//the condition that data starts transmitting
+void IIC_start()
+{
+  digitalWrite(SDA_Pin, HIGH);
+  digitalWrite(SCL_Pin, HIGH);
+  delayMicroseconds(3);
+  digitalWrite(SDA_Pin, LOW);
+  delayMicroseconds(3);
+  digitalWrite(SCL_Pin, LOW);
+}
+
+//transmit data
+void IIC_send(unsigned char send_data)
+{
+  for (byte mask = 0x01; mask != 0; mask <<= 1) //each character has 8 digits, which is detected one by one
+  {
+    if (send_data & mask) { //set high or low levels in light of each bit(0 or 1)
+      digitalWrite(SDA_Pin, HIGH);
+    } else {
+      digitalWrite(SDA_Pin, LOW);
+    }
+    delayMicroseconds(3);
+    digitalWrite(SCL_Pin, HIGH); //pull up the clock pin SCL_Pin to end the transmission of data
+    delayMicroseconds(3);
+    digitalWrite(SCL_Pin, LOW); //pull down the clock pin SCL_Pin to change signals of SDA 
+  }
+}
+
+//the sign that transmission of data ends
+void IIC_end()
+{
+  digitalWrite(SCL_Pin, LOW);
+  digitalWrite(SDA_Pin, LOW);
+  delayMicroseconds(3);
+  digitalWrite(SCL_Pin, HIGH);
+  delayMicroseconds(3);
+  digitalWrite(SDA_Pin, HIGH);
+  delayMicroseconds(3);
+}
+
+/***************motor runs****************/
+void Car_back() {
+  digitalWrite(MR_Ctrl, LOW);
+  analogWrite(MR_PWM, speeds_R);
+  digitalWrite(ML_Ctrl, LOW);
+  analogWrite(ML_PWM, speeds_L);
+  matrix_display(back);  //show the image of going back
+}
+
+void Car_front() {
+  digitalWrite(MR_Ctrl, HIGH);
+  analogWrite(MR_PWM, 255 - speeds_R);
+  digitalWrite(ML_Ctrl, HIGH);
+  analogWrite(ML_PWM, 255 - speeds_L);
+  matrix_display(front);  //show the image of going front
+}
+
+void Car_left() {
+  digitalWrite(MR_Ctrl, HIGH);
+  analogWrite(MR_PWM, 255 - speeds_R);
+  digitalWrite(ML_Ctrl, LOW);
+  analogWrite(ML_PWM, speeds_L);
+  matrix_display(left);  //show the image of turning left
+}
+
+void Car_right() {
+  digitalWrite(MR_Ctrl, LOW);
+  analogWrite(MR_PWM, speeds_R);
+  digitalWrite(ML_Ctrl, HIGH);
+  analogWrite(ML_PWM, 255 - speeds_L);
+  matrix_display(right);  //show the image of turning right
+}
+
+void Car_Stop() {
+  digitalWrite(MR_Ctrl, LOW);
+  analogWrite(MR_PWM, 0);
+  digitalWrite(ML_Ctrl, LOW);
+  analogWrite(ML_PWM, 0);
+  matrix_display(STOP01);  //show the stop image
+}
+```
+
+#### (5)Test Result
+
+Before uploading the program code, the Bluetooth module needs to be removed, otherwise the code upload will fail.
+
+After uploading the code successfully, open the positioning, and then connect the Bluetooth module.
+
+After uploading the code successfully, plug in the Bluetooth module, after power-on, after the mobile APP is connected to the Bluetooth successfully, we can use the mobile APP to control the tank robot
+
+You can also control the robot with the remote control
+
+Some modules work through an IO port. If you need to use the fan module and the flame sensor, you need to \#define USE_FAN_FUNCTION 0 into \#define USE_FAN_FUNCTION 1 .
 
 

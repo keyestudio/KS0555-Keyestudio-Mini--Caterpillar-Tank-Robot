@@ -5,9 +5,7 @@
 
 
    home.md
-   assemble.md
-   arduino/arduino.md
-   kidsblock/kidsblock.md
+
 
 
 
