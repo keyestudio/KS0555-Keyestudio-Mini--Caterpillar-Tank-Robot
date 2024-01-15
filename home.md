@@ -110,8 +110,20 @@ It is really the best choice for you.
 
 ## 6. Tutorial
 
-* [arduino](arduino/arduino.md)
-
-* [kidsblock](kidsblock/kidsblock.md)
-
 * [libraries_and_codes](libraries_and_codes.zip)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
