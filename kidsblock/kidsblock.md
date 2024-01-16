@@ -1714,18 +1714,7 @@ The main interface of the Bluetooth app is shown in the figure below.
 
 ![Img](./media/img-20240111144859.png)
 
-After the code above is successfully uploaded to the development board, then plug in the Bluetooth module, and then connected the mobile phone to the Bluetooth module.
-
-After the mobile phone is successfully connected to the Bluetooth module, click to open the Bluetooth APP and click the <span style="color: rgb(0, 252, 255);">Select</span> button on the <span style="color: rgb(0, 252, 255);">homepage</span>.
-
-![Img](./media/img-20240111144744.png)
-
-The main interface of the Bluetooth app is shown in the figure below.
-
-![Img](./media/img-20240111144859.png)
-
-After the code above is successfully uploaded, open the serial monitor of the arduino IDE and set the baud rate to 9600. Click the icon on the APP interface and the serial monitor will display command sent by button. Click ![Img](./media/img-20240111171312.png)and set the baud rate to 9600. Click the icon on the APP interface and the serial monitor will display command sent by button.
-
+Click ![Img](./media/img-20240111171312.png)and set the baud rate to 9600. Click the icon on the APP interface and the serial monitor will display command sent by button.
 
 ![](media/f5004f5334fb4885ac0096f99e4133f9.png)
 

@@ -358,6 +358,8 @@ Upload the program, LED blinks at the interval of 1s.
 
 We have succeeded in blinking LED. Next, let’s observe what will happen to the LED if we modify pins and delay time.
 
+**Test Code**
+
 (Note: Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
 ```C
@@ -530,6 +532,8 @@ It plays a vital role in controlling smart robot cars. I believe that you cannot
 
 Let’s modify the value of delay and remain the pin unchanged, then observe how LED changes.
 
+**Test Code**
+
 (<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
 ```C
@@ -662,6 +666,8 @@ We know the value of the photoresistor. How about controlling the LED’s bright
 ![Untitled Sketch 3.2](media/88a89f7996fb7f7d037315e57e8bcd33.png)
 
 The LED’s brightness is controlled by PWM. Therefore, we connect the LED to PMW pin(pin 9) of the shield.
+
+**Test Code**
 
 (<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
@@ -800,8 +806,8 @@ void loop (){
 Upload the code on development board, open serial monitor to check line tracking sensors. And the displayed value is 1(high level) when no signals are received. The value shifts into 0 when the sensor is covered with paper.
 
 ![](media/b9319753c148f66aabc9bf648ed93da1.png)
-**
-#### (7)Code Explanation:**
+
+#### **(7)Code Explanation:**
 
 **Serial.begin(9600)**- Initialize serial port, set baud rate to 9600
 
@@ -1174,6 +1180,8 @@ We have just measured the distance displayed by the ultrasonic. How about contro
 
 ![Untitled Sketch 8.2](media/291ac1db0f38418772d11bb1786b7314.png)
 
+**Test Code**
+
 (<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
 ```C
@@ -1334,6 +1342,8 @@ We decoded the key value of IR remote control. How about controlling LED by the 
 Attach an LED to D9, then press the keys of remote control to make LED light on and off.
 
 ![Untitled Sketch 9.2](media/e05da7ef9e7b6f63f414f2ca7e3f4ee3.png)
+
+**Test Code**
 
 (<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
@@ -1535,6 +1545,8 @@ The speed adjustment of the motor is realized by PWM, and the pin that controls 
 #### **(9)Expansion Project:**
 
 We adjust the speed of motors by controlling PWM and the wiring remains the same.
+
+**Test Code**
 
 (<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
@@ -1827,6 +1839,9 @@ We use the modulus tool we just learned, [http://dotmatrixtool.com/#](http://dot
 **Code to clear screen：**
 
 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00
+
+**Test Code**
+
 
 (<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
@@ -2912,7 +2927,7 @@ In order to adjust with the time and reality and need the needs of customers, Bl
 ![Untitled Sketch 10.1](media/63b96e5b26ee18337fb6e0dced5bbbe3.png)
 
 
-#### **(5)Download APP:**
+#### **(5)Download and install APP:**
 
 ##### **For IOS system**
 
@@ -3055,6 +3070,8 @@ This function is generally used to determine whether there is data in this area.
 Here we use the command sent by the mobile phone to turn on or off an LED light. Looking at the wiring diagram, an LED is connected to the D9 pin,
 
 ![Untitled Sketch 10.2](media/549c10efcf47f29f8f6355d8cd0497cc.png)
+
+**Test Code**
 
 (<span style="color: rgb(255, 76, 65);">Note: </span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
@@ -4157,8 +4174,6 @@ After uploading the code successfully, plug in the Bluetooth module, after power
 
 You can also control the robot with the remote control
 
-Some modules work through an IO port. If you need to use the fan module and the flame sensor, you need to \#define USE_FAN_FUNCTION 0 into \#define USE_FAN_FUNCTION 1 .
-
 
 ## 4. Assemble Fire Extinguishing Robot
 
@@ -4310,6 +4325,8 @@ Adjust the potentiometer on the module to maintain D1 at the critical point. Whe
 Next, connect an LED to pin 9 and we can control it by a flame sensor, as shown below;
 
 ![Untitled Sketch 5.2](media/814c315d3bb44278b476a754d3681227.png)
+
+**Test Code**
 
 (<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
 
@@ -5257,6 +5274,5 @@ After uploading the code successfully, plug in the Bluetooth module, after power
 
 You can also control the robot with the remote control
 
-Some modules work through an IO port. If you need to use the fan module and the flame sensor, you need to \#define USE_FAN_FUNCTION 0 into \#define USE_FAN_FUNCTION 1 .
 
 

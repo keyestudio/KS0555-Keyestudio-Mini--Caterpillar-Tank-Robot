@@ -5,9 +5,7 @@
 
 ## 1. Download Resource
 
-Download libraries, app and other documents in the link:
-
-[https://fs.keyestudio.com/KS0555](https://fs.keyestudio.com/KS0555)
+Download libraries and codes: [libraries_and_codes](libraries_and_codes.zip)
 
 ## 2. Introduction
 
@@ -75,7 +73,7 @@ It is really the best choice for you.
 | 10   |       ![4](media/9b0193c19a5a7392052adffdfc4e10c2.png)       |                        Photoresistor                         | 2    |
 | 11   |       ![4](media/2d8e4747f80f8134999a16c9aa0dabb7.png)       |              Acrylic Board for 8\*16 LED Panel               | 1    |
 | 12   |       ![](media/704f390bd65080844e77b498d37784f7.jpeg)       |                      Top Acrylic Board                       | 1    |
-| 13   | ![5](media/ca1240b60ad08bfd5e1dacd3d7dc0f1f.png)![2](media/82e72b8a1e3d2c0eebfa0e96e4b66b83.png) |                        Acrylic Board                         | 1    |
+| 13   | ![Img](./media/img-20240115093710.png) |                        Acrylic Board                         | 1    |
 | 14   |      ![11](media/4bcc6cd652f8101c6a4680b40e40e593.png)       | Keyestudio JMFP-4 17-Key Remote Control (Batteries in KS0555F) | 1    |
 | 15   |       ![](media/e686213ffb2aa53d9960f9f6d1b600cd.png)        |                  Keyestudio 9G 180 ° Servo                   | 1    |
 | 16   |       ![](media/4f8d5af6dee9016b45d975adb2391d37.png)        |                          USB Cable                           | 1    |
@@ -107,23 +105,4 @@ It is really the best choice for you.
 | 42   |       ![](media/64e5f57bd9efb46d1ea5c663e195bbbd.png)        |                      4265c Technic Bush                      | 11   |
 | 43   |       ![](media/2e07431f04b6c1e9543918f86ee695a4.png)        |                       Blue Jumper Cap                        | 4    |
 | 44   |       ![](media/a0aca71a25a9c5152b99c0911e6f5221.png)        |                        Red Jumper Cap                        | 4    |
-
-## 6. Tutorial
-
-* [libraries_and_codes](libraries_and_codes.zip)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
