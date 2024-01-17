@@ -5,7 +5,11 @@
 
 ## 1. Download Resource
 
-Download libraries and codes: [libraries_and_codes](libraries_and_codes.zip)
+Download libraries and codes: 
+
+* [libraries_and_codes](libraries_and_codes.zip)
+
+* [Preparation_and_Troubleshooting](Preparation_and_Troubleshooting.zip)
 
 ## 2. Introduction
 
