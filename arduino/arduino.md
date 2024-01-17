@@ -40,9 +40,12 @@ We can power it with a USB cable, the external DC power jack
 
 ![](media/ide.png)
 
-<span style="color: rgb(255, 76, 65);">**Click the link to start learning how to download software, install drivers, upload code, and install library files.**</span>
+<span style="color: rgb(255, 76, 65);"><span style="color: rgb(255, 76, 65); font-size: 24px;">Note: Click the link to start learning how to download software, install drivers, upload code, and install library files.</span></span>
 
-**[https://getting-started-with-arduino.readthedocs.io](https://getting-started-with-arduino.readthedocs.io/en/latest/Arduino%20IDE%20Tutorial.html)**
+<br>
+<br>
+
+[https://getting-started-with-arduino.readthedocs.io](https://getting-started-with-arduino.readthedocs.io/en/latest/Arduino%20IDE%20Tutorial.html)
 
 ## 2. Assemble Ultrasonic Tank Robot
 
@@ -52,9 +55,17 @@ We can power it with a USB cable, the external DC power jack
 
  **Step1**
 
+Tools needed:
+
+![Img](./media/img-20240117152734.png)
+
 ![img](./media/wps115.jpg)
 
 ![img](./media/wps116.jpg)
+
+<span style="color: rgb(255, 76, 65); font-size: 16px;">Pay attention to the installation direction of the wheels. The thick side is on the outside.</span>
+
+![Img](./media/img-20240117153020.png)
 
 ![image-20230525092859344](./media/image-20230525092859344.png)
 
@@ -259,10 +270,12 @@ Wire up the servo(D10)
 
 <span style="color: rgb(255, 76, 65);">**We adopt a model 18650 lithium battery with a pointed positive pole, whose power and capacity are not required.**</span>
 
+![Img](./media/img-20240117152548.jpg)
+
 ------
 
 
-## 3. Projects 1
+## 3. Projects
 
 In this section, we will start from a single sensor to complex experiments to introduce you how the tank robot works
 
@@ -4228,7 +4241,9 @@ You can also control the robot with the remote control
 
 ![KS0555-12](media/13656cfee75dc5acbeba18a90a084e15.jpeg)
 
-## 4. Assemble Fire Extinguishing Robot
+## 4. Experiment Extension
+
+### Assemble Fire Extinguishing Robot
 
 Remove the ultrasonic sensor and two photoresistors
 
@@ -4275,10 +4290,11 @@ Wire up the fan module
 
  **We adopt a model 18650 lithium battery with a pointed positive pole, whose power and capacity are not required.**
 
+![Img](./media/img-20240117152607.jpg)
+
+
 ------
 
-
-## 5. Projects 2
 
 ###  Project 20: Flame Sensor
 

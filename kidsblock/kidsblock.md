@@ -4,15 +4,20 @@
 
 ### **1. Instruction:**
 
-The Kidsblock, based on the Scratch graphical programming software, integrates multiple mainstream mainboards, sensors as well as modules. It can be programmed by dragging graphical blocks and using the C/C++ programming language, making programming easy and interesting for children to learn.
+The Kidsblock, based on the Scratch graphical programming software, integrates multiple mainstream mainboards, sensors as well as modules. It can be programmed by dragging kidsBlock graphical blocks and using the C/C++ programming language, making programming easy and interesting for children to learn.
 
 ### **2. Download and install KidsBlock software:**
 
-<span style="color: rgb(0, 209, 0);">**Please refer to the link to install and use the KidsBlock software.：** </span>https://kidsblocksite.readthedocs.io/en/latest/
+<span style="color: rgb(0, 209, 0);"><span style="color: rgb(255, 76, 65); font-size: 20px;">Please refer to the link to install and use the KidsBlock software：</span></span> 
 
 <br>
 <br>
-<span style="color: rgb(255, 76, 65);">**Note:** The equipment used in this kit is the TankRobot. For importing the TankRobot, please refer to the following content.</span>
+
+[https://kidsblocksite.readthedocs.io/en/latest/](https://kidsblocksite.readthedocs.io/en/latest/)
+
+<br>
+<br>
+<span style="color: rgb(61, 167, 66); font-size: 16px;">**Note:** The equipment used in this kit is the TankRobot. For importing the TankRobot, please refer to the following content.</span>
 <br>
 <br>
 
@@ -61,9 +66,18 @@ Click![](media/db0135c23e5313dac75a33d7d2faa529.png), then click “**Connect**�
 
  **Step1**
 
+Tools needed:
+
+![Img](./media/img-20240117151325.png)
+
+
 ![img](./media/wps115.jpg)
 
 ![img](./media/wps116.jpg)
+
+<span style="color: rgb(255, 76, 65); font-size: 16px;">Pay attention to the installation direction of the wheels. The thick side is on the outside.</span>
+
+![Img](./media/img-20240117151424.png)
 
 ![image-20230525092859344](./media/image-20230525092859344.png)
 
@@ -72,6 +86,8 @@ Click![](media/db0135c23e5313dac75a33d7d2faa529.png), then click “**Connect**�
 ![image-20230525092919242](./media/image-20230525092919242.png)
 
 ![image-20230525092925326](./media/image-20230525092925326.png)
+
+
 
 ![image-20230525092930362](./media/image-20230525092930362.png)
 
@@ -240,10 +256,12 @@ Wire up the servo(D10)
 
 <span style="color: rgb(255, 76, 65);">**We adopt a model 18650 lithium battery with a pointed positive pole, whose power and capacity are not required.**</span>
 
+![Img](./media/img-20240117152510.jpg)
+
 ------
 
 
-## 3. Projects 1
+## 3. Projects
 
 ### Project 1: LED Blinks
 
@@ -1931,7 +1949,9 @@ After uploading the code successfully, plug in the Bluetooth module, after power
 
 ![](media/9f03ddcc09ca24f0521e68a45991a38b.jpeg)
 
-## 4. Assemble Fire Extinguishing Robot
+## 4. Experiment Extension
+
+### Assemble Fire Extinguishing Robot
 
 Remove the ultrasonic sensor and two photoresistors
 
@@ -1978,10 +1998,10 @@ Wire up the fan module
 
  **We adopt a model 18650 lithium battery with a pointed positive pole, whose power and capacity are not required.**
 
+![Img](./media/img-20240117152622.jpg)
+
 ------
 
-
-## 5. Projects 2
 
 ### Project 19: Flame Sensor
 
