@@ -19,7 +19,7 @@ In the course of assembly process, you can see its multiple functions like light
 
 There are basic sensors and modules, such as a flame sensor, a BT sensor, an obstacle avoidance sensor, an line tracking sensor and an ultrasonic sensor are included.
 
-The two tutorials for C language and Arduino are also suitable for the enthusiasts at different ages.
+The two tutorials for C language code of Arduino IDE and KidsBlock graphical programming are also suitable for the enthusiasts at different ages.
 
 It is really the best choice for you.
 
@@ -35,7 +35,7 @@ It is really the best choice for you.
 
 5. Multiple controls: IR remote control, App control(iOS and Android system)
 
-6. Basic programming：C language code of Arduino IDE.
+6. Basic programming：C language code of Arduino IDE and KidsBlock graphical programming.
 
 ## 4. Parameters
 
