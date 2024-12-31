@@ -7,9 +7,8 @@
 
 Download libraries and codes: 
 
-* [libraries_and_codes](libraries_and_codes.zip)
+* [Download libraries and codes](Download.7z)
 
-* [Preparation_and_Troubleshooting](Preparation_and_Troubleshooting.zip)
 
 ## 2. Introduction
 
