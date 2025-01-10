@@ -9,7 +9,7 @@ int RECV_PIN = 3;        //define the pin of LED as pin 3
 int LED = 9;
 bool flag = 0;
 IRrecv irrecv(RECV_PIN);
-decode_results results;   //decode results exist in the“result” of “decode results
+decode_results results;   //decode results exist in the“result” of “decode results”
 void setup() {
   Serial.begin(9600);
   pinMode(LED, OUTPUT);//set LED to output

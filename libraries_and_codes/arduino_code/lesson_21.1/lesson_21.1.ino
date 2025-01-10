@@ -8,7 +8,7 @@ int INA = 12;
 int INB = 13;
 void setup() {
   pinMode(INA, OUTPUT);//Set digital port INA as output
-  pinMode(INB, OUTPUT);//Set digital port INA as output
+  pinMode(INB, OUTPUT);//Set digital port INB as output
 }
 
 void loop() {

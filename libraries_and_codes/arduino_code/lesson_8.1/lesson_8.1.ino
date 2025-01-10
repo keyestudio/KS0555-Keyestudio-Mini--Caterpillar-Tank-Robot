@@ -21,9 +21,9 @@ void loop()
 {
   //front
   digitalWrite(ML_Ctrl, HIGH); //Set direction control speed of the left motor to HIGH
-  analogWrite(ML_PWM, 55); //PWM control speed of the left motor is 200
+  analogWrite(ML_PWM, 55); //PWM control speed of the left motor is 55
   digitalWrite(MR_Ctrl, HIGH); //Set direction control speed of the right motor to HIGH
-  analogWrite(MR_PWM, 55); //PWM control speed of the right motor is 200
+  analogWrite(MR_PWM, 55); //PWM control speed of the right motor is 55
   delay(2000);//delay in 2s
   
   //back
@@ -37,12 +37,12 @@ void loop()
   digitalWrite(ML_Ctrl, LOW); //Set direction control speed of the left motor to LOW
   analogWrite(ML_PWM, 200); //PWM control speed of the left motor is 200
   digitalWrite(MR_Ctrl, HIGH); //Set direction control speed of the right motor to HIGH
-  analogWrite(MR_PWM, 55); //PWM control speed of the right motor is 200
+  analogWrite(MR_PWM, 55); //PWM control speed of the right motor is 55
   delay(2000);//delay in 2s
 
   //turn right
   digitalWrite(ML_Ctrl, HIGH); //Set direction control speed of the left motor to HIGH
-  analogWrite(ML_PWM, 55); //PWM control speed of the left motor is 200
+  analogWrite(ML_PWM, 55); //PWM control speed of the left motor is 55
   digitalWrite(MR_Ctrl, LOW); //Set direction control speed of the right motor to LOW
   analogWrite(MR_PWM, 200); //PWM control speed of the right motor is 200
   delay(2000);//delay in 2s

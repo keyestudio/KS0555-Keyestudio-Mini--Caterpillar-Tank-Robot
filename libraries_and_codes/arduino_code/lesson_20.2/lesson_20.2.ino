@@ -8,7 +8,7 @@ int flame = A1; //Define the flame pin as analog pin A1
 int LED = 9;    //Define the LED as digital port 9
 int val = 0;    //Define digital variables
 void setup() {
-  pinMode(flame, INPUT);    //Define the buzzer as an input source
+  pinMode(flame, INPUT);    //Define the flame as an input source
   pinMode(LED, OUTPUT);     //Set LED to output mode
   Serial.begin(9600);    //Set the baud rate to 9600
 }

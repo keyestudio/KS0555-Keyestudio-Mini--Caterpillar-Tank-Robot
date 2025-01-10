@@ -85,13 +85,33 @@ Tools needed:
 
 ![image-20230525092919242](./media/image-20230525092919242.png)
 
-![image-20230525092925326](./media/image-20230525092925326.png)
+The wheels and tracks must be installed. Then mount them on the car body simultaneously. Otherwise the tracks cannot be installed.
 
 
+
+![14e92d152a8381b025c7f6fbf38e94f1](img/14e92d152a8381b025c7f6fbf38e94f1.jpeg)
+
+![3_00](img/3_00.png)
+
+Note where the wheels are mounted on the tracks.
+
+![36643ae7e35bf24c26348fe47d7ffc4f](img/36643ae7e35bf24c26348fe47d7ffc4f.jpeg)
 
 ![image-20230525092930362](./media/image-20230525092930362.png)
 
  **Step3**
+
+![T1](img/T1.png)
+
+![T2](img/T2.png)
+
+![T3](img/T3.png)
+
+Please wire up first.
+
+![image-20250106083930071](img/image-20250106083930071.png)
+
+![s](img/s.jpg)
 
 ![ ](./media/6dfc645075993b1a10e45e888b7fc670.png)
 
@@ -119,7 +139,7 @@ Tools needed:
 
 ![ ](./media/7d5047e2ff8803cee7125196533fc4a6.png)
 
-![ ](./media/9479cecb0f142fa3b0e496fae2bfc683.png)
+![2_00](img/2_00.png)
 
 ![ ](./media/5b8572e5104d7e72195e76feb929aba6.png)
 
@@ -157,20 +177,21 @@ Note the direction of jumper caps
 
 ![Untitled Sketch 7](media/5120d0b422a1d0b1f1ba075aa5911c25.png)
 
-Set the angle of the servo to 90°。
+**Set the angle of the servo to 90°**
 
-(<span style="color: rgb(255, 76, 65);">Note:</span> Do not connect the Bluetooth module before uploading the code, because the uploading of the code also uses serial communication, and there may be conflicts with the serial communication of the Bluetooth, which can cause the uploading of the code to fail.)
+**(<span style="color: rgb(255, 76, 65);">Note:</span> Please remove the Bluetooth module before uploading the code! Otherwise, serial port communication conflicts and code uploading fails.)**
 
 Writing the following code in kidsBlock software and upload it to the motherboard, or just open the code provided by us and upload it to the motherboard.
 
 ![Img](./media/img-20240111153542.png)
 
+**After initializing serv o angle, install the Bluetooth module.**
 
 Keep the ultrasonic sensor parallel to the board
 
 ![ 8_4.png 8_4](./media/24d9629c520bda267abd2bb3274f8234.png)
 
-![ 8_5.png 8_5](./media/c408c7aa269fee1e0988ad69e4d99215.png)
+![c408c7aa269fee1e0988ad69e4d99215](img/c408c7aa269fee1e0988ad69e4d99215.png)
 
  **Step 11**
 
@@ -199,9 +220,9 @@ For 8\*16LED panel, Make wires connect to A4 and A5
 ![Img](./media/img-20240111154343.png)
 
 
-Connect the motor A to B port and make the motor B to A port.
+Connect the motor A to A port and make the motor B to B port.
 
-![ ](./media/5c5ca1f43b3fe0758ed9c2b95700ab22.png)
+![image-20250106193043245](img/image-20250106193043245.png)
 
 ![ ](./media/47dabc315fe9e19c5d3d5f42b7e36959.png)
 
@@ -211,7 +232,11 @@ Connect the power wire
 
 ![ ](./media/07144428.jpg)
 
+
+
 Line Tracking Sensor(see the picture)
+
+![image-20250104165401885](img/image-20250104165401885.png)
 
 ![ ](./media/6d44df09cf294c175fe45a067da373ec.jpeg)
 
@@ -221,17 +246,27 @@ Line Tracking Sensor(see the picture)
 
 Wire up the photoresistors
 
+![image-20250104150216956](img/image-20250104150216956.png)
+
 ![ ](./media/e0d6dbb2e9a054991bbd53284790d2dd.png)
+
+| Photoresistor | Keyestudio 8833 Board |
+| :-----------: | :-------------------: |
+|       G       |           G           |
+|       V       |           V           |
+|       S       |          A1           |
 
 ![ ](./media/3c4715f8bd327477824d5f9ac872503d.png)
 
-| Left | Keyestudio 8833 Board |      | Right | Keyestudio 8833  Board |
-| :--: | :-------------------: | ---- | :---: | :--------------------: |
-|  G   |           G           |      |   G   |           G            |
-|  V   |           V           |      |   V   |           V            |
-|  S   |          A1           |      |   S   |           A2           |
+| Photoresistor | Keyestudio 8833  Board |
+| :-----------: | :--------------------: |
+|       G       |           G            |
+|       V       |           V            |
+|       S       |           A2           |
 
 Wire up ultrasonic sensor
+
+![image-20250104165256601](img/image-20250104165256601.png)
 
 ![Img](./media/img-20240111160009.png)
 
@@ -263,17 +298,23 @@ Wire up the servo(D10)
 
 ## 3. Projects
 
+In this section, we will start from a single sensor to complex experiments to introduce you how the tank robot works
+
+<span style="color: rgb(255, 76, 65);">Note:</span> (G), marked on each sensor and module, is the negative pole and connected to“G”, ”-”or “GND”on the sensor shield or control board ; (V) is the positive pole and linked with V , VCC, + or 5V on the sensor shield or control board.
+
 ### Project 1: LED Blinks
 
 #### (1)Description：
 
-![image-20230525101410727](media/image-20230525101410727.png)
-
-For starters and enthusiasts, LED Blink is a fundamental program. LED, the abbreviation of light emitting diodes, consists of Ga, As, P, N chemical compounds and so on. The LED can flash in diverse colors by altering the delay time in the test code. When in control, power on GND and VCC, the LED will be on if S end is in high level; nevertheless, it will go off.
+![64b0b431d58473408ac46b39d2dc2ad0](img/64b0b431d58473408ac46b39d2dc2ad0.jpeg)
 
 ![](media/ae87aea86f6c7e427f7adfc0e7c0efe3.png)
 
+For starters and enthusiasts, LED Blink is a fundamental program. LED, the abbreviation of light emitting diodes, consists of Ga, As, P, N chemical compounds and so on. The LED can flash in diverse colors by altering the delay time in the test code. When in control, power on GND and VCC, the LED will be on if S end is in high level; nevertheless, it will go off.
+
 #### **(2)Parameters:**
+
+![](media/0ea85307e1317c25f2a8d92f25319aa8.png)
 
 - Control interface: digital port
 
@@ -283,27 +324,21 @@ For starters and enthusiasts, LED Blink is a fundamental program. LED, the abbre
 
 - LED display color: yellow
 
-![](media/0ea85307e1317c25f2a8d92f25319aa8.png)
-
-#### **(3)Components Needed:**
-
-![Img](./media/img-20240117091155.png)
+#### **(3)8833 Motor Driver Expansion Board:**
 
 The Keyestudio 8833 motor driver expansion board is compatible with the Arduino UNO development board. Just stack it onto the development board when using it.
 
-#### **(4)8833 Motor Driver Expansion Board:**
-
 ![](media/d8696e83ade31f2b7c56cc5911eacbd7.GIF)
 
-#### **(5)Connection Diagram:**
+#### **(4)Connection Diagram:**
 
 ![](media/8ad54723c1d6149952c730217a1861cd.png)
 
-LED is connected to D9 port, and remember to install jumper caps onto the shield.
+![d68e6475a7c9ed55bb057b75d1b11689](img/d68e6475a7c9ed55bb057b75d1b11689.png)
 
-![Img](./media/img-20240117091303.png)
+<span style="color: rgb(255, 76, 65);">NOTE:</span> LED is connected to D9 port, and remember to install jumper caps onto the shield
 
-#### **(6)Test Code:**
+#### **(5)Test Code:**
 
 You can also drag blocks to edit your code, as shown below
 
@@ -319,11 +354,11 @@ You can also drag blocks to edit your code, as shown below
 
 ![](media/ba4723bab640078eccbe1811da138bc3.png)
 
-#### **(7)Test Results:**
+#### **(6)Test Results:**
 
 Upload the program, LED blinks at the interval of 1s.
 
-#### **(8)Extension Practice:**
+#### **(7)Extension Practice:**
 
 We have known how to control the LED, then let's change the frequency of the LED.
 
@@ -347,7 +382,9 @@ In previous lesson, we control LED on and off and make it blink.
 
 In this project, we will control LED’s brightness through PWM simulating breathing effect. Similarly, you can change the step length and delay time in the code so as to demonstrate different breathing effects.
 
-PWM is a means of controlling the analog output via digital means. Digital control is used to generate square waves with different duty cycles (a signal that constantly switches between high and low levels) to control the analog output. In general, the input voltages of ports are 0V and 5V. What if the 3V is required? Or a switch among 1V, 3V and 3.5V? We cannot change resistors constantly. For this reason, we resort to PWM. 
+PWM is a means of controlling the analog output via digital means. Digital control is used to generate square waves with different duty cycles (a signal that constantly switches between high and low levels) to control the analog output. 
+
+In general, the input voltages of ports are 0V and 5V. What if the 3V is required? Or a switch among 1V, 3V and 3.5V? We cannot change resistors constantly. For this reason, we resort to PWM. 
 
 ![](media/bbcfcb9ae56abb7e80ee587246fc4be9.GIF)
 
@@ -357,6 +394,8 @@ This process can be likened to showing a movie. The movie we watch are not compl
 
 #### **(2)Parameters:**
 
+![](media/0ea85307e1317c25f2a8d92f25319aa8.png)
+
 - Control interface: Digital port 3
 
 - Working voltage: DC 3.3-5V
@@ -365,21 +404,13 @@ This process can be likened to showing a movie. The movie we watch are not compl
 
 - LED display color: yellow
 
-![](media/0ea85307e1317c25f2a8d92f25319aa8.png)
+#### **(3)Wiring Diagram**
 
-#### **(3)Components Needed:**
-
-![Img](./media/img-20240117091343.png)
-
-#### **(4)Wiring Diagram**
-
-PWM pins of the Arduino are pin 3, 5, 6, 9, 10 and 11
-
-Keep the D9 unchanged
+PWM pins of the Arduino are connected to 3, 5, 6, 9, 10 and 11.Keep the pin9 unchanged
 
 ![](media/8ad54723c1d6149952c730217a1861cd.png)
 
-#### **(5)Test Code:**
+#### **(4)Test Code:**
 
 You can also drag blocks to edit your code, as shown below
 
@@ -396,16 +427,14 @@ You can also drag blocks to edit your code, as shown below
 ![](media/aaab53a06684ab078936ee61f9abcbb3.png)
 
 
-#### **(6)Test Results**
+#### **(5)Test Results**
 
 Upload test code successfully, LED gradually changes from bright to dark, like human’s breath, rather than turning on and off immediately.
 
-#### **(7)Extension Practice:**
-
-You can not change the position of the lamp pin, just by changing the program code (the value after wait)
+#### **(6)Extension Practice:**
 
 
-You can also drag blocks to edit your code, as shown below
+Let’s modify the value of delay and remain the pin unchanged, then observe how LED changes.
 
 **Complete Test Code**
 
@@ -413,7 +442,9 @@ You can also drag blocks to edit your code, as shown below
 
 ![](media/2ff0d71c2688d39695b760a1d0f76965.png)
 
-Upload the code, observe the LED
+Upload the code to development board, LED flashes more slowly.
+
+
 
 ### Project 3: Photoresistor
 
@@ -421,9 +452,13 @@ Upload the code, observe the LED
 
 #### **(1)Description:**
 
-The photosensitive resistor is a special resistor made of a semiconductor material such as a sulfide or selenium, and a moisture-proof resin is also coated with a photoconductive effect. The photosensitive resistance is most sensitive to the ambient light, different illumination strength, and the resistance of the photosensitive resistance is different. We use the photosensitive resistance to design the photosensitive resistor module. The module signal is connected to the microcontroller analog port. 
+The photosensitive resistor is a special resistor made of a semiconductor material such as a sulfide or selenium, and a moisture-proof resin is also coated with a photoconductive effect. The photosensitive resistance is most sensitive to the ambient light, different illumination strength, and the resistance of the photosensitive resistance is different. We use the photosensitive resistance to design the photosensitive resistor module. 
 
-When the light intensity is stronger, the larger the analog port voltage, that is, the simulation value of the microcontroller is also large; in turn, when the light intensity is weaker, the smaller the analog port voltage, that is, the simulation value of the microcontroller is also small. . In this way, we can read the corresponding analog value using the photosensitive resistor module, and the intensity of the light in the inductive environment.
+The module signal is connected to the microcontroller analog port. When the light intensity is stronger, the larger the analog port voltage, that is, the simulation value of the microcontroller is also large; in turn, when the light intensity is weaker, the smaller the analog port voltage, that is, the simulation value of the microcontroller is also small. 
+
+In this way, we can read the corresponding analog value using the photosensitive resistor module, and the intensity of the light in the inductive environment.
+
+![7784e14e15402644cdbe674d500327c4](img/7784e14e15402644cdbe674d500327c4.png)
 
 ![](media/0d9daba6454ef099fe1ceb0e6cb56ec4.png)
 
@@ -437,12 +472,7 @@ When the light intensity is stronger, the larger the analog port voltage, that i
 
 - Pin spacing: 2.54mm
 
-
-#### **(3)Components Needed:**
-
-![Img](./media/img-20240117091358.png)
-
-#### **(4)Connection Diagram:**
+#### **(3)Connection Diagram:**
 
 What we are going to test next isthe photoresistor module on the leftside ofthe robot
 
@@ -453,7 +483,7 @@ The left photoresistoris connected to A1/P3 of the motor drive shield.
 ![](media/484852a36f52bdbe44bec1b9a8941e44.png)
 
 
-#### **(5)Test Code:**
+#### **(4)Test Code:**
 
 You can also drag blocks to edit your code, as shown below
 
@@ -471,7 +501,7 @@ You can also drag blocks to edit your code, as shown below
 
 ![](media/f29c7da2238bcc2bc70cb4b2c773b50d.png)
 
-#### **(6)Test Results:**
+#### **(5)Test Results:**
 
 Upload the code to the development board. Click ![](media/9011f20d83897d7a5936793c4ae142fc.png) to set baud rate 9600.When covering it with your hand, the value gets smaller; if not, the value gets larger.
 
@@ -479,9 +509,9 @@ Upload the code to the development board. Click ![](media/9011f20d83897d7a593679
 
 
 
-#### **(7)Extension Practice:**
+#### **(6)Extension Practice:**
 
-The above code just reads the value of the photoresistor. We can make the photosensitive and LED combine to change the LED.
+The above code just reads the value of the photoresistor. We can make the photosensitive and LED combine to change the LED.How about controlling the LED’s brightness by it?
 
 ![](media/88a89f7996fb7f7d037315e57e8bcd33.png)
 
@@ -530,23 +560,19 @@ If the Line Tracking Sensor does not work as expected, you will need to use a sc
 #### **(2)Parameters:**
 
 - Operating Voltage: 3.3-5V (DC)
-
 - Interface: 5PIN
-
 - Output Signal: Digital signal
-
 - Detection Height: 0-3 cm
 
+Special note: before testing,rotate the potentiometer on the sensor to adjust the detection sensitivity. When adjust the LED at the threshold between ON and OFF, the sensitivity is the best.
 
-#### **(3)Components Required:**
+<span style="color: rgb(255, 76, 65);">Note:</span> the line tracking sensor is installed under the bottom of the robot.
 
-![Img](./media/img-20240117091824.png)
-
-#### **(4)Connection Diagram:**
+#### **(3)Connection Diagram:**
 
 ![](media/6426516400b21d7fbe1d9a1a58a1808b.png)
 
-#### **(5)Test Code:**
+#### **(4)Test Code:**
 
 You can also drag blocks to edit your code, as shown below
 
@@ -566,13 +592,13 @@ You can also drag blocks to edit your code, as shown below
 
 ![](media/5298cdfb6fd7c71df155c969c80450cd.png)
 
-#### **(6)Test Results:**
+#### **(5)Test Results:**
 
 Upload the code to the development board, open serial monitor to 9600 and check line tracking sensors. And the displayed value is 1(high level) when no signals are received. The value shifts into 0 when the sensor is covered with paper.
 
 ![](media/5630032421adf9446d51b770f0e7f8af.png)
 
-#### **(7)Extension Practice:**
+#### **(6)Extension Practice:**
 
 We can control an LED with this sensor. The LED is connected to D9. If we cover it , the LED will light up.
 
@@ -642,18 +668,13 @@ The angle of the servo:
 
 - Standby current: 3 ± 1mA (DC 4.8V) 4 ± 1mA (DC 6V)
 
-
-#### **(3)Components Needed:**
-
-![Img](./media/img-20240117092202.png)
-
-#### **(4)Connection Diagram:**
+#### **(3)Connection Diagram:**
 
 ![](media/5120d0b422a1d0b1f1ba075aa5911c25.png)
 
 Note: The brown, red and orange wire of the servo are respectively attached to Gnd(G), 5v(V) and D10 of the shield. Remember to connect an external power because of the high current of the servo. If not, the development board will be burnt out.
 
-#### **(5)Test Code:**
+#### **(4)Test Code:**
 
 You can also drag blocks to edit your code, as shown below
 
@@ -687,6 +708,8 @@ The HC-SR04 ultrasonic sensor uses sonar to determine distance to an object like
 
 The HC-SR04 or the ultrasonic sensor is being used in a wide range of electronics projects for creating obstacle detection and distance measuring application as well as various other applications. Here we have brought the simple method to measure the distance with Arduino and ultrasonic sensor and how to use ultrasonic sensor with Arduino.
 
+![](img/9779999818cbbe4e1adf5b57081be431.png)
+
 #### **(2)Parameters:**
 
 - Power Supply :+5V DC
@@ -705,13 +728,7 @@ The HC-SR04 or the ultrasonic sensor is being used in a wide range of electronic
 
 - Trigger Input Pulse width: 10uS
 
-![](media/9779999818cbbe4e1adf5b57081be431.png)
-
-#### **(3)Components Needed:**
-
-![Img](./media/img-20240117092248.png)
-
-#### **(4)The principle of ultrasonic sensor:**
+#### **(3)The principle of ultrasonic sensor:**
 
 As the above picture shown, it is like two eyes. One is transmitting end, the other is receiving end.
 
@@ -719,27 +736,27 @@ The ultrasonic module will emit the ultrasonic waves after triggering a signal. 
 
 The t is the time that emitting signal meets obstacle and returns. And the propagation speed of sound in the air is about 343m/s, and distance = speed * time. However, the ultrasonic wave emits and comes back, which is 2 times of distance. Therefore, it needs to be divided by 2, the distance measured by **ultrasonic wave = (speed * time)/2**
 
-\1. Use method and timing chart of ultrasonic module:
+1. Use method and timing chart of ultrasonic module:
 
-\2. Setting the delay time of Trig pin of SR04 to 10μs at least, which can trigger it to detect distance.
+2. Setting the delay time of Trig pin of SR04 to 10μs at least, which can trigger it to detect distance.
 
-\3. After triggering, the module will automatically send eight 40KHz ultrasonic pulses and detect whether there is a signal return. This step will be completed automatically by the module.
+3. After triggering, the module will automatically send eight 40KHz ultrasonic pulses and detect whether there is a signal return. This step will be completed automatically by the module.
 
-\4. If the signal returns, the Echo pin will output a high level, and the duration of the high level is the time from the transmission of the ultrasonic wave to the return.
+4. If the signal returns, the Echo pin will output a high level, and the duration of the high level is the time from the transmission of the ultrasonic wave to the return.
 
 ![image-20230525110337646](media/image-20230525110337646.png)
 
-#### **(5)Circuit diagram of ultrasonic sensor:**
+Circuit diagram of ultrasonic sensor:
 
 ![](media/a25028af84d6c7c94382c2a907101241.jpeg)
 
-#### **(6)Connection Diagram:**
+#### **(4)Connection Diagram:**
 
 ![](media/d8fad040d3ab5abe247d6a8d1e08a13d.png)
 
 <span style="color: rgb(255, 76, 65);">Wiring Note:</span> The VCC pin of the ultrasonic sensor module is connected to the 5v(V) of the Keyestudio 8833 motor drive expansion board, the Trig pin is connected to digital D12, the Echo pin is connected to digital D13, and the Gnd pin is connected to Gnd(G);
 
-#### **(7)Test Code:**
+#### **(5)Test Code:**
 
 You can also drag blocks to edit your code, as shown below
 
@@ -763,15 +780,13 @@ You can also drag blocks to edit your code, as shown below
 
 ![](media/569aff5ff2cbd2f3605f217ebb5ed50b.png)
 
-#### **(8)Test Results:**
+#### **(6)Test Results:**
 
 Upload test code on the development board, open serial monitor and set baud rate to 9600. The detected distance will be displayed, and the unit is cm and inch. Hinder the ultrasonic sensor by hand, the displayed distance value gets smaller.
 
 ![](media/4f77acbf5b226e20e3cdd70c0f90602e.png)
 
-#### **(9)Extension Practice:**
-
-![Img](./media/img-20240117092355.png)
+#### **(7)Extension Practice:**
 
 We have just measured the distance displayed by the ultrasonic. How about controlling the LED with the measured distance? Let's try it and connect an LED light module to the D9 pin.
 
@@ -808,7 +823,7 @@ Upload test code to development board and move your hand and close to the ultras
 
 #### **(1)Description:**
 
-![](media/8969111328604c5358f7c915ac94e474.png)
+![8969111328604c5358f7c915ac94e474](img/8969111328604c5358f7c915ac94e474.png)
 
 There is no doubt that infrared remote control is ubiquitous in daily life. It is used to control various household appliances, such as TVs, stereos, video recorders and satellite signal receivers. Infrared remote control is composed of infrared transmitting and infrared receiving systems, that is, an infrared remote control and infrared receiving module and a single-chip microcomputer capable of decoding.   
 
@@ -825,22 +840,15 @@ Infrared receiver we use is an infrared receiver module. Mainly composed of an i
 #### **(2)Parameters:**
 
 - Operating Voltage: 3.3-5V（DC）
-
 - Interface: 3PIN
-
 - Output Signal: Digital signal
-
 - Receiving Angle: 90 degrees
-
 - Frequency: 38khz
-
 - Receiving Distance: 10m
 
-![](media/f247e1010aa68c1e58e16b332680698a.png)
+Infrared receiver integrated on motor drive board：
 
-#### **(3)Components Required:**
-
-![Img](./media/img-20240117092453.png)
+![img-20240117082433](img/img-20240117082433.png)
 
 <span style="color: rgb(255, 76, 65);">Note: </span>Since the IR receiver is integrated in the Keyestudio 8833 motor drive expansion board, no additional wiring is required. The pins of the IR receiver on the Keyestudio 8833 motor drive expansion board are G (GND), V (VCC) and D3.
 
@@ -953,19 +961,15 @@ According to the table below, we can know how to control the movement of the rob
 | Rotate Right | HIGH |    100    |   Rotate Left   | LOW  |    255    |  Rotate Right   |
 |     Stop     | LOW  |     0     |      Stop       | LOW  |     0     |      Stop       |
 
-#### **(5)Components Required:**
+#### **(4)Connection Diagram:**
 
-![Img](./media/img-20240117092559.png)
-
-#### **(6)Connection Diagram:**
-
-![](media/ca2a8dd55a64e590f8a1ce9e04de88f7.png)
+![3e53cf19ea5f85a931b955453b86304b](img/3e53cf19ea5f85a931b955453b86304b-17363899850521.png)
 
 <span style="color: rgb(255, 76, 65);">Note:</span>
 
 The 4-pinconnector is marked with A, A1, B1 and B. The right rear motor is connected to B of the 8833 board and left front one is connected to A port.
 
-#### **(7)Test Code:**
+#### **(5)Test Code:**
 
 You can also drag blocks to edit your code, as shown below
 
@@ -984,7 +988,7 @@ You can also drag blocks to edit your code, as shown below
 ![](media/332229f3dc01a38de898367f52531b28.png)
 
 
-#### **(8)Test Results:**
+#### **(6)Test Results:**
 
 After wiring according to the diagram, uploading the test code and powering it up.
 
@@ -1014,11 +1018,7 @@ The 8*16 LED board comes with 128 LEDs. The data of the microprocessor (Arduino)
 
 -   Communication mode: two-wire bus
 
-#### **(3)Components Needed:**
-
-![Img](./media/img-20240117092647.png)
-
-#### **(4)About the 8\*16 Dot Matrix:**
+#### **(3)Knowledge:**
 
 **Circuit of the 8\*16 LED dot matrix**
 
@@ -1062,7 +1062,8 @@ In the example, the pulse width is 4/16, and the hexadecimal corresponding to 10
 ![image-20230907161220995](media/image-20230907161220995.png)
 
 
-4\. Instructions for the use of modulus tool
+
+**Instructions for the use of modulus tool**
 
 The dot matrix tool uses the online version, and the link is: <http://dotmatrixtool.com/#>
 
@@ -1080,7 +1081,7 @@ As shown in the figure below, press the left mouse button to select, right click
 
 ![](media/586e88bf13c61b0918046437ed7f6796.png)
 
-#### **(5)Connection Diagram:**
+#### **(4)Connection Diagram:**
 
 ![](media/cec50fec4a335b6922e4c6694a133bc1.png)
 
@@ -1088,7 +1089,7 @@ The GND, VCC, SDA, and SCL of the 8x16 LED light board are respectively connecte
 
 (<span style="color: rgb(255, 76, 65);">Note:</span> though it is connected with the IIC pin of Arduino, this module is not for IIC communication. And the IO port here is to simulate I2C communication and can be connected with any two pins )
 
-#### **(6)Test Code:**
+#### **(5)Test Code:**
 
 
 You can also drag blocks to edit your code, as shown below
@@ -1105,13 +1106,13 @@ You can also drag blocks to edit your code, as shown below
 
 ![](media/75e6f65c9a299868d37544ac42c54f66.png)
 
-#### **(7)Test Results:**
+#### **(6)Test Results:**
 
 After uploading the test code successfully, wire up, turn the DIP switch to the ON end and power up, a smile-shaped pattern shows on the dot matrix.
 
 ![](media/0fd4831db288e04e75828346ea66a3f5.png)
 
-#### **(8)Extension Practice:**
+#### **(7)Extension Practice:**
 
 We use the modulus tool we just learned, [http://dotmatrixtool.com/#](http://dotmatrixtool.com/#), to make the dot matrix display the pattern start , go forward, and stop and then clear the pattern. The time interval is 2000 ms.
 
@@ -1151,6 +1152,10 @@ You can also drag blocks to edit your code, as shown below
 
 Upload the code to the development board, the 8\*16 board will show following patters.
 
+![e7ba47508826acc25d348182a0530c05](img/e7ba47508826acc25d348182a0530c05.png)
+
+![831b7e0e07250cbc7bdc4fa509c5a0a3](img/831b7e0e07250cbc7bdc4fa509c5a0a3.png)
+
 ![](media/dce75583e8bf4bc4377364bf8ed3aa99.png)
 
 ### Project 10: Light-following Tank
@@ -1166,15 +1171,11 @@ The specific logic of the light-following smart car is shown as below.
 
 ![image-20230525113331422](media/image-20230525113331422.png)
 
-#### **(2)Components Needed:**
-
-![Img](./media/img-20240117093729.png)
-
-#### **(3)Flow chart:**
+#### **(2)Flow chart:**
 
 ![img](media/wps117.png)
 
-#### **(4)Connection Diagram:**
+#### **(3)Connection Diagram:**
 
 ![](media/d8132c5a3f88a1016d27e5fa9e5fda92.png)
 
@@ -1184,7 +1185,7 @@ The pin "G", "V" and S of the right photoresistor module are connected to the G 
 
 The 4pin cable is marked with A, A1, B1 and B. The right rear motor is connected to B port of the 8833 motor driver expansion board and the left front motor is connected to A port of the 8833 motor driver expansion board.
 
-#### **(5)Test Code:**
+#### **(4)Test Code:**
 
 
 You can also drag blocks to edit your code, as shown below
@@ -1212,7 +1213,7 @@ Do not connect the Bluetooth module before uploading the code, because the uploa
 ![](media/6300174b85f63c05dbdcb3b77188f9dc.png)
 
 
-#### **(6)Test Results:**
+#### **(5)Test Results:**
 
 After uploading the test code successfully, wire up, turn DIP switch to the ON end and power on, the smart car follows the light to move.
 
@@ -1227,23 +1228,25 @@ In the previous lesson, we learned about the light-following smart car. And in t
 
 The specific logic of the ultrasonic sound- following smart car is shown in the table blow:
 
-![image-20230525113540421](media/image-20230525113540421.png)
+|                        Detection                        |              Setting              |
+| :-----------------------------------------------------: | :-------------------------------: |
+| The distance(cm) between the car and the obstacle front | Set the angle of the servo to 90° |
+|                      **Condition**                      |           **Movement**            |
+|               distance≥20 and distance≤50               |             Go front              |
+|            10＜distance＜20<br/>distance＞50            |               Stop                |
+|                       distance≤10                       |              go back              |
 
-#### **(2)Components Needed:**
-
-![Img](./media/img-20240117093833.png)
-
-#### **(3)Flow chart:**
+#### **(2)Flow chart:**
 
 ![img](media/wps118.png)
 
-#### **(4)Connection Diagram:**
+#### **(3)Connection Diagram:**
 
 ![](media/c5c842ac7e834b9b24ab06b3ce3d02ac.png)
 
 <span style="color: rgb(255, 76, 65);">Note:</span> The wiring of the ultrasonic sensor, the servo and the motor is the same as the previous project experiment. The GND, VCC, SDA, and SCL of the 8x16 LED panel are respectively connected to G (GND), V (VCC), A4, and A5 on the expansion board
 
-#### **(5)Test Code:**
+#### **(4)Test Code:**
 
 You can also drag blocks to edit your code, as shown below
 
@@ -1274,7 +1277,7 @@ You can also drag blocks to edit your code, as shown below
 ![](media/b895ca60e3249e09d4c15c356c60099a.png)
 
 
-#### **(6)Test Result:**
+#### **(5)Test Result:**
 
 Upload the code, power up and turn the DIP switch to ON. The servo will rotate 90°, the 8X16 LED panel will show ![](media/fdd4ae50b3372cc9c4ef27f6bddda387.png) and the car follows the obstacle to move.
 
@@ -1285,7 +1288,9 @@ Upload the code, power up and turn the DIP switch to ON. The servo will rotate 9
 
 #### **(1)Description:**
 
-In the previous project, we made an ultrasonic sound-following smart car. In fact, using the same components and the same wiring method, we only need to change the test code to turn it into an ultrasonic obstacle avoidance smart car. This smart car can move with the movement of the human hands. We use ultrasonic sensors to detect the distance between the smart car and the obstacle in front, and then control the rotation of the two motors based on this data so as to control the movements of the smart car.
+In the previous project, we made an ultrasonic sound-following smart car. In fact, using the same components and the same wiring method, we only need to change the test code to turn it into an ultrasonic obstacle avoidance smart car. This smart car can move with the movement of the human hands. 
+
+We use ultrasonic sensors to detect the distance between the smart car and the obstacle in front, and then control the rotation of the two motors based on this data so as to control the movements of the smart car.
 
 |                          Detection                           |         |
 | :----------------------------------------------------------: | :-----: |
@@ -1304,22 +1309,17 @@ In the previous project, we made an ultrasonic sound-following smart car. In fac
 |             | a1≥50<br />and<br />a2≥50  |         Random         | set the angle of the servo to 90°，rotate left for 500ms（set PWM to 255），and move forward（set PWM to 200）.<br /><br />set the angle of the servo to 90°，rotate right for 500ms（set PWM to 255），and move forward（set PWM to 200）. |
 |    a≥20     |                            |                        | move forward（set PWM to 100）                               |
 
-
-#### **(2)Components Needed:**
-
-![Img](./media/img-20240117093931.png)
-
-#### **(3)Flow chart:**
+#### **(2)Flow chart:**
 
 ![img](media/wps119.png)
 
-#### **(4)Connection Diagram:**
+#### **(3)Connection Diagram:**
 
 ![](media/c5c842ac7e834b9b24ab06b3ce3d02ac.png)
 
 (<span style="color: rgb(255, 76, 65);">Note:</span> the brown, red and orange wires of the servo are respectively connected to G (GND), V（5V）and D10 of the expansion board；and for the ultrasonic sensor, the VCC pin is connected to the 5v (V) ,the Trig pin to digital 12 (S), the Echo pin to digital 13 (S), and the Gnd pin to Gnd (G); the same as last project.）
 
-#### **(6)Test Code:**
+#### **(4)Test Code:**
 
 
 You can also drag blocks to edit your code, as shown below
@@ -1352,7 +1352,7 @@ You can also drag blocks to edit your code, as shown below
 
 ![](media/4360f9642a8c6b2488767c079d481482.png)
 
-#### **(6)Test Results:**
+#### **(5)Test Results:**
 
 After upload the test code successfully, wire up, turn the DIP switch to the ON end, and power up, the smart car moves forward and automatically avoids obstacles.
 
@@ -1375,19 +1375,15 @@ The specific logic of the line-tracking smart car is shown in the table blow:
 | If one of three line tracking sensors detects black lines | Go back（set PWM to 150）Then turn left（set PWM to 150） |
 |             None of them detects black lines              |               Go forward（set PWM to 100）                |
 
-#### **(2)Components Needed:**
-
-![Img](./media/img-20240117094017.png)
-
-#### **(3)Flow chart**
+#### **(2)Flow chart**
 
 ![](media/b3c30f92cb78d4c2a4a8bd746aef24e1.png)
 
-#### **(4)Connection Diagram:**
+#### **(3)Connection Diagram:**
 
 ![](media/34c48ca77307761e5ce0b1a1fb202201.png)
 
-#### **(5)Test Code:**
+#### **(4)Test Code:**
 
 You can also drag blocks to edit your code, as shown below
 
@@ -1415,7 +1411,7 @@ You can also drag blocks to edit your code, as shown below
 
 ![](media/e656126c11bb8ebe7b6b0df8f22e7a79.png)
 
-#### **(6)Test Results:**
+#### **(5)Test Results:**
 
 After upload the test code successfully and power up, the smart car moves in a circle drawn in black line.
 
@@ -1430,32 +1426,30 @@ The previous project has introduced how to confine the smart car to move in a ce
 
 The specific logic of the line-tracking smart car is shown in the table blow:
 
-![image-20230525114740584](media/image-20230525114740584.png)
+|               Sensor               |                          Detection                           |
+| :--------------------------------: | :----------------------------------------------------------: |
+| Line-tracking sensor in the middle | Black line detected: in high level<br />White line detected: in low level |
+|  Line-tracking sensor on the left  | Black line detected: in high level<br />White line detected: in low level |
+| Line-tracking sensor on the right  | Black line detected: in high level<br />White line detected: in low level |
 
 |                         Condition 1                          |                         Condition 2                          |   Movement   |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------: |
 | Line-tracking sensor <br />in the middle <br />detects the black line | Line-tracking sensor on the left detects the black line<br />the one on the right detects white lines | Rotate left  |
-|                                                              | Line-tracking sensor on the left detects white lines<br />the one on the right detects the black line | Rotate right |
-|                                                              | Both the left and right  line-tracking sensors detect white lines<br />Both the left and right line-tracking sensors detect  the black line | Move forward |
+| Line-tracking sensor <br />in the middle <br />detects the black line | Line-tracking sensor on the left detects white lines<br />the one on the right detects the black line | Rotate right |
+| Line-tracking sensor <br />in the middle <br />detects the black line | Both the left and right  line-tracking sensors detect white lines<br />Both the left and right line-tracking sensors detect  the black line | Move forward |
 | Line-tracking sensor<br />in the middle <br />detects white lines | Line-tracking sensor on the left detects the black line<br />the one on the right detects white lines | Rotate left  |
-|                                                              | Line-tracking sensor on the left detects white lines<br />the one on the right detects the black line | Rotate right |
-|                                                              | Both the left and right  line-tracking sensors detect white lines<br />Both the left and right line-tracking sensors detect  the black line |     Stop     |
+| Line-tracking sensor<br />in the middle <br />detects white lines | Line-tracking sensor on the left detects white lines<br />the one on the right detects the black line | Rotate right |
+| Line-tracking sensor<br />in the middle <br />detects white lines | Both the left and right  line-tracking sensors detect white lines<br />Both the left and right line-tracking sensors detect  the black line |     Stop     |
 
-The following flow chart shows the values the line tracking sensor detect.
-
-#### **(2)Components Needed:**
-
-![Img](./media/img-20240117094100.png)
-
-#### **(3)Flow chart:**
+#### **(2)Flow chart:**
 
 ![img](media/wps11.png)
 
-#### **(4)Connection Diagram:**
+#### **(3)Connection Diagram:**
 
 ![](media/34c48ca77307761e5ce0b1a1fb202201.png)
 
-#### **(5)Test Code:**
+#### **(4)Test Code:**
 
 You can also drag blocks to edit your code, as shown below
 
@@ -1482,13 +1476,15 @@ You can also drag blocks to edit your code, as shown below
 ![](media/294ae4c01072e34b58a334912c90083a.png)
 
 
-#### **(6)Test Results:**
+#### **(5)Test Results:**
 
 After upload the test code successfully and power on, the smart car moves along the black line.
 
 ![Img](./media/img-20240117094129.png)
 
 ### Project 15: IR Remote Control Tank
+
+![wps6](img/wps6.png)
 
 #### **(1)Description:**
 
@@ -1498,8 +1494,6 @@ In the 9th lesson, we have tested the corresponding key value of each key of the
 
 The specific logic of the line-tracking smart car is shown in the table:
 
-**Initial setting: 8X16 LED dot matrix shows the pattern“![](media/dc59c5fcb4fcf6af4d4a5ebb14b7a919.png)”**
-
 |                 Ultrasonic key                  | Key value | Instructions from keys                                       |
 | :---------------------------------------------: | :-------: | ------------------------------------------------------------ |
 | ![](media/b11dc5ffa6cccebc6088e5d557d76daf.png) |  FF629D   | Move forward（set PWM to 200）<br />display the pattern of going forward |
@@ -1508,15 +1502,15 @@ The specific logic of the line-tracking smart car is shown in the table:
 | ![](media/ad907a618af86f30d52986bbbd57ba76.png) |  FFC23D   | Turn right<br />display the pattern of turning left          |
 | ![](media/9716a4ed61a4064d2f47a7b73eccaf87.png) |  FF02FD   | Stop<br />display the pattern“STOP”                          |
 
-#### **(2)Components Needed:**
+**Initial setting: 8X16 LED dot matrix shows the pattern“![](media/dc59c5fcb4fcf6af4d4a5ebb14b7a919.png)”**
 
-![Img](./media/img-20240117094158.png)
 
-#### **(3)Flow chart:**
+
+#### **(2)Flow chart:**
 
 ![img](media/wps121.png)
 
-#### **(4)Connection Diagram:**
+#### **(3)Connection Diagram:**
 
 ![](media/54527fe245b218dd22bdff5dafd4805d.png)
 
@@ -1526,7 +1520,7 @@ GND, VCC, SDA and SCL of the 8x16 LED panel are connected to G（GND), V（VCC).
 
 Since the 8833 board integrates the IR receiver, you don’t need to wire it up. The pins of the IR receiver are G（GND), V（VCC) and D3.
 
-#### **(5)Test Code:**
+#### **(4)Test Code:**
 
 You can edit blocks to build up your code
 
@@ -1554,13 +1548,15 @@ You can edit blocks to build up your code
 
 ![](media/fae6c22640ced038daca9cb6721ab95e.png)
 
-#### **(6)Test Results:**
+#### **(5)Test Results:**
 
 After upload the test code successfully and power up, the smart car can be controlled to move by IR remote control and the 8\*16 shows the corresponding patterns of its movements.
 
 ![Img](./media/img-20240117094223.png)
 
 ### Project 16: Bluetooth Remote Control
+
+![img-20240111140012](img/img-20240111140012.png)
 
 #### **(1)Description:**
 
@@ -1571,15 +1567,12 @@ In order to adjust with the time and reality and need the needs of customers, Bl
 #### **(2)Parameter:**
 
 - Bluetooth protocol: Bluetooth Specification V5.1 BLE
-
-- Working distance: In an open environment, achieve 40m ultra-long distance communication Operating frequency: 2.4GHz ISM band
-
-- Communication interface: UART Bluetooth certification: in line with FCC CE ROHS REACH certification standards
-
+- Working distance: In an open environment, achieve 40m ultra-long distance
+- Communication Operating frequency: 2.4GHz ISM band
+- Communication interface: UART
+- Bluetooth certification: in line with FCC CE ROHS REACH certification standards
 - Serial port parameters: 9600, 8 data bits, 1 stop bit, invalid bit, no flow control
-
 - Power: 5V DC
-
 - Operating temperature: –10 to +65 degrees Celsius
 
 
@@ -1628,15 +1621,11 @@ Connect Bluetooth to the development board
 | VCC  |  5V  |
 | GND  | GND  |
 
-#### **(5)Components Required:**
-
-![Img](./media/img-20240117094249.png)
-
-#### **(6)Connection Diagram:**
+#### **(5)Connection Diagram:**
 
 ![](media/63b96e5b26ee18337fb6e0dced5bbbe3.png)
 
-#### **(7)Download APP:**
+#### **(6)Download APP:**
 
 ##### **For IOS system**
 
@@ -1717,7 +1706,7 @@ enable Location and nearby device permissions.(<span style="color: rgb(255, 76, 
 ![Img](./media/img-20240111142702.png)
 
 
-#### **(8)BT Test Code:**
+#### **(7)BT Test Code:**
 
 You can also drag blocks to edit your code, as shown below
 
@@ -1759,9 +1748,7 @@ Click ![Img](./media/img-20240111171312.png)and set the baud rate to 9600. Click
 <br>
 
 
-#### **(9)Extension Practice:**
-
-![Img](./media/img-20240117094342.png)
+#### **(8)Extension Practice:**
 
 In the above project, Bluetooth receives the signal sent by the mobile phone and displays it on the serial port of the development board. Here we use the command sent by the mobile phone to turn on or off an LED. Looking at the wiring diagram, an LED is connected to the D9 pin,
 
@@ -1844,9 +1831,9 @@ The following table illustrates the functions of corresponding keys:
 | ![](media/a76df707b84409e57a1167889c3510d9.png) |                Click to send“x”                | Click to show the distance detected by ultrasonic sensor (unit: cm) |
 | ![](media/704e5c6a72d89ee8f78d79ff3cd9537c.png) | Click to send“c” <br />Click again to send“d”  |   Press to turn on the fan and press again to turn off it    |
 
-#### **(3)Components Needed:**
+#### **(3)Flow Chart:**
 
-![Img](./media/img-20240117094724.png)
+![image-20230427101759352](img/image-20230427101759352.png)
 
 #### **(4)Connection Diagram:**
 
@@ -1907,13 +1894,15 @@ After uploading the code, connect the robot to the Bluetooth module and pair the
 
 #### **(1)Description:**
 
-The smart car has performed a single function in every previous project. Can it display multiply functions at a time ? Positive. In this last big project, we intend to use a complete code to control the smart car to show off all functions mentioned in previous projects. We use the keys on the Bluetooth APP to automatically switch various functions, quite simple and convenient.
+The smart car has performed a single function in every previous project. 
+
+Can it display multiply functions at a time ? Positive. 
+
+In this last big project, we intend to use a complete code to control the smart car to show off all functions mentioned in previous projects. We use the keys on the Bluetooth APP to automatically switch various functions, quite simple and convenient.
+
+#### **(2)Flow Diagram:**
 
 ![img](media/wps122.png)
-
-#### **(2)Components Needed:**
-
-![Img](./media/img-20240117095736.png)
 
 #### **(3)Connection Diagram:**
 
@@ -1947,8 +1936,6 @@ After uploading the code successfully, open the positioning, and then connect th
 
 After uploading the code successfully, plug in the Bluetooth module, after power-on, after the mobile APP is connected to the Bluetooth successfully, we can use the mobile APP to control the tank robot.
 
-![](media/9f03ddcc09ca24f0521e68a45991a38b.jpeg)
-
 ## 4. Experiment Extension
 
 ### Assemble Fire Extinguishing Robot
@@ -1973,13 +1960,19 @@ Wire up the two flame sensors
 
 ![ ](./media/e224ea3ffed9b63eda92e9fbd2fc0ed2.png)
 
+| Flame Sensor | Keyestudio 8833 Board |
+| :----------: | :-------------------: |
+|      G       |           G           |
+|      V       |           V           |
+|      A       |          A1           |
+
 ![ ](./media/5aaf61e5d36e7bc01753e544bebeca46.png)
 
-| Left | Keyestudio 8833 Board |      | Right | Keyestudio 8833 Board |
-| :--: | :-------------------: | ---- | :---: | :-------------------: |
-|  G   |           G           |      |   G   |           G           |
-|  V   |           V           |      |   V   |           V           |
-|  A   |          A1           |      |   A   |          A2           |
+| Flame Sensor | Keyestudio 8833 Board |
+| :----------: | :-------------------: |
+|      G       |           G           |
+|      V       |           V           |
+|      A       |          A2           |
 
 Wire up the fan module 
 
@@ -2035,11 +2028,7 @@ In the process of use, pay attention to keep the flame sensor in certain distanc
 
 - Output signal: analog signals A0, A1
 
-#### **(3)Components Required:**
-
-![Img](./media/img-20240117095911.png)
-
-#### **(4)Connection Diagram:**
+#### **(3)Connection Diagram:**
 
 ![](media/10f5f2256c61c54bf7f9a7a0c52375f9.png)
 
@@ -2047,9 +2036,9 @@ Pin A of two photoresistors are connected to A1 and A2. We connect the flame sen
 
 <span style="color: rgb(255, 76, 65);">**Note:**</span>
 1）This experiment requires the use of a fire source. Please make it away from flammable items to prevent fire. Children should experiment under adult supervision. If you cannot confirm that you are safe, please abandon the experiment. 
-2）The flame sensoris not fireproof, please do not burn it directly with flame.
+2）**The flame sensoris not fireproof, please do not burn it directly with flame.**
 
-#### **(5)Test Code:**
+#### **(4)Test Code:**
 
 You can also drag blocks to edit your code, as shown below
 
@@ -2067,7 +2056,7 @@ You can also drag blocks to edit your code, as shown below
 
 ![](media/4bc6c8a4d6e964fd078a6aeb0dd51ff4.png)
 
-#### **(6)Test Results:**
+#### **(5)Test Results:**
 
 Wire up components, burn the code, open the serial monitor and set the baud rate to 9600.
 
@@ -2081,10 +2070,7 @@ Adjust the potentiometer on the module to maintain the LED at the critical point
 
 ![](media/60d0ce2044a504135af3b1113a1a4c7d.png)
 
-#### **(7)Extension Practice:**
-
-![Img](./media/img-20240117100201.png)
-
+#### **(6)Extension Practice:**
 
 <span style="color: rgb(255, 76, 65);">**Note:**</span>
 1）This experiment requires the use of a fire source. Please make it away from flammable items to prevent fire. Children should experiment under adult supervision. If you cannot confirm that you are safe, please abandon the experiment. 
@@ -2115,6 +2101,9 @@ You can use the flame of a lighter near the left flame sensor. When the flame se
 
 ![Img](./media/img-20240117100333.png)
 
+<span style="color: rgb(255, 76, 65);">**Note:**</span>
+Please make it away from flammable items to prevent fire. Children should experiment under adult supervision. If you cannot confirm that you are safe, please abandon the experiment. The flame sensor is not fireproof, please do not burn it directly with flame.
+
 
 ### Project 20: Fan
 
@@ -2138,18 +2127,15 @@ In addition, its low standby current and low static working current makes itself
 
 - Size: 47.6mm \* 23.8mm
 
+#### **(3)Connection Diagram:**
 
-#### **(3)Components Needed:**
-
-![Img](./media/img-20240117100433.png)
-
-#### **(4)Connection Diagram:**
+The fan module needs driving by large current; therefore, we install a battery holder.
 
 ![](media/2bd9aa5cc21e274458328958561f1915.png)
 
 The pin GND, VCC, IN+ and IN- of the fan module are connected to pin G, V, 12 and 13 of the shield.
 
-#### **(5)Test Code:**
+#### **(4)Test Code:**
 
 You can also drag blocks to edit your code, as shown below
 
@@ -2165,13 +2151,13 @@ You can also drag blocks to edit your code, as shown below
 
 ![](media/cbb8f153dd0d114bdd350577af7a1f02.png)
 
-#### **(6)Test Results:**
+#### **(5)Test Results:**
 
 Upload code, wire up components, power on and turn the DIP switch to ON. The small fan will turn clockwise for 2s, stop for 2s and anticlockwise for 2s
 
 ![Img](./media/img-20240117100504.png)
 
-#### **(7)Extension Practice:**
+#### **(6)Extension Practice:**
 
 We have understood the working principle of the flame sensor. Next, hook up a flame sensor in the circuit , as shown below. Then control the fan to blew out fire with the flame sensor.
 
@@ -2199,15 +2185,13 @@ After uploading the code, turn on the power switch of the motor drive shield, yo
 
 ![Img](./media/img-20240117102303.png)
 
-
-
 ### Project 21: Fire Extinguishing Tank
-
-
 
 #### **(1)Description:**
 
-The line-tracking function of the smart tank has been explained in the previous project. And in this project we use the flame sensor to make a fire extinguishing robot. When the car encounters flames, the motor of the fan will rotate to blow out the fire. Of course, we need to replace the ultrasonic sensor and two photoresistors with a fan module and flame sensors first.
+The line-tracking function of the smart tank has been explained in the previous project. And in this project we use the flame sensor to make a fire extinguishing robot. 
+
+When the car encounters flames, the motor of the fan will rotate to blow out the fire. Of course, we need to replace the ultrasonic sensor and two photoresistors with a fan module and flame sensors first.
 
 The specific logic of the line-tracking smart car is shown in the table blow:
 
@@ -2218,21 +2202,17 @@ The specific logic of the line-tracking smart car is shown in the table blow:
 |        ≥700        |        ≥700         | Car stops，fan starts rotating to blow up flame |
 |       ＞700        |        ＞700        | Fan stops，car moves                            |
 
-#### **(2)Components Needed:**
-
-![Img](./media/img-20240117102540.png)
-
 <span style="color: rgb(255, 76, 65);">**Note:**</span>
 1）This experiment requires the use of a fire source. Please make it away from flammable items to prevent fire. Children should experiment under adult supervision. If you cannot confirm that you are safe, please abandon the experiment. 
 2）The flame sensoris not fireproof, please do not burn it directly with flame.
 We can control an external LED with the flame sensor. The LED still is connected to D9. When fire is connected, LED will be on.
 
 
-#### **(3)Flow chart:**
+#### **(2)Flow chart:**
 
 ![img](media/wps120.png)
 
-#### **(4)Connection Diagram:**
+#### **(3)Connection Diagram:**
 
 ![](media/c02e461ac7bdbab7fd14a19c453e08e4.png)
 
@@ -2242,7 +2222,7 @@ GND, VCC, SDA and SCL of the 8x16 LED panel are connected to G（GND, V（VCC), 
 
 G, V and A of two flame sensors are interfaced with G（GND), V（VCC), A1 and A2 of the expansion board.
 
-#### **(5)Test Code:**
+#### **(4)Test Code:**
 
 
 You can also drag blocks to edit your code, as shown below
@@ -2265,30 +2245,30 @@ You can also drag blocks to edit your code, as shown below
 
 ![](media/c07c09e5533a37838722b8c2b513646d.png)
 
-#### **(6)Test Results:**
+#### **(5)Test Results:**
 
 After upload the test code successfully, power up and turn the DIP switch to ON end. The smart car will put out the fire when it detects flame.
 
 ![](media/2de5f1d832d40c0fc94274f1d87443c6.jpeg)
 
+<span style="color: rgb(255, 76, 65);">**Note:**</span>
+Please make it away from flammable items to prevent fire. Children should experiment under adult supervision. If you cannot confirm that you are safe, please abandon the experiment. The flame sensor is not fireproof, please do not burn it directly with flame.
+
 ### Project 22: Fire Extinguishing Robot Multiple Functions
-
-
 
 #### **(1)Description:**
 
-The smart car has performed a single function in every previous project. Can it display multiply functions at a time ? Positive. In this last big project, we intend to use a complete code to control the smart car to show off all functions mentioned in previous projects. We use the keys on the Bluetooth APP to automatically switch various functions, quite simple and convenient.
+The smart car has performed a single function in every previous project. 
 
-![img](media/wps122.png)
+Can it display multiply functions at a time ? Positive. 
 
-#### **(2)Components Needed:**
+In this last big project, we intend to use a complete code to control the smart car to show off all functions mentioned in previous projects. We use the keys on the Bluetooth APP to automatically switch various functions, quite simple and convenient.
 
-![Img](./media/img-20240117102743.png)
-
+#### **(2)Flow Diagram:**
 
 <span style="color: rgb(255, 76, 65);">**Please referto Project 16 to install and configure Bluetooth APP**</span>
 
-
+![img](media/wps122.png)
 
 #### **(3)Connection Diagram:**
 
@@ -2320,9 +2300,7 @@ Before uploading the program code, the Bluetooth module needs to be removed, oth
 
 After uploading the code successfully, open the positioning, and then connect the Bluetooth module.
 
-After uploading the code successfully, plug in the Bluetooth module, after power-on, after the mobile APP is connected to the Bluetooth successfully, we can use the mobile APP to control the tank robot
-
-You need to comment out the unused code, and uncomment the used code. Because some modules use the same IO port, you must comment out a part. The above two codes are the corresponding two ways to play.
+After uploading the code successfully, plug in the Bluetooth module, after power-on, after the mobile APP is connected to the Bluetooth successfully, we can use the mobile APP to control the tank robot.
 
 ![](media/13656cfee75dc5acbeba18a90a084e159.jpg)
 

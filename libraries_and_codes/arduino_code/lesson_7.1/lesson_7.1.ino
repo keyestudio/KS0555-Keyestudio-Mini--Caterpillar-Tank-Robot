@@ -7,7 +7,7 @@
 #include <IRremote.h>     // IRremote library statement
 int RECV_PIN = 3;        //define the pins of IR receiver as 3
 IRrecv irrecv(RECV_PIN);
-decode_results results;   //decode results exist in the“result” of “decode results
+decode_results results;   //decode results exist in the“result” of “decode results”
 void setup() {
   Serial.begin(9600);
   irrecv.enableIRIn();    //Enable receiver
