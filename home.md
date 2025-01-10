@@ -115,3 +115,9 @@ It is really the best choice for you.
 | 49   |               ![img](media/wps6.jpg)                |                 M4*12MM hexagon socket screw                 | 2    |
 | 50   |               ![img](media/wps7.jpg)                |                          belt track                          | 2    |
 
+## 6. Assemble Ultrasonic Tank Robot
+
+| Arduino Tutorial                                             | Kidsblock Tutorial                                           |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| https://docs.keyestudio.com/projects/KS0555/en/latest/arduino/arduino.html#assemble-ultrasonic-tank-robot | https://docs.keyestudio.com/projects/KS0555/en/latest/kidsblock/kidsblock.html#assemble-ultrasonic-tank-robot |
+
