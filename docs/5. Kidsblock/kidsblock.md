@@ -22,6 +22,12 @@ First connect the development board to the computer
 
 ![](./media/A.gif)
 
+If you encounter the error shown below during the installation of KidsBlock, a reinstallation may resolve the issue. Please refer to the video tutorial and follow the steps provided.
+
+![](./media/c37b8b9849a01212eb02a3ab28ca82d0.jpg)
+
+<iframe width="951" height="536" src="https://www.youtube.com/embed/ZOIm0tTaBeQ" title="KidsBlock Error Resolution" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## 5.3 Software installation of Mac System
 
 1.Download kidsblock: https://xiazai.keyesrobot.cn/KidsBlock.dmg Desktop 2.0.4.dmg.

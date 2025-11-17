@@ -8,6 +8,10 @@
 
 ![](./media/1234567.gif)
 
+ [Arduino Tutorial](..\4. Arduino\Arduino.7z) 
+
+ [Kidsblock  Tutorial](..\5. Kidsblock\Kidsblock.7z) 
+
 # 1. Product introduction  
 
 ![](media/0eed85e053eec9481023a1aaa999190e.png)
