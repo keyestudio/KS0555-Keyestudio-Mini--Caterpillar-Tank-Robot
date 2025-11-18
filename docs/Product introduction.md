@@ -8,9 +8,9 @@
 
 ![](./media/1234567.gif)
 
- [Arduino Tutorial](../4. Arduino/Arduino.7z) 
+ [Arduino Tutorial](./Arduino/Arduino.7z) 
 
- [Kidsblock  Tutorial](../5. Kidsblock/Kidsblock.7z) 
+ [Kidsblock  Tutorial](./Kidsblock/Kidsblock.7z) 
 
 # 1. Product introduction  
 
