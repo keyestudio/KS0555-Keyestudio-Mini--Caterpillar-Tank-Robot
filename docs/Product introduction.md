@@ -69,7 +69,7 @@ It is really the best choice for you.
 
 | No.  |                             Name                             | QTY  |                       Picture                       |
 | ---- | :----------------------------------------------------------: | ---- | :-------------------------------------------------: |
-| 1    |                      Tank Robot Chassis                      | 1    |               ![img](media/wps8.jpg)                |
+| 1    | Tank Robot Chassis（**Please prepare two 18650 batteries yourself in advance**） | 1    |               ![img](media/wps8.jpg)                |
 | 2    |  Keyestudio V4.0 development board (compatible Arduino UNO)  | 1    |   ![](media/8ecfc7e4f74bd2001452e33f74eace2e.png)   |
 | 3    |         Keyestudio 8833 Motor Driver Expansion Board         | 1    |  ![ ](media/a68b920cd30c3b17941fa8b28b643c8f.png)   |
 | 4    |                  DX-BT24 V5.1 BLE BT Module                  | 1    |  ![ ](media/5932436a0916951504a9debb97a905c3.jpeg)  |
