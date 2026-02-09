@@ -117,7 +117,7 @@ It is really the best choice for you.
 | 46   |                    chassis driving wheel                     | 2    |               ![img](media/wps3.png)                |
 | 47   |                    chassis bearing wheel                     | 2    |               ![img](media/wps4.png)                |
 | 48   |                 M4*12MM hexagon socket screw                 | 2    |               ![img](media/wps5.jpg)                |
-| 49   |                 M4*12MM hexagon socket screw                 | 2    |               ![img](media/wps6.jpg)                |
+| 49   |                 M4*35MM hexagon socket screw                 | 2    |               ![img](media/wps6.jpg)                |
 | 50   |                          belt track                          | 2    |               ![img](media/wps7.jpg)                |
 
 ## 1.5Keyestudio V4.0 Development Board
