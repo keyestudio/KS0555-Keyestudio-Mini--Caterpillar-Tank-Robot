@@ -678,5 +678,3 @@ After uploading the code successfully, turn on location services on your device,
 Once the Bluetooth module is plugged in and powered on, and the mobile APP is successfully connected to the Bluetooth, we can use the mobile APP to control the tank robot.
 
 You can also control the robot with the remote control.
-
-## 4. Experiment Extension
