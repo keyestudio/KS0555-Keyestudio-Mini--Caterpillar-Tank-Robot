@@ -43,5 +43,3 @@ Before uploading the program code, the Bluetooth module needs to be removed; oth
 After uploading the code successfully, turn on location services on your device, and then connect the Bluetooth module.
 
 Once the Bluetooth module is plugged in and powered on, and the mobile APP is successfully connected to the Bluetooth, we can use the mobile APP to control the tank robot.
-
-## 4. Experiment Extension
