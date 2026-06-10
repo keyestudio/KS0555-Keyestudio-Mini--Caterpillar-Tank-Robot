@@ -8,6 +8,6 @@
    docs/Driver installation/Driver installation
    docs/Arduino/arduino
    docs/Kidsblock/kidsblock
-   docs/Need Technical Support/Need Technical Support
+   docs/Need Technical Support
 
 

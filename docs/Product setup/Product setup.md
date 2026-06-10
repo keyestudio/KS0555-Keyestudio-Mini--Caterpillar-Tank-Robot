@@ -1,6 +1,6 @@
 # 2. Product setup
 
-<span style="color: rgb(255, 76, 65);">**Caution**</span>: Set the initial angle of the servo Peel thin films off boards before installing this robot .
+<span style="color: rgb(255, 76, 65);">**Caution**</span>: Peel thin films off boards before installing this robot. Note that the initial angle of the servo must be set during installation.
 
 ![](./media/image-20250709092645945.png)
 
@@ -14,7 +14,7 @@ Tools needed:
 
 ![](./media/image-20250709092738119.png)
 
-<span style="color: rgb(255, 76, 65); font-size: 16px;">Pay attention to the installation direction of the wheels. The thick side is on the outside.</span>
+<span style="color: rgb(255, 76, 65); font-size: 16px;">**Note:** Pay attention to the installation direction of the wheels. The thick side should be on the outside.</span>
 
 ![](./media/image-20250709092816744.png)
 
@@ -30,7 +30,7 @@ The wheels and tracks must be installed. Then mount them on the car body simulta
 
 ![](./media/image-20250709093110898.png)
 
-Note where the wheels are mounted on the tracks.
+**Note:** Pay attention to where the wheels are mounted on the tracks.
 
 ![](./media/image-20250709093130989.png)
 
@@ -44,7 +44,7 @@ Note where the wheels are mounted on the tracks.
 
 ![](./media/image-20250709093246548.png)
 
-Please wire up first.
+**Note:** Please wire up first.
 
 ![](./media/image-20250709093344681.png)
 
@@ -84,7 +84,7 @@ Please wire up first.
 
 ![](./media/image-20250709094006571.png)
 
-<span style="color: rgb(255, 76, 65);">Note the direction of jumper caps.</span>
+<span style="color: rgb(255, 76, 65);">**Note:** Pay attention to the direction of jumper caps.</span>
 
 ![](./media/image-20250709094035675.png)
 
@@ -108,7 +108,7 @@ Please wire up first.
 
 **Step 10**
 
-（Need to adjust the angle of the servo）
+(Need to adjust the angle of the servo)
 
 ![](./media/image-20250709095001492.png)
 
@@ -116,7 +116,7 @@ Please wire up first.
 
 **Set the angle of the servo to 90°**
 
-To adjust the code of the servo,please select it according to the course.
+To adjust the code of the servo, please select the corresponding code according to the course.
 
 1.**Arduino:**Download the code file:[Arduino](./Arduino.7z)
 
@@ -154,7 +154,7 @@ Keep the ultrasonic sensor parallel to the board.
 
 **Wire up**
 
-For 8\*16LED panel, Make wires connect to A4 and A5.
+For the 8\*16 LED panel, connect the wires to A4 and A5.
 
 ![](./media/image-20250709095552072.png)
 
@@ -162,19 +162,19 @@ For 8\*16LED panel, Make wires connect to A4 and A5.
 
 ![](./media/image-20250709095643567.png)
 
-Connect the motor A to A port and make the motor B to B port.
+Connect motor A to the A port and motor B to the B port.
 
 ![](./media/image-20250709095728739.png)
 
 ![](./media/image-20250709095740866.png)
 
-Connect the power wire
+Connect the power wire.
 
 ![](./media/image-20250709095759390.png)
 
 ![](./media/image-20250709095811580.png)
 
-Line Tracking Sensor(see the picture)
+Line Tracking Sensor (see the picture):
 
 ![](./media/image-20250709095830428.png)
 
@@ -184,7 +184,7 @@ Line Tracking Sensor(see the picture)
 
 ![](./media/image-20250709095911639.png)
 
-Wire up the photoresistors
+Wire up the photoresistors:
 
 ![](./media/image-20250709095929779.png)
 
@@ -204,7 +204,7 @@ Wire up the photoresistors
 |       V       |           V            |
 |       S       |           V2           |
 
-Wire up ultrasonic sensor.
+Wire up the ultrasonic sensor:
 
 ![](./media/image-20250709100317508.png)
 
@@ -217,7 +217,7 @@ Wire up ultrasonic sensor.
 |       Echo        |          D13          |
 |        Gnd        |           G           |
 
-Wire up the servo(D10)
+Wire up the servo (D10):
 
 ![](./media/image-20250709100626238.png)
 

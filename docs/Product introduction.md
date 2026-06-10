@@ -120,7 +120,7 @@ It is really the best choice for you.
 | 49   |                 M4*35MM hexagon socket screw                 | 2    |                    ![img](media/wps6.jpg)                    |
 | 50   |                          belt track                          | 2    |                    ![img](media/wps7.jpg)                    |
 
-## 1.5Keyestudio V4.0 Development Board
+## 1.5 Keyestudio V4.0 Development Board
 
 You need to know that keyestudio V4.0 development board is the core of this smart car.
 
