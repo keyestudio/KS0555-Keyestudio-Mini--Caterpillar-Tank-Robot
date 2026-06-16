@@ -38,7 +38,6 @@
   <a href="https://docs.keyestudio.com/projects/KS0555/nl/latest/" target="_blank">Dutch</a>
 
 
-
 .. toctree::
    :maxdepth: 3
    :caption: KS0555 Mini Tank Robot V3 tutorial
