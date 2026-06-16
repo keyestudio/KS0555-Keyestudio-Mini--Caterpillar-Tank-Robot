@@ -1,12 +1,12 @@
-# 2. Product setup
+# 2. Produkt-Setup
 
-<span style="color: rgb(255, 76, 65);">**Caution**</span>: Peel thin films off boards before installing this robot. Note that the initial angle of the servo must be set during installation.
+<span style="color: rgb(255, 76, 65);">**Achtung**</span>: Entfernen Sie dünne Folien von den Platinen, bevor Sie diesen Roboter installieren. Beachten Sie, dass der anfängliche Winkel des Servos während der Installation eingestellt werden muss.
 
 ![](./media/image-20250709092645945.png)
 
- **Step1**
+ **Schritt 1**
 
-Tools needed:
+Benötigte Werkzeuge:
 
 ![](./media/image-20250709102252976.png)
 
@@ -14,29 +14,29 @@ Tools needed:
 
 ![](./media/image-20250709092738119.png)
 
-<span style="color: rgb(255, 76, 65); font-size: 16px;">**Note:** Pay attention to the installation direction of the wheels. The thick side should be on the outside.</span>
+<span style="color: rgb(255, 76, 65); font-size: 16px;">**Hinweis:** Achten Sie auf die Einbaurichtung der Räder. Die dicke Seite sollte außen sein.</span>
 
 ![](./media/image-20250709092816744.png)
 
 ![](./media/image-20250709092828746.png)
 
- **Step2**
+ **Schritt 2**
 
 ![](./media/image-20250709093034445.png)
 
-The wheels and tracks must be installed. Then mount them on the car body simultaneously. Otherwise the tracks cannot be installed.
+Die Räder und Ketten müssen installiert werden. Montieren Sie sie dann gleichzeitig am Fahrzeugkörper. Andernfalls können die Ketten nicht installiert werden.
 
 ![](./media/image-20250709093056711.png)
 
 ![](./media/image-20250709093110898.png)
 
-**Note:** Pay attention to where the wheels are mounted on the tracks.
+**Hinweis:** Achten Sie darauf, wo die Räder an den Ketten montiert werden.
 
 ![](./media/image-20250709093130989.png)
 
 ![](./media/image-20250709093205374.png)
 
- **Step3**
+ **Schritt 3**
 
 ![](./media/image-20250709093225354.png)
 
@@ -44,7 +44,7 @@ The wheels and tracks must be installed. Then mount them on the car body simulta
 
 ![](./media/image-20250709093246548.png)
 
-**Note:** Please wire up first.
+**Hinweis:** Bitte zuerst verkabeln.
 
 ![](./media/image-20250709093344681.png)
 
@@ -56,7 +56,7 @@ The wheels and tracks must be installed. Then mount them on the car body simulta
 
 ![](./media/image-20250709093449028.png)
 
-**Step 4**
+**Schritt 4**
 
 ![](./media/image-20250709093522583.png)
 
@@ -64,7 +64,7 @@ The wheels and tracks must be installed. Then mount them on the car body simulta
 
 ![](./media/image-20250709093547507.png)
 
-**Step 5**
+**Schritt 5**
 
 ![](./media/image-20250709093644514.png)
 
@@ -72,7 +72,7 @@ The wheels and tracks must be installed. Then mount them on the car body simulta
 
 ![](./media/image-20250709093847892.png)
 
- **Step 6**
+ **Schritt 6**
 
 ![](./media/image-20250709093916149.png)
 
@@ -80,17 +80,17 @@ The wheels and tracks must be installed. Then mount them on the car body simulta
 
 ![](./media/image-20250709093939255.png)
 
-**Step 7**
+**Schritt 7**
 
 ![](./media/image-20250709094006571.png)
 
-<span style="color: rgb(255, 76, 65);">**Note:** Pay attention to the direction of jumper caps.</span>
+<span style="color: rgb(255, 76, 65);">**Hinweis:** Achten Sie auf die Richtung der Jumper-Kappen.</span>
 
 ![](./media/image-20250709094035675.png)
 
 ![](./media/image-20250709094048424.png)
 
- **Step 8**
+ **Schritt 8**
 
 ![](./media/image-20250709094212254.png)
 
@@ -98,7 +98,7 @@ The wheels and tracks must be installed. Then mount them on the car body simulta
 
 ![](./media/image-20250709094802015.png)
 
-**Step 9**
+**Schritt 9**
 
 ![](./media/image-20250709094906387.png)
 
@@ -106,35 +106,35 @@ The wheels and tracks must be installed. Then mount them on the car body simulta
 
 ![](./media/image-20250709094931895.png)
 
-**Step 10**
+**Schritt 10**
 
-(Need to adjust the angle of the servo)
+(Der Winkel des Servos muss eingestellt werden)
 
 ![](./media/image-20250709095001492.png)
 
 ![](./media/image-20250709095028698.png)
 
-**Set the angle of the servo to 90°**
+**Stellen Sie den Winkel des Servos auf 90° ein**
 
-To adjust the code of the servo, please select the corresponding code according to the course.
+Um den Code des Servos anzupassen, wählen Sie bitte den entsprechenden Code gemäß dem Kurs aus.
 
-1.**Arduino:**Download the code file:[Arduino](./Arduino.7z)
+1.**Arduino:** Laden Sie die Codedatei herunter: [Arduino](./Arduino.7z)
 
 ![](./media/image-20250710110650230.png)
 
-2.**Kidsblock:**Download the code file:[Kidsblock](./Kidsblock.7z)
+2.**Kidsblock:** Laden Sie die Codedatei herunter: [Kidsblock](./Kidsblock.7z)
 
 ![](./media/image-20250710110906515.png)
 
-**After initializing servo angle, install the Bluetooth module.**
+**Nach der Initialisierung des Servowinkels installieren Sie das Bluetooth-Modul.**
 
-Keep the ultrasonic sensor parallel to the board.
+Halten Sie den Ultraschallsensor parallel zur Platine.
 
 ![](./media/image-20250709095254305.png)
 
 ![](./media/image-20250709095307371.png)
 
- **Step 11**
+ **Schritt 11**
 
 ![](./media/image-20250709095338636.png)
 
@@ -144,7 +144,7 @@ Keep the ultrasonic sensor parallel to the board.
 
 
 
-**Step 12**
+**Schritt 12**
 
 ![](./media/image-20250709095454717.png)
 
@@ -152,9 +152,9 @@ Keep the ultrasonic sensor parallel to the board.
 
 ![](./media/image-20250709095524456.png)
 
-**Wire up**
+**Verkabelung**
 
-For the 8\*16 LED panel, connect the wires to A4 and A5.
+Für das 8*16 LED-Panel verbinden Sie die Kabel mit A4 und A5.
 
 ![](./media/image-20250709095552072.png)
 
@@ -162,19 +162,19 @@ For the 8\*16 LED panel, connect the wires to A4 and A5.
 
 ![](./media/image-20250709095643567.png)
 
-Connect motor A to the A port and motor B to the B port.
+Verbinden Sie Motor A mit dem A-Port und Motor B mit dem B-Port.
 
 ![](./media/image-20250709095728739.png)
 
 ![](./media/image-20250709095740866.png)
 
-Connect the power wire.
+Verbinden Sie das Stromkabel.
 
 ![](./media/image-20250709095759390.png)
 
 ![](./media/image-20250709095811580.png)
 
-Line Tracking Sensor (see the picture):
+Linienverfolgungssensor (siehe Bild):
 
 ![](./media/image-20250709095830428.png)
 
@@ -184,13 +184,13 @@ Line Tracking Sensor (see the picture):
 
 ![](./media/image-20250709095911639.png)
 
-Wire up the photoresistors:
+Verkabeln Sie die Fotowiderstände:
 
 ![](./media/image-20250709095929779.png)
 
 ![](./media/image-20250709095939414.png)
 
-| Photoresistor | Keyestudio 8833 Board |
+| Fotowiderstand | Keyestudio 8833 Platine |
 | :-----------: | :-------------------: |
 |       G       |           G           |
 |       V       |           V           |
@@ -198,36 +198,35 @@ Wire up the photoresistors:
 
 ![](./media/image-20250709100043670.png)
 
-| Photoresistor | Keyestudio 8833  Board |
+| Fotowiderstand | Keyestudio 8833 Platine |
 | :-----------: | :--------------------: |
 |       G       |           G            |
 |       V       |           V            |
 |       S       |           V2           |
 
-Wire up the ultrasonic sensor:
+Verkabeln Sie den Ultraschallsensor:
 
 ![](./media/image-20250709100317508.png)
 
 ![](./media/image-20250709100329430.png)
 
-| Ultrasonic Sensor | Keyestudio 8833 Board |
+| Ultraschallsensor | Keyestudio 8833 Platine |
 | :---------------: | :-------------------: |
 |        Vcc        |           V           |
 |       Trig        |          D12          |
 |       Echo        |          D13          |
 |        Gnd        |           G           |
 
-Wire up the servo (D10):
+Verkabeln Sie das Servo (D10):
 
 ![](./media/image-20250709100626238.png)
 
-| Servo  | Keyestudio 8833 Board |
+| Servo  | Keyestudio 8833 Platine |
 | :----: | :-------------------: |
-| Brown  |           G           |
-|  Red   |         V(5V)         |
+| Braun  |           G           |
+|  Rot   |         V(5V)         |
 | Orange |          D10          |
 
-<span style="color: rgb(255, 76, 65);">**We adopt a model 18650 lithium battery with a pointed positive pole, whose power and capacity are not required.**</span>
+<span style="color: rgb(255, 76, 65);">**Wir verwenden ein Modell 18650 Lithium-Akku mit spitzem Pluspol, dessen Leistung und Kapazität nicht erforderlich sind.**</span>
 
 ![](./media/image-20250709100841625.png)
-
