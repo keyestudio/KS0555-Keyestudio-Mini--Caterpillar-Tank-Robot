@@ -1,12 +1,12 @@
-# 2. Configurazione del prodotto
+# 2. 製品セットアップ
 
-<span style="color: rgb(255, 76, 65);">**Attenzione**</span>: Rimuovere le pellicole sottili dalle schede prima di installare questo robot. Si noti che l'angolo iniziale del servo deve essere impostato durante l'installazione.
+<span style="color: rgb(255, 76, 65);">**注意**</span>: このロボットを取り付ける前に、ボードから薄いフィルムを剥がしてください。サーボの初期角度は取り付け時に設定する必要があることに注意してください。
 
 ![](./media/image-20250709092645945.png)
 
- **Passo 1**
+**ステップ1**
 
-Strumenti necessari:
+必要なツール：
 
 ![](./media/image-20250709102252976.png)
 
@@ -14,29 +14,29 @@ Strumenti necessari:
 
 ![](./media/image-20250709092738119.png)
 
-<span style="color: rgb(255, 76, 65); font-size: 16px;">**Nota:** Prestare attenzione alla direzione di installazione delle ruote. Il lato spesso deve essere all'esterno.</span>
+<span style="color: rgb(255, 76, 65); font-size: 16px;">**注意：** 車輪の取り付け方向に注意してください。厚い側が外側になるようにしてください。</span>
 
 ![](./media/image-20250709092816744.png)
 
 ![](./media/image-20250709092828746.png)
 
- **Passo 2**
+**ステップ2**
 
 ![](./media/image-20250709093034445.png)
 
-Le ruote e i cingoli devono essere installati. Quindi montarli contemporaneamente sul corpo dell'auto. Altrimenti i cingoli non possono essere installati.
+車輪とトラックを取り付ける必要があります。その後、それらを同時に車体に取り付けます。そうしないと、トラックを取り付けることができません。
 
 ![](./media/image-20250709093056711.png)
 
 ![](./media/image-20250709093110898.png)
 
-**Nota:** Prestare attenzione a dove le ruote sono montate sui cingoli.
+**注意：** 車輪がトラックのどこに取り付けられているかに注意してください。
 
 ![](./media/image-20250709093130989.png)
 
 ![](./media/image-20250709093205374.png)
 
- **Passo 3**
+**ステップ3**
 
 ![](./media/image-20250709093225354.png)
 
@@ -44,7 +44,7 @@ Le ruote e i cingoli devono essere installati. Quindi montarli contemporaneament
 
 ![](./media/image-20250709093246548.png)
 
-**Nota:** Si prega di cablare prima.
+**注意：** まず配線してください。
 
 ![](./media/image-20250709093344681.png)
 
@@ -56,7 +56,7 @@ Le ruote e i cingoli devono essere installati. Quindi montarli contemporaneament
 
 ![](./media/image-20250709093449028.png)
 
-**Passo 4**
+**ステップ4**
 
 ![](./media/image-20250709093522583.png)
 
@@ -64,7 +64,7 @@ Le ruote e i cingoli devono essere installati. Quindi montarli contemporaneament
 
 ![](./media/image-20250709093547507.png)
 
-**Passo 5**
+**ステップ5**
 
 ![](./media/image-20250709093644514.png)
 
@@ -72,7 +72,7 @@ Le ruote e i cingoli devono essere installati. Quindi montarli contemporaneament
 
 ![](./media/image-20250709093847892.png)
 
- **Passo 6**
+**ステップ6**
 
 ![](./media/image-20250709093916149.png)
 
@@ -80,17 +80,17 @@ Le ruote e i cingoli devono essere installati. Quindi montarli contemporaneament
 
 ![](./media/image-20250709093939255.png)
 
-**Passo 7**
+**ステップ7**
 
 ![](./media/image-20250709094006571.png)
 
-<span style="color: rgb(255, 76, 65);">**Nota:** Prestare attenzione alla direzione dei cappucci dei ponticelli.</span>
+<span style="color: rgb(255, 76, 65);">**注意：** ジャンパーキャップの方向に注意してください。</span>
 
 ![](./media/image-20250709094035675.png)
 
 ![](./media/image-20250709094048424.png)
 
- **Passo 8**
+**ステップ8**
 
 ![](./media/image-20250709094212254.png)
 
@@ -98,7 +98,7 @@ Le ruote e i cingoli devono essere installati. Quindi montarli contemporaneament
 
 ![](./media/image-20250709094802015.png)
 
-**Passo 9**
+**ステップ9**
 
 ![](./media/image-20250709094906387.png)
 
@@ -106,35 +106,35 @@ Le ruote e i cingoli devono essere installati. Quindi montarli contemporaneament
 
 ![](./media/image-20250709094931895.png)
 
-**Passo 10**
+**ステップ10**
 
-(È necessario regolare l'angolo del servo)
+（サーボの角度を調整する必要があります）
 
 ![](./media/image-20250709095001492.png)
 
 ![](./media/image-20250709095028698.png)
 
-**Impostare l'angolo del servo a 90°**
+**サーボの角度を90°に設定します**
 
-Per regolare il codice del servo, selezionare il codice corrispondente in base al corso.
+サーボのコードを調整するには、コースに応じて対応するコードを選択してください。
 
-1.**Arduino:** Scarica il file del codice:[Arduino](./Arduino.7z)
+1.**Arduino:** コードファイルをダウンロード: [Arduino](./Arduino.7z)
 
 ![](./media/image-20250710110650230.png)
 
-2.**Kidsblock:** Scarica il file del codice:[Kidsblock](./Kidsblock.7z)
+2.**Kidsblock:** コードファイルをダウンロード: [Kidsblock](./Kidsblock.7z)
 
 ![](./media/image-20250710110906515.png)
 
-**Dopo aver inizializzato l'angolo del servo, installare il modulo Bluetooth.**
+**サーボ角度を初期化した後、Bluetoothモジュールを取り付けます。**
 
-Mantenere il sensore ultrasonico parallelo alla scheda.
+超音波センサーをボードと平行に保ちます。
 
 ![](./media/image-20250709095254305.png)
 
 ![](./media/image-20250709095307371.png)
 
- **Passo 11**
+**ステップ11**
 
 ![](./media/image-20250709095338636.png)
 
@@ -142,9 +142,7 @@ Mantenere il sensore ultrasonico parallelo alla scheda.
 
 ![](./media/image-20250709095428457.png)
 
-
-
-**Passo 12**
+**ステップ12**
 
 ![](./media/image-20250709095454717.png)
 
@@ -152,9 +150,9 @@ Mantenere il sensore ultrasonico parallelo alla scheda.
 
 ![](./media/image-20250709095524456.png)
 
-**Cablaggio**
+**配線**
 
-Per il pannello LED 8*16, collegare i fili ad A4 e A5.
+8*16 LEDパネルの場合、ワイヤーをA4とA5に接続します。
 
 ![](./media/image-20250709095552072.png)
 
@@ -162,19 +160,19 @@ Per il pannello LED 8*16, collegare i fili ad A4 e A5.
 
 ![](./media/image-20250709095643567.png)
 
-Collegare il motore A alla porta A e il motore B alla porta B.
+モーターAをAポートに、モーターBをBポートに接続します。
 
 ![](./media/image-20250709095728739.png)
 
 ![](./media/image-20250709095740866.png)
 
-Collegare il cavo di alimentazione.
+電源ワイヤーを接続します。
 
 ![](./media/image-20250709095759390.png)
 
 ![](./media/image-20250709095811580.png)
 
-Sensore di tracciamento linea (vedi immagine):
+ライン追跡センサー（写真参照）：
 
 ![](./media/image-20250709095830428.png)
 
@@ -184,13 +182,13 @@ Sensore di tracciamento linea (vedi immagine):
 
 ![](./media/image-20250709095911639.png)
 
-Cablare i fotoresistori:
+フォトレジスターを配線します：
 
 ![](./media/image-20250709095929779.png)
 
 ![](./media/image-20250709095939414.png)
 
-| Fotoresistore | Scheda Keyestudio 8833 |
+| フォトレジスター | Keyestudio 8833ボード |
 | :-----------: | :-------------------: |
 |       G       |           G           |
 |       V       |           V           |
@@ -198,35 +196,35 @@ Cablare i fotoresistori:
 
 ![](./media/image-20250709100043670.png)
 
-| Fotoresistore | Scheda Keyestudio 8833 |
+| フォトレジスター | Keyestudio 8833ボード |
 | :-----------: | :--------------------: |
 |       G       |           G            |
 |       V       |           V            |
 |       S       |           V2           |
 
-Cablare il sensore ultrasonico:
+超音波センサーを配線します：
 
 ![](./media/image-20250709100317508.png)
 
 ![](./media/image-20250709100329430.png)
 
-| Sensore ultrasonico | Scheda Keyestudio 8833 |
+| 超音波センサー | Keyestudio 8833ボード |
 | :---------------: | :-------------------: |
 |        Vcc        |           V           |
 |       Trig        |          D12          |
 |       Echo        |          D13          |
 |        Gnd        |           G           |
 
-Cablare il servo (D10):
+サーボを配線します（D10）：
 
 ![](./media/image-20250709100626238.png)
 
-| Servo  | Scheda Keyestudio 8833 |
+| サーボ | Keyestudio 8833ボード |
 | :----: | :-------------------: |
-| Marrone  |           G           |
-|  Rosso   |         V(5V)         |
-| Arancione |          D10          |
+| Brown  |           G           |
+|  Red   |         V(5V)         |
+| Orange |          D10          |
 
-<span style="color: rgb(255, 76, 65);">**Adottiamo una batteria al litio modello 18650 con polo positivo appuntito, la cui potenza e capacità non sono richieste.**</span>
+<span style="color: rgb(255, 76, 65);">**当社は、電力と容量を必要としない、先端が尖ったプラス極を持つモデル18650リチウムバッテリーを採用しています。**</span>
 
 ![](./media/image-20250709100841625.png)

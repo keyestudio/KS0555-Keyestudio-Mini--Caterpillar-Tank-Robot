@@ -1,146 +1,144 @@
-**Per quanto riguarda il cambio di lingua nel tutorial, fare riferimento alla seguente immagine animata.**
-
+**チュートリアルの言語切り替えについては、以下のGIF画像を参照してください。**
 ![](./media/1234567.gif)
 
- [Tutorial Arduino](./Arduino/Arduino.7z) 
+[Arduino チュートリアル](./Arduino/Arduino.7z)
 
- [Tutorial Kidsblock](./Kidsblock/Kidsblock.7z) 
+[Kidsblock チュートリアル](./Kidsblock/Kidsblock.7z)
 
-# 1. Introduzione al prodotto  
+# 1. 製品紹介
 
 ![](media/0eed85e053eec9481023a1aaa999190e.png)
 
+## 1.1 はじめに
 
-## 1.1 Introduzione
+このSTEM教育用V3.0タンクロボットは、ライン追跡機能と消火機能が追加され、新しくアップグレードされました。子供と親の関係を強力に強化し、プログラミングとコーディングを通じて子供たちの想像力を刺激します。
 
-Questo robot carro armato STEM educativo V3.0 è stato recentemente aggiornato, aggiungendo una funzione di tracciamento linea e una funzione di estinzione incendi. Migliora vigorosamente la relazione tra bambini e genitori e accende l'immaginazione dei bambini attraverso la programmazione e la codifica.
+組み立ての過程で、光追従、ライン追跡、IRおよびBTリモートコントロール、速度調整など、その複数の機能を見ることができます。さらに、ロボットカーを組み立てるのに役立ついくつかの小さな部品があります。
 
-Durante il processo di assemblaggio, è possibile vedere le sue molteplici funzioni come il seguire la luce, il tracciamento linea, il controllo remoto IR e BT, la regolazione della velocità e così via. Inoltre, ci sono alcune piccole parti che possono aiutarti ad assemblare l'auto robot.
+炎センサー、BTセンサー、障害物回避センサー、ライン追跡センサー、超音波センサーなどの基本的なセンサーとモジュールが含まれています。
 
-Sono inclusi sensori e moduli di base, come un sensore di fiamma, un sensore BT, un sensore di evitamento ostacoli, un sensore di tracciamento linea e un sensore ultrasonico.
+Arduino IDEのC言語コードとKidsBlockグラフィカルプログラミングの2つのチュートリアルは、さまざまな年齢の愛好家にも適しています。
 
-I due tutorial per il codice in linguaggio C dell'IDE Arduino e la programmazione grafica KidsBlock sono adatti anche per gli appassionati di diverse età.
+それは本当にあなたにとって最良の選択です。
 
-È davvero la scelta migliore per te.
+## 1.2 特徴
 
-## 1.2 Caratteristiche
+1. 複数の機能：閉じ込め、ライン追跡、消火、光追従、IRおよびBTリモートコントロール、速度制御など。
 
-1. Funzioni multiple: Confinamento, tracciamento linea, estinzione incendi, seguire la luce, controllo remoto IR e BT, controllo della velocità e così via.
+2. 組み立てが簡単：いくつかの部品でロボットを組み立てます。
 
-2. Facile da costruire: assembla il robot con alcune parti.
+3. 高い粘り強さ：アルミニウム合金ブラケット、金属モーター、高品質ホイール
 
-3. Elevata tenacità: Staffe in lega di alluminio, motori metallici, ruote di alta qualità
+4. 高い拡張性：モータードライバーシールドとLEGO部品を介して多くのセンサーとモジュールを接続します
 
-4. Elevata estensione: collega molti sensori e moduli tramite lo scudo del driver del motore e le parti LEGO
+5. 複数の制御：IRリモートコントロール、アプリ制御（iOSおよびAndroidシステム）
 
-5. Controlli multipli: Controllo remoto IR, controllo tramite App (sistemi iOS e Android)
+6. 基本的なプログラミング：Arduino IDEのC言語コードとKidsBlockグラフィカルプログラミング。
 
-6. Programmazione di base: codice in linguaggio C dell'IDE Arduino e programmazione grafica KidsBlock.
+## 1.3 パラメータ
 
-## 1.3 Parametri
+- 動作電圧：5V
 
-- Tensione di lavoro: 5V
+- 入力電圧：6-9V
 
-- Tensione di ingresso: 6-9V
+- 最大出力電流：1.5A
 
-- Corrente di uscita massima: 1.5A
+- 最大消費電力：32W
 
-- Dissipazione di potenza massima: 32W
+- モーター速度：5V 200 rpm /分
 
-- Velocità del motore: 5V 200 rpm / min
+- モーター駆動モード：デュアルHブリッジ駆動（HR8833）
 
-- Modalità di azionamento del motore: doppio ponte H (HR8833)
+- 超音波誘導角度：<15°
 
-- Angolo di induzione ultrasonica: \<15°
+- 超音波検出距離：2cm-300cm
 
-- Distanza di rilevamento ultrasonica: 2cm-300cm
+- 赤外線リモートコントロール距離：10メートル（実測）
 
-- Distanza del telecomando a infrarossi: 10 metri (misurata)
+- BTリモートコントロール距離：30メートル（実測）
 
-- Distanza del telecomando BT: 30 metri (misurata)
+## 1.4 キットリスト
 
-## 1.4 Elenco del kit
-
-| No.  |                             Nome                             | QTY  |                           Immagine                            |
+| No. | 名前 | 数量 | 写真 |
 | ---- | :----------------------------------------------------------: | ---- | :----------------------------------------------------------: |
-| 1    | Telaio robot carro armato（**Si prega di portare due batterie 18650**） | 1    |                    ![img](media/wps8.jpg)                    |
-| 2    |  Scheda di sviluppo Keyestudio V4.0 (compatibile Arduino UNO)  | 1    |       ![](media/8ecfc7e4f74bd2001452e33f74eace2e.png)        |
-| 3    |         Scheda di espansione driver motore Keyestudio 8833         | 1    |       ![ ](media/a68b920cd30c3b17941fa8b28b643c8f.png)       |
-| 4    |                  Modulo BT BLE DX-BT24 V5.1                  | 1    |      ![ ](media/5932436a0916951504a9debb97a905c3.jpeg)       |
-| 5    |                  Sensore ultrasonico HC-SR04                   | 1    |       ![](media/b0906d68835b2659491e53a85567569b.png)        |
-| 6    |                  Pannello LED Keyestudio 8\*16                  | 1    |       ![](media/2d831a9e71d1777b7b12132267d22947.png)        |
-| 7    |                      Modulo LED Giallo                       | 1    |       ![2](media/0b130b1b8eb4e626a9cad08906af2ef5.png)       |
-| 8    |                         Sensore di fiamma                         | 2    |       ![1](media/ecf808f114234039582880ab4682c4e6.png)       |
-| 9    |                       Modulo motore 130                       | 1    |       ![5](media/465d2f91471dcdab8de9b07e44d37cf4.png)       |
-| 10   |                        Fotoresistore                         | 2    |       ![4](media/9b0193c19a5a7392052adffdfc4e10c2.png)       |
-| 11   |              Scheda acrilica per pannello LED 8\*16               | 1    |       ![4](media/2d8e4747f80f8134999a16c9aa0dabb7.png)       |
-| 12   |                      Scheda acrilica superiore                       | 1    |       ![](media/704f390bd65080844e77b498d37784f7.jpeg)       |
-| 13   |                        Scheda acrilica                         | 1    |            ![Img](./media/img-20240115093710.png)            |
-| 14   | Telecomando Keyestudio JMFP-4 17 tasti (Batterie in KS0555F) | 1    |      ![11](media/4bcc6cd652f8101c6a4680b40e40e593.png)       |
-| 15   |                  Servo Keyestudio 9G 180 °                   | 1    |       ![](media/e686213ffb2aa53d9960f9f6d1b600cd.png)        |
-| 16   |                          Cavo USB                           | 1    |       ![](media/4f8d5af6dee9016b45d975adb2391d37.png)        |
-| 17   |                         Tubo avvolgente                         | 1    |       ![](media/95a430f19b519f4c80f1aee9bdea1605.png)        |
-| 18   |                    Cacciavite 3.0\*40MM                     | 1    |       ![](media/f353b46e6c2c0597c3268d5aa137fd99.png)        |
-| 19   |                        Fascette 3\*100MM                         | 5    |       ![](media/247e99cde38f40eb256ed698ec47bb1d.png)        |
-| 20   |                      Chiave a L M2.5                      | 1    |       ![](media/ad46a09c801f0ce10448cf7f7c3ef279.png)        |
-| 21   |                       Chiave a L M3                       | 1    |       ![](media/ad46a09c801f0ce10448cf7f7c3ef279.png)        |
-| 22   |                      Chiave a L M1.5                      | 1    |       ![](media/ad46a09c801f0ce10448cf7f7c3ef279.png)        |
-| 23   |                          Cartone                           | 1    |       ![](media/8c9753cc11848ca134532d52e9ca2277.png)        |
-| 24   |  Cavo Dupont 4P M-F PH2.0mm a 2.54 (Verde-Blu-Rosso-Nero)   | 1    |       ![](media/9065eb862cc4bcbde2f324702ec8a954.png)        |
-| 25   |        Cavo Dupont 4P HX-2.54 (Nero-Rosso-Bianco-Marrone)        | 1    |       ![5](media/f89d96fdf835c372754aadc7c22ca907.png)       |
-| 26   |                  Cavo Dupont 5P JST-PH2.0MM                  | 1    |       ![](media/d815578410bf7d4d943c921e79fdc8a5.png)        |
-| 27   |     Cavo Dupont 3P-3P XH2.54 a 2.54（Giallo-Rosso-Nero)      | 1    |       ![9](media/6a1c8e7c27ca08c62ac0c30a0dbd4578.png)       |
-| 28   |     Cavo Dupont 3P-3P XH2.54 a PH2.0（Giallo-Rosso-Nero)     | 2    |     ![10-1](media/054fc8fbedd22e8e9c6074207bc94524.png)      |
-| 29   |     Cavo Dupont 4P-3P XH2.54 a PH2.0（Giallo-Rosso-Nero)     | 2    |      ![11](media/7856a38f34cdeb19966cd0fb99b55f85.png)       |
-| 30   |    Cavo Dupont 4P XH2.54 a PH2.0（Verde-Blu-Rosso-Nero)     | 1    |       ![8](media/900ce366290c7cb8537c498a3b1b6b08.png)       |
-| 31   |                 Viti a testa tonda M1.4\*8MM                  | 6    |       ![](media/f304cb590f040f13b4bd93bfc636ddba.png)        |
-| 32   |                          Dadi M1.4                           | 6    |       ![](media/fb3d2a6b5e5de551ae702b94a468ab49.png)        |
-| 33   |                           Dadi M2                            | 8    |       ![](media/fb3d2a6b5e5de551ae702b94a468ab49.png)        |
-| 34   |                  Viti a testa tonda M2\*8MM                   | 8    |       ![](media/f304cb590f040f13b4bd93bfc636ddba.png)        |
-| 35   |                 Viti a testa tonda M1.2\*5MM                  | 6    |       ![](media/1ae2d251fa671bdbedd375c37ed394aa.png)        |
-| 36   |                  Viti a testa tonda M3\*6MM                   | 18   |       ![](media/f304cb590f040f13b4bd93bfc636ddba.png)        |
-| 37   |                  Viti a testa tonda M3\*10MM                  | 3    |       ![](media/f304cb590f040f13b4bd93bfc636ddba.png)        |
-| 38   |                           Dadi M3                            | 3    |       ![](media/fb3d2a6b5e5de551ae702b94a468ab49.png)        |
-| 39   |               Colonna di rame a doppio passaggio M3\*10MM               | 4    |       ![](media/0e0fd3c7109c9fdaae633447ace2452f.png)        |
-| 40   |                Boccola esagonale in rame (M3*45MM)                 | 4    | ![image-20250902121024042](./media/image-20250902121024042.webp) |
-| 41   |       Perno assiale tecnico blu 43093 con creste di attrito       | 11   |       ![](media/be8bf7c301b2cc756ed4b6bc0d0fce59.png)        |
-| 42   |                      Boccola tecnica 4265c                      | 11   |       ![](media/64e5f57bd9efb46d1ea5c663e195bbbd.png)        |
-| 43   |                       Cappuccio ponticello blu                        | 4    |       ![](media/2e07431f04b6c1e9543918f86ee695a4.png)        |
-| 44   |                        Cappuccio ponticello rosso                        | 4    |       ![](media/a0aca71a25a9c5152b99c0911e6f5221.png)        |
-| 45   |                           Chiave inglese                            | 1    |                    ![img](media/wps2.jpg)                    |
-| 46   |                    Ruota motrice del telaio                     | 2    |                    ![img](media/wps3.png)                    |
-| 47   |                    Ruota portante del telaio                     | 2    |                    ![img](media/wps4.png)                    |
-| 48   |                 Vite a esagono incassato M4*12MM                 | 2    |                    ![img](media/wps5.jpg)                    |
-| 49   |                 Vite a esagono incassato M4*35MM                 | 2    |                    ![img](media/wps6.jpg)                    |
-| 50   |                          Cingolo a nastro                          | 2    |                    ![img](media/wps7.jpg)                    |
+| 1 | タンクロボットシャーシ（**18650バッテリーを2本ご持参ください**） | 1 | ![img](media/wps8.jpg) |
+| 2 | Keyestudio V4.0開発ボード（Arduino UNO互換） | 1 | ![](media/8ecfc7e4f74bd2001452e33f74eace2e.png) |
+| 3 | Keyestudio 8833モータードライバー拡張ボード | 1 | ![ ](media/a68b920cd30c3b17941fa8b28b643c8f.png) |
+| 4 | DX-BT24 V5.1 BLE BTモジュール | 1 | ![ ](media/5932436a0916951504a9debb97a905c3.jpeg) |
+| 5 | HC-SR04超音波センサー | 1 | ![](media/b0906d68835b2659491e53a85567569b.png) |
+| 6 | Keyestudio 8*16 LEDパネル | 1 | ![](media/2d831a9e71d1777b7b12132267d22947.png) |
+| 7 | 黄色LEDモジュール | 1 | ![2](media/0b130b1b8eb4e626a9cad08906af2ef5.png) |
+| 8 | 炎センサー | 2 | ![1](media/ecf808f114234039582880ab4682c4e6.png) |
+| 9 | 130モーターモジュール | 1 | ![5](media/465d2f91471dcdab8de9b07e44d37cf4.png) |
+| 10 | フォトレジスター | 2 | ![4](media/9b0193c19a5a7392052adffdfc4e10c2.png) |
+| 11 | 8*16 LEDパネル用アクリルボード | 1 | ![4](media/2d8e4747f80f8134999a16c9aa0dabb7.png) |
+| 12 | トップアクリルボード | 1 | ![](media/704f390bd65080844e77b498d37784f7.jpeg) |
+| 13 | アクリルボード | 1 | ![Img](./media/img-20240115093710.png) |
+| 14 | Keyestudio JMFP-4 17キーリモートコントロール（KS0555Fにバッテリー内蔵） | 1 | ![11](media/4bcc6cd652f8101c6a4680b40e40e593.png) |
+| 15 | Keyestudio 9G 180°サーボ | 1 | ![](media/e686213ffb2aa53d9960f9f6d1b600cd.png) |
+| 16 | USBケーブル | 1 | ![](media/4f8d5af6dee9016b45d975adb2391d37.png) |
+| 17 | 巻きパイプ | 1 | ![](media/95a430f19b519f4c80f1aee9bdea1605.png) |
+| 18 | 3.0*40MMドライバー | 1 | ![](media/f353b46e6c2c0597c3268d5aa137fd99.png) |
+| 19 | 3*100MMタイ | 5 | ![](media/247e99cde38f40eb256ed698ec47bb1d.png) |
+| 20 | L型M2.5レンチ | 1 | ![](media/ad46a09c801f0ce10448cf7f7c3ef279.png) |
+| 21 | L型M3レンチ | 1 | ![](media/ad46a09c801f0ce10448cf7f7c3ef279.png) |
+| 22 | L型M1.5レンチ | 1 | ![](media/ad46a09c801f0ce10448cf7f7c3ef279.png) |
+| 23 | 段ボール | 1 | ![](media/8c9753cc11848ca134532d52e9ca2277.png) |
+| 24 | 4P M-F PH2.0mm - 2.54デュポンワイヤー（緑-青-赤-黒） | 1 | ![](media/9065eb862cc4bcbde2f324702ec8a954.png) |
+| 25 | 4P HX-2.54デュポンワイヤー（黒-赤-白-茶） | 1 | ![5](media/f89d96fdf835c372754aadc7c22ca907.png) |
+| 26 | 5P JST-PH2.0MMデュポンワイヤー | 1 | ![](media/d815578410bf7d4d943c921e79fdc8a5.png) |
+| 27 | 3P-3P XH2.54 - 2.54デュポンワイヤー（黄-赤-黒） | 1 | ![9](media/6a1c8e7c27ca08c62ac0c30a0dbd4578.png) |
+| 28 | 3P-3P XH2.54 - PH2.0デュポンワイヤー（黄-赤-黒） | 2 | ![10-1](media/054fc8fbedd22e8e9c6074207bc94524.png) |
+| 29 | 4P-3P XH2.54 - PH2.0デュポンワイヤー（黄-赤-黒） | 2 | ![11](media/7856a38f34cdeb19966cd0fb99b55f85.png) |
+| 30 | 4P XH2.54 - PH2.0デュポンワイヤー（緑-青-赤-黒） | 1 | ![8](media/900ce366290c7cb8537c498a3b1b6b08.png) |
+| 31 | M1.4*8MM丸頭ネジ | 6 | ![](media/f304cb590f040f13b4bd93bfc636ddba.png) |
+| 32 | M1.4ナット | 6 | ![](media/fb3d2a6b5e5de551ae702b94a468ab49.png) |
+| 33 | M2ナット | 8 | ![](media/fb3d2a6b5e5de551ae702b94a468ab49.png) |
+| 34 | M2*8MM丸頭ネジ | 8 | ![](media/f304cb590f040f13b4bd93bfc636ddba.png) |
+| 35 | M1.2*5MM丸頭ネジ | 6 | ![](media/1ae2d251fa671bdbedd375c37ed394aa.png) |
+| 36 | M3*6MM丸頭ネジ | 18 | ![](media/f304cb590f040f13b4bd93bfc636ddba.png) |
+| 37 | M3*10MM丸頭ネジ | 3 | ![](media/f304cb590f040f13b4bd93bfc636ddba.png) |
+| 38 | M3ナット | 3 | ![](media/fb3d2a6b5e5de551ae702b94a468ab49.png) |
+| 39 | M3*10MM両端銅柱 | 4 | ![](media/0e0fd3c7109c9fdaae633447ace2452f.png) |
+| 40 | 六角銅ブッシュ（M3*45MM） | 4 | ![image-20250902121024042](./media/image-20250902121024042.webp) |
+| 41 | 43093摩擦リッジ付き青色テクニックアクスルピン | 11 | ![](media/be8bf7c301b2cc756ed4b6bc0d0fce59.png) |
+| 42 | 4265cテクニックブッシュ | 11 | ![](media/64e5f57bd9efb46d1ea5c663e195bbbd.png) |
+| 43 | 青色ジャンパーキャップ | 4 | ![](media/2e07431f04b6c1e9543918f86ee695a4.png) |
+| 44 | 赤色ジャンパーキャップ | 4 | ![](media/a0aca71a25a9c5152b99c0911e6f5221.png) |
+| 45 | スパナ | 1 | ![img](media/wps2.jpg) |
+| 46 | シャーシ駆動輪 | 2 | ![img](media/wps3.png) |
+| 47 | シャーシベアリングホイール | 2 | ![img](media/wps4.png) |
+| 48 | M4*12MM六角穴付きネジ | 2 | ![img](media/wps5.jpg) |
+| 49 | M4*35MM六角穴付きネジ | 2 | ![img](media/wps6.jpg) |
+| 50 | ベルトトラック | 2 | ![img](media/wps7.jpg) |
 
-## 1.5 Scheda di sviluppo Keyestudio V4.0
+## 1.5 Keyestudio V4.0開発ボード
 
-È necessario sapere che la scheda di sviluppo Keyestudio V4.0 è il cuore di questa smart car.
+Keyestudio V4.0開発ボードがこのスマートカーの核であることを知っておく必要があります。
 
 ![](./media/image-20250709102941963.png)
 
-La scheda di sviluppo Keyestudio V4.0 è basata su MCU ATmega328P e con un chip CP2102 come convertitore UART-USB.
+Keyestudio V4.0開発ボードはATmega328P MCUをベースにしており、CP2102チップをUART-USBコンバーターとして搭載しています。
 
 ![](./media/image-20250709103216112.png)
 
-Dispone di 14 pin di ingresso/uscita digitali (di cui 6 possono essere utilizzati come uscite PWM), 6 ingressi analogici, un cristallo di quarzo da 16 MHz, una connessione USB, un jack di alimentazione, 2 header ICSP e un pulsante di reset.
+14個のデジタル入出力ピン（うち6個はPWM出力として使用可能）、6個のアナログ入力、16MHz水晶発振子、USB接続、電源ジャック、2個のICSPヘッダー、リセットボタンを備えています。
 
 ![](./media/image-20250709103241560.png)
 
-Possiamo alimentarlo con un cavo USB, il jack di alimentazione CC esterno (DC 7-12V) o i pin femmina Vin/GND (DC 7-12V)
+USBケーブル、外部DC電源ジャック（DC 7-12V）、またはメスヘッダーVin/GND（DC 7-12V）で電源を供給できます。
 
-|      Microcontrollore       |                      ATmega328P-PU                       |
+| マイクロコントローラー | ATmega328P-PU |
 | :-------------------------: | :------------------------------------------------------: |
-|      Tensione operativa      |                            5V                            |
-| Tensione di ingresso (raccomandata) |                         DC7-12V                          |
-|      Pin I/O digitali       |       14 (D0-D13)  (di cui 6 forniscono uscita PWM)       |
-|    Pin I/O digitali PWM     |               6 (D3, D5, D6, D9, D10, D11)               |
-|      Pin di ingresso analogici      |                        6 (A0-A5)                         |
-|   Corrente CC per pin I/O    |                          20 mA                           |
-|   Corrente CC per pin 3.3V   |                          50 mA                           |
-|        Memoria Flash         | 32 KB (ATmega328P-PU) di cui 0.5 KB utilizzati dal bootloader |
-|            SRAM             |                   2 KB (ATmega328P-PU)                   |
-|           EEPROM            |                   1 KB (ATmega328P-PU)                   |
-|         Velocità di clock         |                          16 MHz                          |
-|         LED_BUILTIN         |                           D13                            |
+| 動作電圧 | 5V |
+| 入力電圧（推奨） | DC7-12V |
+| デジタルI/Oピン | 14 (D0-D13) (うち6個はPWM出力) |
+| PWMデジタルI/Oピン | 6 (D3, D5, D6, D9, D10, D11) |
+| アナログ入力ピン | 6 (A0-A5) |
+| I/OピンあたりのDC電流 | 20 mA |
+| 3.3VピンあたりのDC電流 | 50 mA |
+| フラッシュメモリ | 32 KB (ATmega328P-PU) (うち0.5 KBはブートローダーで使用) |
+| SRAM | 2 KB (ATmega328P-PU) |
+| EEPROM | 1 KB (ATmega328P-PU) |
+| クロック速度 | 16 MHz |
+| LED_BUILTIN | D13 |
