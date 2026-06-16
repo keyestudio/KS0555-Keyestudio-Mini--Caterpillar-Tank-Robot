@@ -1,12 +1,12 @@
-# 2. Configuración del producto
+# 2. Configuration du produit
 
-<span style="color: rgb(255, 76, 65);">**Precaución**</span>: Retire las películas delgadas de las placas antes de instalar este robot. Tenga en cuenta que el ángulo inicial del servo debe ajustarse durante la instalación.
+<span style="color: rgb(255, 76, 65);">**Attention**</span>: Retirez les films minces des cartes avant d'installer ce robot. Notez que l'angle initial du servo doit être réglé pendant l'installation.
 
 ![](./media/image-20250709092645945.png)
 
-**Paso 1**
+ **Étape 1**
 
-Herramientas necesarias:
+Outils nécessaires:
 
 ![](./media/image-20250709102252976.png)
 
@@ -14,29 +14,29 @@ Herramientas necesarias:
 
 ![](./media/image-20250709092738119.png)
 
-<span style="color: rgb(255, 76, 65); font-size: 16px;">**Nota:** Preste atención a la dirección de instalación de las ruedas. El lado grueso debe estar hacia afuera.</span>
+<span style="color: rgb(255, 76, 65); font-size: 16px;">**Note:** Faites attention au sens d'installation des roues. Le côté épais doit être à l'extérieur.</span>
 
 ![](./media/image-20250709092816744.png)
 
 ![](./media/image-20250709092828746.png)
 
-**Paso 2**
+ **Étape 2**
 
 ![](./media/image-20250709093034445.png)
 
-Las ruedas y las orugas deben instalarse. Luego móntelas en la carrocería del coche simultáneamente. De lo contrario, las orugas no se podrán instalar.
+Les roues et les chenilles doivent être installées. Ensuite, montez-les simultanément sur le corps de la voiture. Sinon, les chenilles ne peuvent pas être installées.
 
 ![](./media/image-20250709093056711.png)
 
 ![](./media/image-20250709093110898.png)
 
-**Nota:** Preste atención a dónde se montan las ruedas en las orugas.
+**Note:** Faites attention à l'endroit où les roues sont montées sur les chenilles.
 
 ![](./media/image-20250709093130989.png)
 
 ![](./media/image-20250709093205374.png)
 
-**Paso 3**
+ **Étape 3**
 
 ![](./media/image-20250709093225354.png)
 
@@ -44,7 +44,7 @@ Las ruedas y las orugas deben instalarse. Luego móntelas en la carrocería del 
 
 ![](./media/image-20250709093246548.png)
 
-**Nota:** Por favor, conecte los cables primero.
+**Note:** Veuillez câbler d'abord.
 
 ![](./media/image-20250709093344681.png)
 
@@ -56,7 +56,7 @@ Las ruedas y las orugas deben instalarse. Luego móntelas en la carrocería del 
 
 ![](./media/image-20250709093449028.png)
 
-**Paso 4**
+**Étape 4**
 
 ![](./media/image-20250709093522583.png)
 
@@ -64,7 +64,7 @@ Las ruedas y las orugas deben instalarse. Luego móntelas en la carrocería del 
 
 ![](./media/image-20250709093547507.png)
 
-**Paso 5**
+**Étape 5**
 
 ![](./media/image-20250709093644514.png)
 
@@ -72,7 +72,7 @@ Las ruedas y las orugas deben instalarse. Luego móntelas en la carrocería del 
 
 ![](./media/image-20250709093847892.png)
 
-**Paso 6**
+ **Étape 6**
 
 ![](./media/image-20250709093916149.png)
 
@@ -80,17 +80,17 @@ Las ruedas y las orugas deben instalarse. Luego móntelas en la carrocería del 
 
 ![](./media/image-20250709093939255.png)
 
-**Paso 7**
+**Étape 7**
 
 ![](./media/image-20250709094006571.png)
 
-<span style="color: rgb(255, 76, 65);">**Nota:** Preste atención a la dirección de los puentes.</span>
+<span style="color: rgb(255, 76, 65);">**Note:** Faites attention au sens des cavaliers.</span>
 
 ![](./media/image-20250709094035675.png)
 
 ![](./media/image-20250709094048424.png)
 
-**Paso 8**
+ **Étape 8**
 
 ![](./media/image-20250709094212254.png)
 
@@ -98,7 +98,7 @@ Las ruedas y las orugas deben instalarse. Luego móntelas en la carrocería del 
 
 ![](./media/image-20250709094802015.png)
 
-**Paso 9**
+**Étape 9**
 
 ![](./media/image-20250709094906387.png)
 
@@ -106,35 +106,35 @@ Las ruedas y las orugas deben instalarse. Luego móntelas en la carrocería del 
 
 ![](./media/image-20250709094931895.png)
 
-**Paso 10**
+**Étape 10**
 
-(Es necesario ajustar el ángulo del servo)
+(Besoin d'ajuster l'angle du servo)
 
 ![](./media/image-20250709095001492.png)
 
 ![](./media/image-20250709095028698.png)
 
-**Ajuste el ángulo del servo a 90°**
+**Réglez l'angle du servo à 90°**
 
-Para ajustar el código del servo, seleccione el código correspondiente según el curso.
+Pour ajuster le code du servo, veuillez sélectionner le code correspondant selon le cours.
 
-1.**Arduino:** Descargue el archivo de código: [Arduino](./Arduino.7z)
+1.**Arduino:** Téléchargez le fichier de code:[Arduino](./Arduino.7z)
 
 ![](./media/image-20250710110650230.png)
 
-2.**Kidsblock:** Descargue el archivo de código: [Kidsblock](./Kidsblock.7z)
+2.**Kidsblock:** Téléchargez le fichier de code:[Kidsblock](./Kidsblock.7z)
 
 ![](./media/image-20250710110906515.png)
 
-**Después de inicializar el ángulo del servo, instale el módulo Bluetooth.**
+**Après avoir initialisé l'angle du servo, installez le module Bluetooth.**
 
-Mantenga el sensor ultrasónico paralelo a la placa.
+Gardez le capteur à ultrasons parallèle à la carte.
 
 ![](./media/image-20250709095254305.png)
 
 ![](./media/image-20250709095307371.png)
 
-**Paso 11**
+ **Étape 11**
 
 ![](./media/image-20250709095338636.png)
 
@@ -142,7 +142,9 @@ Mantenga el sensor ultrasónico paralelo a la placa.
 
 ![](./media/image-20250709095428457.png)
 
-**Paso 12**
+
+
+**Étape 12**
 
 ![](./media/image-20250709095454717.png)
 
@@ -150,9 +152,9 @@ Mantenga el sensor ultrasónico paralelo a la placa.
 
 ![](./media/image-20250709095524456.png)
 
-**Cableado**
+**Câblage**
 
-Para el panel LED 8*16, conecte los cables a A4 y A5.
+Pour le panneau LED 8*16, connectez les fils à A4 et A5.
 
 ![](./media/image-20250709095552072.png)
 
@@ -160,19 +162,19 @@ Para el panel LED 8*16, conecte los cables a A4 y A5.
 
 ![](./media/image-20250709095643567.png)
 
-Conecte el motor A al puerto A y el motor B al puerto B.
+Connectez le moteur A au port A et le moteur B au port B.
 
 ![](./media/image-20250709095728739.png)
 
 ![](./media/image-20250709095740866.png)
 
-Conecte el cable de alimentación.
+Connectez le fil d'alimentation.
 
 ![](./media/image-20250709095759390.png)
 
 ![](./media/image-20250709095811580.png)
 
-Sensor de seguimiento de línea (ver la imagen):
+Capteur de suivi de ligne (voir l'image):
 
 ![](./media/image-20250709095830428.png)
 
@@ -182,49 +184,50 @@ Sensor de seguimiento de línea (ver la imagen):
 
 ![](./media/image-20250709095911639.png)
 
-Conecte los fotorresistores:
+Câblez les photorésistances:
 
 ![](./media/image-20250709095929779.png)
 
 ![](./media/image-20250709095939414.png)
 
-| Fotorresistor | Placa Keyestudio 8833 |
+| Photorésistance | Carte Keyestudio 8833 |
 | :-----------: | :-------------------: |
-| G | G |
-| V | V |
-| S | A1 |
+|       G       |           G           |
+|       V       |           V           |
+|       s       |          A1           |
 
 ![](./media/image-20250709100043670.png)
 
-| Fotorresistor | Placa Keyestudio 8833 |
+| Photorésistance | Carte Keyestudio 8833 |
 | :-----------: | :--------------------: |
-| G | G |
-| V | V |
-| S | V2 |
+|       G       |           G            |
+|       V       |           V            |
+|       S       |           V2           |
 
-Conecte el sensor ultrasónico:
+Câblez le capteur à ultrasons:
 
 ![](./media/image-20250709100317508.png)
 
 ![](./media/image-20250709100329430.png)
 
-| Sensor ultrasónico | Placa Keyestudio 8833 |
+| Capteur à ultrasons | Carte Keyestudio 8833 |
 | :---------------: | :-------------------: |
-| Vcc | V |
-| Trig | D12 |
-| Echo | D13 |
-| Gnd | G |
+|        Vcc        |           V           |
+|       Trig        |          D12          |
+|       Echo        |          D13          |
+|        Gnd        |           G           |
 
-Conecte el servo (D10):
+Câblez le servo (D10):
 
 ![](./media/image-20250709100626238.png)
 
-| Servo | Placa Keyestudio 8833 |
+| Servo  | Carte Keyestudio 8833 |
 | :----: | :-------------------: |
-| Marrón | G |
-| Rojo | V(5V) |
-| Naranja | D10 |
+| Marron  |           G           |
+|  Rouge   |         V(5V)         |
+| Orange |          D10          |
 
-<span style="color: rgb(255, 76, 65);">**Adoptamos una batería de litio modelo 18650 con polo positivo puntiagudo, cuya potencia y capacidad no son requisitos.**</span>
+<span style="color: rgb(255, 76, 65);">**Nous adoptons une batterie au lithium modèle 18650 avec un pôle positif pointu, dont la puissance et la capacité ne sont pas requises.**</span>
 
 ![](./media/image-20250709100841625.png)
+
