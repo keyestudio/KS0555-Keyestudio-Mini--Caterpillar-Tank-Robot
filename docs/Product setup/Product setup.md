@@ -1,12 +1,12 @@
-# 2. 製品セットアップ
+# 2. Productconfiguratie
 
-<span style="color: rgb(255, 76, 65);">**注意**</span>: このロボットを取り付ける前に、ボードから薄いフィルムを剥がしてください。サーボの初期角度は取り付け時に設定する必要があることに注意してください。
+<span style="color: rgb(255, 76, 65);">**Let op**</span>: Verwijder dunne folies van de printplaten voordat u deze robot installeert. Houd er rekening mee dat de initiële hoek van de servo tijdens de installatie moet worden ingesteld.
 
 ![](./media/image-20250709092645945.png)
 
-**ステップ1**
+**Stap 1**
 
-必要なツール：
+Benodigde gereedschappen:
 
 ![](./media/image-20250709102252976.png)
 
@@ -14,29 +14,29 @@
 
 ![](./media/image-20250709092738119.png)
 
-<span style="color: rgb(255, 76, 65); font-size: 16px;">**注意：** 車輪の取り付け方向に注意してください。厚い側が外側になるようにしてください。</span>
+<span style="color: rgb(255, 76, 65); font-size: 16px;">**Opmerking:** Let op de installatierichting van de wielen. De dikke kant moet aan de buitenkant zitten.</span>
 
 ![](./media/image-20250709092816744.png)
 
 ![](./media/image-20250709092828746.png)
 
-**ステップ2**
+**Stap 2**
 
 ![](./media/image-20250709093034445.png)
 
-車輪とトラックを取り付ける必要があります。その後、それらを同時に車体に取り付けます。そうしないと、トラックを取り付けることができません。
+De wielen en rupsbanden moeten worden geïnstalleerd. Monteer ze vervolgens gelijktijdig op de carrosserie. Anders kunnen de rupsbanden niet worden geïnstalleerd.
 
 ![](./media/image-20250709093056711.png)
 
 ![](./media/image-20250709093110898.png)
 
-**注意：** 車輪がトラックのどこに取り付けられているかに注意してください。
+**Opmerking:** Let op waar de wielen op de rupsbanden zijn gemonteerd.
 
 ![](./media/image-20250709093130989.png)
 
 ![](./media/image-20250709093205374.png)
 
-**ステップ3**
+**Stap 3**
 
 ![](./media/image-20250709093225354.png)
 
@@ -44,7 +44,7 @@
 
 ![](./media/image-20250709093246548.png)
 
-**注意：** まず配線してください。
+**Opmerking:** Sluit eerst de bedrading aan.
 
 ![](./media/image-20250709093344681.png)
 
@@ -56,7 +56,7 @@
 
 ![](./media/image-20250709093449028.png)
 
-**ステップ4**
+**Stap 4**
 
 ![](./media/image-20250709093522583.png)
 
@@ -64,7 +64,7 @@
 
 ![](./media/image-20250709093547507.png)
 
-**ステップ5**
+**Stap 5**
 
 ![](./media/image-20250709093644514.png)
 
@@ -72,7 +72,7 @@
 
 ![](./media/image-20250709093847892.png)
 
-**ステップ6**
+**Stap 6**
 
 ![](./media/image-20250709093916149.png)
 
@@ -80,17 +80,17 @@
 
 ![](./media/image-20250709093939255.png)
 
-**ステップ7**
+**Stap 7**
 
 ![](./media/image-20250709094006571.png)
 
-<span style="color: rgb(255, 76, 65);">**注意：** ジャンパーキャップの方向に注意してください。</span>
+<span style="color: rgb(255, 76, 65);">**Opmerking:** Let op de richting van de jumper caps.</span>
 
 ![](./media/image-20250709094035675.png)
 
 ![](./media/image-20250709094048424.png)
 
-**ステップ8**
+**Stap 8**
 
 ![](./media/image-20250709094212254.png)
 
@@ -98,43 +98,43 @@
 
 ![](./media/image-20250709094802015.png)
 
-**ステップ9**
+**Stap 9**
 
 ![](./media/image-20250709094906387.png)
 
-![](./media/image-20250709094915724.png)
+![](./media/image-20250707094915724.png)
 
 ![](./media/image-20250709094931895.png)
 
-**ステップ10**
+**Stap 10**
 
-（サーボの角度を調整する必要があります）
+(Moet de hoek van de servo aanpassen)
 
 ![](./media/image-20250709095001492.png)
 
 ![](./media/image-20250709095028698.png)
 
-**サーボの角度を90°に設定します**
+**Stel de hoek van de servo in op 90°**
 
-サーボのコードを調整するには、コースに応じて対応するコードを選択してください。
+Om de code van de servo aan te passen, selecteert u de overeenkomstige code volgens de cursus.
 
-1.**Arduino:** コードファイルをダウンロード: [Arduino](./Arduino.7z)
+1.**Arduino:** Download het codebestand: [Arduino](./Arduino.7z)
 
 ![](./media/image-20250710110650230.png)
 
-2.**Kidsblock:** コードファイルをダウンロード: [Kidsblock](./Kidsblock.7z)
+2.**Kidsblock:** Download het codebestand: [Kidsblock](./Kidsblock.7z)
 
 ![](./media/image-20250710110906515.png)
 
-**サーボ角度を初期化した後、Bluetoothモジュールを取り付けます。**
+**Na het initialiseren van de servohoek, installeert u de Bluetooth-module.**
 
-超音波センサーをボードと平行に保ちます。
+ Houd de ultrasone sensor parallel aan de printplaat.
 
 ![](./media/image-20250709095254305.png)
 
 ![](./media/image-20250709095307371.png)
 
-**ステップ11**
+**Stap 11**
 
 ![](./media/image-20250709095338636.png)
 
@@ -142,7 +142,7 @@
 
 ![](./media/image-20250709095428457.png)
 
-**ステップ12**
+**Stap 12**
 
 ![](./media/image-20250709095454717.png)
 
@@ -150,9 +150,9 @@
 
 ![](./media/image-20250709095524456.png)
 
-**配線**
+**Bedrading**
 
-8*16 LEDパネルの場合、ワイヤーをA4とA5に接続します。
+Voor het 8*16 LED-paneel sluit u de draden aan op A4 en A5.
 
 ![](./media/image-20250709095552072.png)
 
@@ -160,19 +160,19 @@
 
 ![](./media/image-20250709095643567.png)
 
-モーターAをAポートに、モーターBをBポートに接続します。
+Sluit motor A aan op poort A en motor B op poort B.
 
 ![](./media/image-20250709095728739.png)
 
 ![](./media/image-20250709095740866.png)
 
-電源ワイヤーを接続します。
+Sluit de voedingsdraad aan.
 
 ![](./media/image-20250709095759390.png)
 
 ![](./media/image-20250709095811580.png)
 
-ライン追跡センサー（写真参照）：
+Lijnvolgsensor (zie de afbeelding):
 
 ![](./media/image-20250709095830428.png)
 
@@ -182,13 +182,13 @@
 
 ![](./media/image-20250709095911639.png)
 
-フォトレジスターを配線します：
+Sluit de fotoweerstanden aan:
 
 ![](./media/image-20250709095929779.png)
 
 ![](./media/image-20250709095939414.png)
 
-| フォトレジスター | Keyestudio 8833ボード |
+| Fotoweerstand | Keyestudio 8833 Board |
 | :-----------: | :-------------------: |
 |       G       |           G           |
 |       V       |           V           |
@@ -196,35 +196,35 @@
 
 ![](./media/image-20250709100043670.png)
 
-| フォトレジスター | Keyestudio 8833ボード |
+| Fotoweerstand | Keyestudio 8833 Board |
 | :-----------: | :--------------------: |
 |       G       |           G            |
 |       V       |           V            |
 |       S       |           V2           |
 
-超音波センサーを配線します：
+Sluit de ultrasone sensor aan:
 
 ![](./media/image-20250709100317508.png)
 
 ![](./media/image-20250709100329430.png)
 
-| 超音波センサー | Keyestudio 8833ボード |
+| Ultrasone Sensor | Keyestudio 8833 Board |
 | :---------------: | :-------------------: |
 |        Vcc        |           V           |
 |       Trig        |          D12          |
 |       Echo        |          D13          |
 |        Gnd        |           G           |
 
-サーボを配線します（D10）：
+Sluit de servo aan (D10):
 
 ![](./media/image-20250709100626238.png)
 
-| サーボ | Keyestudio 8833ボード |
+| Servo | Keyestudio 8833 Board |
 | :----: | :-------------------: |
-| Brown  |           G           |
-|  Red   |         V(5V)         |
-| Orange |          D10          |
+| Bruin |           G           |
+| Rood |         V(5V)         |
+| Oranje |          D10          |
 
-<span style="color: rgb(255, 76, 65);">**当社は、電力と容量を必要としない、先端が尖ったプラス極を持つモデル18650リチウムバッテリーを採用しています。**</span>
+<span style="color: rgb(255, 76, 65);">**We gebruiken een model 18650 lithiumbatterij met een puntige positieve pool, waarvan het vermogen en de capaciteit niet vereist zijn.**</span>
 
 ![](./media/image-20250709100841625.png)
